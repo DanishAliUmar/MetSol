@@ -9,7 +9,7 @@ const Phone = ({ className }) => {
 
 const X = ({ className }) => {
     return (
-        <svg className={className ? className : ''} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" /></svg>
+        <svg className={className ? className : ''}  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
     )
 }
 
@@ -22,7 +22,7 @@ const YouTube = ({ className }) => {
 
 const FaceBook = ({ className }) => {
     return (
-        <svg className={className ? className : ''} xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M57.4,99H40c-1.8,0-3.2-1.4-3.2-3.2V60.3h-12c-1.8,0-3.2-1.4-3.2-3.2V40.5c0-1.8,1.4-3.2,3.2-3.2h12v-8.5 c0-9.8,2.7-17.1,8.1-21.8c6.5-5.6,16.5-7.2,30.6-5.1c1.7,0.3,2.9,1.7,2.9,3.4v14.5c0,1.8-1.5,3.3-3.3,3.3h-9.7 c-3.4,0-4.9,0.8-4.9,5.7v8.5h13.7c1,0,1.9,0.4,2.5,1.1c0.6,0.7,0.9,1.7,0.8,2.6l-2,16.3c-0.2,1.7-1.7,3-3.4,3H60.6v35.5 C60.6,97.6,59.2,99,57.4,99z M42.2,93.6h13V57.9c0-1.7,1.4-3,3-3h12.3L72,42.7H58.2c-1.7,0-3-1.4-3-3v-11c0-7.4,3.5-11.1,10.3-11.1 H73V7c-11.6-1.5-19.6-0.2-24.6,4.1c-4.2,3.6-6.2,9.4-6.2,17.6v11c0,1.7-1.4,3-3,3H27v12.2h12.2c1.7,0,3,1.4,3,3V93.6z"></path></svg>
+        <svg className={className ? className : ''}  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
 
     )
 }
@@ -65,6 +65,16 @@ const ArrowUpLong = ({ className }) => {
         <svg className={className ? className : ''} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M214.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-370.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128z" /></svg>
     )
 }
+const Plus = ({ className }) => {
+    return (
+        <svg className={className ? className : ''} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/></svg>   
+         )
+}
+const Minus = ({ className }) => {
+    return (
+        <svg className={className ? className : ''} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>   
+         )
+}
 
 export default {
     Phone,
@@ -77,5 +87,7 @@ export default {
     EllipsisVertical,
     Star,
     ArrowUpLong,
+    Plus,
+    Minus,
 
 }
