@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="flex items-center justify-between px-10 py-5 bg-gradient-to-b from-[#000] to-[#F2295B00]">
-        <div className="w-40 h-auto object-contain"><img src="./public/Images/Logo/Logo.png" alt="" /></div>
+        <div className="w-40 h-auto object-contain"><img src="src/Assets/Images/Logo/Logo.png" alt="" /></div>
         <ul className="lg:flex hidden justify-center ">
           <li className="mx-4">
             <Link to="/" className="group hover:text-[#f8955b] text-white">Home<div class="rounded-[30px] bg-[#f8955b] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
