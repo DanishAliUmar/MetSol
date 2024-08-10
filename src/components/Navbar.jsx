@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Svgs from '../Assets/svgs';
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between px-10 py-3 bg-black">
-      <div className="logo"></div>
+    <nav className="flex items-center justify-between px-10 py-3 bg-slate-400">
+      <div className="logo"><img src="" alt="" /></div>
       <ul className="flex justify-center">
         <li className="mx-4">
           <Link to="/" className="text-white hover:text-gray-300">Home</Link>
@@ -23,8 +24,8 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="support flex items-center gap-2">
-        <div className="whatsapp"></div>
-        
+        <div className="whatsapp"><Svgs.Phone className={'w-8 h-8'}/></div>
+
       </div>
     </nav>
   );
