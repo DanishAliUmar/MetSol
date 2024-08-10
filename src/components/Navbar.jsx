@@ -27,7 +27,7 @@ import {
 const Navbar = () => {
   return (
     <>
-      <nav className="flex items-center justify-between px-10 py-5 bg-gradient-to-b from-[#000] to-[#F2295B00]">
+      <nav className="flex items-center justify-between px-10 py-5 bg-gradient-to-b fixed w-full from-[#000] to-[#F2295B00]">
         <div className="w-40 h-auto object-contain"><img src={logo} alt="" /></div>
         <ul className="lg:flex hidden justify-center ">
           <li className="mx-4">
