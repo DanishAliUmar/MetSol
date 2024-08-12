@@ -1,28 +1,50 @@
 import Svgs from '@/Assets/svgs'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import SpaceMan from '/Images/assets/slider-1-parallax-image-big.png';
 import HeroBg from '/Images/assets/slider-1-parallax-bg.jpg';
 import groupedImage from '/Images/assets/grouped-image.png';
 const Home = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+console.log(scrollPosition);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const newScrollPosition = window.scrollY;
+      setScrollPosition(newScrollPosition);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll',
+      handleScroll);
+  }, []);
+
+  const calculateBottomPosition = (initialBottom, scrollThreshold) => {
+    const bottomOffset = Math.min(
+      scrollPosition / scrollThreshold, // Adjust based on desired parallax effect
+      1 // Ensure max bottom position is reached at full scroll
+    ) * 100; // Adjust multiplier for desired distance (in pixels)
+    return initialBottom + bottomOffset + 'px';
+  };
   return (
     <>
       <header className='min-h-[120vh] flex items-center relative lg:justify-between justify-center lg:flex-row flex-col overflow-hidden xl:gap-10 lg:gap-2 gap-10 !bg-cover !bg-center !bg-no-repeat p-10' style={{ background: 'url(/Images/assets/slider-1-parallax-bg.jpg)' }} >
-        <img src={SpaceMan} className='absolute sm:bottom-24 bottom-1 sm:left-24 -left-40 z-0 sm:scale-150 min-w-[1300px] max-w-[1300px]' alt="" />
-          <div className=" space-y-6 absolute left-0 top-[40%] px-5 hidden md:block">
-            <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#f8955b] transition-all group">
-              <Svgs.X className={'size-5 fill-black group-hover:fill-white transition-all group-hover:scale-75'} />
-            </div>
-            <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#f8955b] transition-all group">
-              <Svgs.YouTube className={'size-5 fill-black group-hover:fill-white transition-all group-hover:scale-75'} />
-            </div>
-            <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#f8955b] transition-all group">
-              <Svgs.FaceBook className={'size-5 fill-black group-hover:fill-white transition-all group-hover:scale-75'} />
-            </div>
-            <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#f8955b] transition-all group">
-              <Svgs.Instagram className={'size-5 fill-black group-hover:fill-white transition-all group-hover:scale-75'} />
-            </div>
+        <img src={SpaceMan} className='absolute sm:left-24 -left-40 z-0 sm:scale-150 min-w-[1300px] max-w-[1300px]' style={{bottom:(-scrollPosition + 180) / 1.5 }} alt="" />
+        <div className=" space-y-6 absolute left-0 top-[40%] px-5 hidden md:block">
+          <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#f8955b] transition-all group">
+            <Svgs.X className={'size-5 fill-black group-hover:fill-white transition-all group-hover:scale-75'} />
           </div>
-        <div className="lg:flex-1 flex flex-col relative z-10">
+          <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#f8955b] transition-all group">
+            <Svgs.YouTube className={'size-5 fill-black group-hover:fill-white transition-all group-hover:scale-75'} />
+          </div>
+          <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#f8955b] transition-all group">
+            <Svgs.FaceBook className={'size-5 fill-black group-hover:fill-white transition-all group-hover:scale-75'} />
+          </div>
+          <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#f8955b] transition-all group">
+            <Svgs.Instagram className={'size-5 fill-black group-hover:fill-white transition-all group-hover:scale-75'} />
+          </div>
+        </div>
+        <div className="lg:flex-1 flex flex-col relative z-10 lg:pt-80">
           <div className="flex items-start md:gap-7 gap-3 md:pl-10">
             <Svgs.Play className={'fill-[#f8955b] size-24 !h-10 rotate-90'} />
             <p className="text-white sm:min-w-80 lg:pr-0 md:pr-20">Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Egestas fringilla phasellus faucibus scelerisque. Nisl nisi scelerisque eu ultrices vitae auctor eu augue ut. Facilisis gravida neque convallis a. Phasellus vestibulum lorem sed risus ultricies tristique.            </p>
