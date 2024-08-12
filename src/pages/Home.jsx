@@ -6,7 +6,7 @@ import groupedImage from '/Images/assets/grouped-image.png';
 const Home = () => {
   return (
     <>
-      <header className='min-h-[120vh] flex items-center relative justify-between overflow-hidden gap-10 !bg-cover !bg-center !bg-no-repeat p-10' style={{ background: 'url(public/Images/assets/slider-1-parallax-bg.jpg)' }} >
+      <header className='min-h-[120vh] flex items-center relative justify-between overflow-hidden gap-10 !bg-cover !bg-center !bg-no-repeat p-10' style={{ background: 'url(/Images/assets/slider-1-parallax-bg.jpg)' }} >
         <img src={SpaceMan} className='absolute bottom-0 left-0 z-0 scale-150' alt="" />
         <div className="flex-1 flex flex-col relative z-10">
           <div className="flex-1 items-center justify-center flex-col space-y-6">
