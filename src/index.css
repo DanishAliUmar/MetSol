@@ -60,6 +60,20 @@
 }
 
 @layer base {
+  /* .awardImage2::before {
+    content: "";
+    display: block;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    border-radius: 2em;
+    bottom: -2em;
+    left: calc(50% - 1em);
+    z-index: 0;
+    color: white;
+    box-shadow: inset 1em -1em 0px 0px white;
+    transform: rotate(180deg);
+} */
   * {
     @apply border-border;
   }
