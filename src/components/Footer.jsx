@@ -275,7 +275,7 @@ const Footer = () => {
                   d="M14.1162 2.5C15.2337 2.5 16.3087 2.94167 17.0995 3.73417C17.8912 4.525 18.3337 5.59167 18.3337 6.70833V13.2917C18.3337 15.6167 16.442 17.5 14.1162 17.5H5.88366C3.55783 17.5 1.66699 15.6167 1.66699 13.2917V6.70833C1.66699 4.38333 3.54949 2.5 5.88366 2.5H14.1162ZM15.4419 7.94962L15.5086 7.88296C15.7078 7.64129 15.7078 7.29129 15.4994 7.04962C15.3836 6.92546 15.2244 6.84962 15.0586 6.83296C14.8836 6.82379 14.7169 6.88296 14.5911 6.99962L10.8336 9.99962C10.3503 10.4005 9.65777 10.4005 9.16693 9.99962L5.41693 6.99962C5.15777 6.80796 4.79943 6.83296 4.5836 7.05796C4.3586 7.28296 4.3336 7.64129 4.52443 7.89129L4.6336 7.99962L8.42527 10.958C8.89193 11.3246 9.45777 11.5246 10.0503 11.5246C10.6411 11.5246 11.2169 11.3246 11.6828 10.958L15.4419 7.94962Z"
                   fill="#0D99FF"></path>
               </svg>
-                <p className="text-[#fff] text-[13px] sm:text-[14px] font-[300] ">team@hashedsystem.com
+                <p className="text-[#fff] text-[13px] sm:text-[14px] font-[300] ">team@metsol.com
                 </p>
               </div><span className="flex items-center justify-center h-[30px] w-[30px] cursor-pointer "><svg
                 width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -321,7 +321,7 @@ const Footer = () => {
                     fill="white"></path>
                 </svg></span>
             </div>
-            <p className="text-[#e5e8eca2] text-[11px] font-[300] mt-[17px] ">© Copyright HashedSystem 2024.
+            <p className="text-[#e5e8eca2] text-[11px] font-[300] mt-[17px] ">© Copyright metsol 2024.
               All rights reserved.</p>
           </div>
           <div className=" ">
@@ -344,8 +344,8 @@ const Footer = () => {
               <p className="text-[20px] font-[600] text-[#fff] ">Contact</p>
             </div>
             <div className="mt-[4px] ">
-              <p className="text-[12px] text-[#fff] font-[200] ">+971 52 5201204</p>
-              <p className="text-[12px] text-[#fff] font-[200] ">+44 7909 834259</p>
+              <p className="text-[12px] text-[#fff] font-[200] ">+971 12345678</p>
+              <p className="text-[12px] text-[#fff] font-[200] ">+44 23456786</p>
             </div>
           </div>
         </div>
