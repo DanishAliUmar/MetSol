@@ -77,7 +77,11 @@ const Home = () => {
         </div>
         <div className="flex items-center gap-20">
           <div className="relative w-[450px] h-[530px]">
-            <img src={AwardImage} alt="" className="absolute w-full h-full" />
+            <div className="flex items-center gap-3 -rotate-90 absolute -left-10 top-20 z-50 w-fit bg-white p-2 rounded-full px-5">
+              <Svgs.Play className={'fill-[#f8955b] rotate-90'} width={14} />
+              <p className="">Watch Intro</p>
+            </div>
+            <img src={AwardImage} alt="" className="absolute w-full h-full rounded-3xl" />
             <img src={AwardImage2} alt="" className="awardImage2 absolute w-40 h-40 rounded-2xl outline outline-[14px] outline-white right-0 top-1/2 translate-x-1/2" />
           </div>
         </div>
