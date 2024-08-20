@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <>
       <header className='min-h-[120vh] flex items-center relative lg:justify-between justify-center lg:flex-row flex-col overflow-hidden xl:gap-10 lg:gap-2 gap-10 !bg-cover !bg-center !bg-no-repeat p-10' style={{ background: 'url(/Images/assets/slider-1-parallax-bg.jpg)' }} >
-        <img src={SpaceMan} className='absolute sm:left-24 -left-40 z-0 sm:scale-150 min-w-[1300px] max-w-[1300px]' style={{ bottom: (-scrollPosition + 180) / 1.5 }} alt="" />
+        <img src={SpaceMan} className='absolute sm:left-24 -left-40 z-0 sm:scale-150 min-w-[1300px] max-w-[1300px]' style={{ bottom: (-scrollPosition + 700) / 3 }} alt="" />
         <div className=" space-y-6 absolute left-0 top-[40%] px-5 hidden md:block">
           <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#f8955b] transition-all group">
             <Svgs.X className={'size-5 fill-black group-hover:fill-white transition-all group-hover:scale-75'} />
@@ -192,11 +192,11 @@ const Home = () => {
       <section className="px-10 py-28">
         <p className='text-[#f8955b] font-semibold uppercase '>Featured Tools</p>
         <h3 className='text-black font-semibold text-[40px] mt-3 leading-[54px] '>Special Tools For Business Growth</h3>
-        <div className='flex items-center justify-center'>
+        <div className='flex items-center justify-center Tools__slider'>
         <Swiper className='py-20'
               modules={[ Autoplay]}
               spaceBetween={50}
-              slidesPerView={4}
+              slidesPerView={3}
               centeredSlides={true}
               loop={true}
               autoplay={{

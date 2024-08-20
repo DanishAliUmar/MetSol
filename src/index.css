@@ -67,3 +67,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.Tools__slider .swiper-slide-active{
+  margin-top:100px
+}
