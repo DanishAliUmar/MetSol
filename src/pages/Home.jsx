@@ -81,15 +81,9 @@ const Home = () => {
       <section className="px-10 py-28 space-y-20">
         <div className="flex items-center gap-20">
           <h2 className="text-4xl flex-1 font-medium capitalize leading-[1.4] tracking-wider">A Single Platform To Find World's Top Agency Services.</h2>
-<<<<<<< HEAD
           <div className="flex items-start  flex-1 md:gap-7 gap-3 md:pl-10">
             <Svgs.Play className={'fill-[#fae951] size-24 !h-10 rotate-90'} />
             <p className="tracking-wider leading-[2]">Quis vel eros donec ac odio tempor. Sit amet consectetur adipiscing elit ut aliquam purus sit. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada.Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Lectus mauris ultrices eros in cursus turpis.</p>
-=======
-          <div className="flex items-start  flex-1 md:gap-6 gap-3 md:pl-10">
-            <Svgs.Play className={'fill-[#f8955b] size-24 !h-10 rotate-90'} />
-            <p className="tracking-wider leading-[2] text-[#757575]  ">Quis vel eros donec ac odio tempor. Sit amet consectetur adipiscing elit ut aliquam purus sit. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada.Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Lectus mauris ultrices eros in cursus turpis.</p>
->>>>>>> 4025f56174bf2ccaf4de92fee4e9942bad6f5c57
           </div>
         </div>
         <div className="flex items-center">
