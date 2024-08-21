@@ -1,5 +1,9 @@
-.custom_transition {
+  .custom_transition {
     transition: all 0.4s ease-in-out !important;
+  }
+
+  .custom_transition6s {
+    transition: all 0.7s ease-in-out !important;
   }
   
   .swiper-pagination {
@@ -40,9 +44,30 @@
     border-right: 10px solid transparent;
     border-top: 10px solid #f8955b;
   }
-  
 
-  /* .swiper-slide-active{
-    margin-top: 140px;
-    transition: all 0.3s ease-in-out;
-  } */
+
+  .beforeDiv::before{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 230px;
+    width: 100px;
+    height: 44px;
+    content: '';
+    border-top-left-radius: 22px;
+    box-shadow: -30px -20px 0 white;
+    z-index: 0;
+}
+
+.afterDiv::after {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 230px; /* Adjust as needed */
+    width: 100px;
+    height: 44px;
+    content: '';
+    border-top-right-radius: 22px;
+    box-shadow: 30px -20px 0 white;
+    z-index: 0;
+}

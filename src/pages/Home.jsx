@@ -81,51 +81,67 @@ const Home = () => {
       <section className="px-10 py-28 space-y-20">
         <div className="flex items-center gap-20">
           <h2 className="text-4xl flex-1 font-medium capitalize leading-[1.4] tracking-wider">A Single Platform To Find World's Top Agency Services.</h2>
-          <div className="flex items-start  flex-1 md:gap-6 gap-3 md:pl-10">
+          <div className="flex items-start flex-1 md:gap-6 gap-3 md:pl-10">
             <Svgs.Play className={'fill-[#f8955b] size-24 !h-10 rotate-90'} />
             <p className="tracking-wider leading-[2] text-[#757575]  ">Quis vel eros donec ac odio tempor. Sit amet consectetur adipiscing elit ut aliquam purus sit. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada.Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Lectus mauris ultrices eros in cursus turpis.</p>
           </div>
         </div>
         <div className="flex items-center">
           <div className='flex-1'>
-            <div className="relative w-[510px] h-[610px]">
-              <div className="flex items-center gap-3 -rotate-90 absolute -left-7 border border-black hover:border-[#f8955b] group hover:bg-[#f8955b] custom_transition cursor-pointer top-20 z-50 w-fit bg-white p-3 rounded-full px-5">
-                <Svgs.Play className={'fill-[#f8955b] group-hover:fill-white custom_transition rotate-90'} width={14} />
-                <p className="group-hover:text-white custom_transition">Watch Intro</p>
-              </div>
+            <div className="relative w-[560px] h-[635px]">
+              {/* <div class="mx-auto bg-[#fff] h-[46px] top-24 absolute left-0 -rotate-90 w-[230px] rounded-bl-[22px] rounded-br-[22px] flex items-center justify-center z-50">
+                <div className="flex items-center gap-3 border border-black hover:border-[#f8955b] group hover:bg-[#f8955b] custom_transition cursor-pointer w-fit bg-white p-3 rounded-full px-5">
+                  <Svgs.Play className={'fill-[#f8955b] group-hover:fill-white custom_transition '} width={14} />
+                  <p className="group-hover:text-white custom_transition uppercase">Watch Intro</p>
+                </div>
+              </div> */}
+              <div className="flex items-center gap-3 border border-black hover:border-[#f8955b] -rotate-90 group hover:bg-[#f8955b] custom_transition cursor-pointer w-fit bg-white p-3 z-50 top-20 -left-10 absolute rounded-full px-5">
+                  <Svgs.Play className={'fill-[#f8955b] group-hover:fill-white custom_transition '} width={14} />
+                  <p className="group-hover:text-white custom_transition uppercase">Watch Intro</p>
+                </div>
               <img src={AwardImage} alt="" className="absolute w-full h-full rounded-3xl" />
-              <img src={AwardImage2} alt="" className="awardImage2 absolute w-44 h-44 rounded-2xl outline outline-[14px] outline-white right-0 top-1/2 translate-x-1/2" />
+              <img src={AwardImage2} alt="" className="awardImage2 absolute w-52 h-52 rounded-2xl outline outline-[14px] outline-white right-0 top-1/2 translate-x-1/2" />
             </div>
           </div>
-          <div className='flex-1'>
-            <p className='text-[#f8955b] font-semibold uppercase '>About Us</p>
-            <h3 className='text-black font-semibold text-4xl mt-3 '>High Performing Digital Agency</h3>
-            <p className='text-[#757575] mt-4 text-lg '>Risus sed vulputate odio ut enim blandit volutpat. Sed cras ornare arcu dui vivamus arcu.</p>
-            <div className='py-12 border-b border-black'>
-              <div className='flex '>
-                <div className='flex-1'>
-                  <h3 className='font-bold text-5xl'>50k+</h3>
-                  <p className='font-semibold text-black mt-4 '>Successful Projects</p>
+          <div className='flex-1 flex gap-6'>
+            <div className='flex-1'>
+              <p className='text-[#f8955b] font-semibold uppercase '>About Us</p>
+              <h3 className='text-black font-semibold text-4xl mt-3 '>High Performing Digital Agency</h3>
+              <p className='text-[#757575] mt-4 text-lg '>Risus sed vulputate odio ut enim blandit volutpat. Sed cras ornare arcu dui vivamus arcu.</p>
+              <div className='py-12 border-b border-black'>
+                <div className='flex '>
+                  <div className='flex-1'>
+                    <h3 className='font-bold text-5xl'>50k+</h3>
+                    <p className='font-semibold text-black mt-4 '>Successful Projects</p>
+                  </div>
+                  <div className='flex-1'>
+                    <h3 className='font-bold text-5xl'>25k</h3>
+                    <p className='font-semibold text-black mt-4 '>Global Clients</p>
+                  </div>
                 </div>
-                <div className='flex-1'>
-                  <h3 className='font-bold text-5xl'>25k</h3>
-                  <p className='font-semibold text-black mt-4 '>Global Clients</p>
+                <div className='flex mt-12 '>
+                  <div className='flex-1'>
+                    <h3 className='font-bold text-5xl'>15k+</h3>
+                    <p className='font-semibold text-black mt-4 '>On Going Projects</p>
+                  </div>
+                  <div className='flex-1'>
+                    <h3 className='font-bold text-5xl'>80+</h3>
+                    <p className='font-semibold text-black mt-4 '>Branches</p>
+                  </div>
                 </div>
               </div>
-              <div className='flex mt-12 '>
-                <div className='flex-1'>
-                  <h3 className='font-bold text-5xl'>15k+</h3>
-                  <p className='font-semibold text-black mt-4 '>On Going Projects</p>
-                </div>
-                <div className='flex-1'>
-                  <h3 className='font-bold text-5xl'>80+</h3>
-                  <p className='font-semibold text-black mt-4 '>Branches</p>
-                </div>
+              <button className='mt-10 rounded-full px-10 py-3 flex items-center justify-center bg-[#f8955b] cursor-pointer custom_transition hover:bg-black text-white '>
+                About Us
+              </button>
+            </div>
+            <div className='flex flex-col justify-end pb-3'>
+              <div className='max-w-max relative flex items-center justify-center'>
+                <img loading="lazy" decoding="async" src="https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-300x300.png" class="h-[150px] w-[150px] " alt="" srcset="https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-300x300.png 300w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-150x150.png 150w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-768x768.png 768w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward.png 800w" sizes="(max-width: 300px) 100vw, 300px" ></img>
+                <span className='flex items-center justify-center rounded-full h-[100px] w-[100px] bg-[#200233] absolute inset-0 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] '>
+                  <svg className='h-[34px] w-[34px] fill-[#f8955b] -rotate-45 ' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </span>
               </div>
             </div>
-            <button className='mt-10 rounded-full px-10 py-3 flex items-center justify-center bg-[#f8955b] cursor-pointer custom_transition hover:bg-black text-white '>
-              About Us
-            </button>
           </div>
         </div>
       </section>
@@ -193,35 +209,36 @@ const Home = () => {
         <p className='text-[#f8955b] font-semibold uppercase '>Featured Tools</p>
         <h3 className='text-black font-semibold text-[40px] mt-3 leading-[54px] '>Special Tools For Business Growth</h3>
         <div className='flex items-center justify-center Tools__slider'>
-        <Swiper className='py-20'
-              modules={[ Autoplay]}
+        <Swiper className='py-20 custom_transition6s'
+              modules={[Autoplay]}
               spaceBetween={50}
               slidesPerView={3}
               centeredSlides={true}
               loop={true}
               autoplay={{
-                delay: 1800,
+                delay: 1400,
                 disableOnInteraction: false,
               }}
+              speed={1000}
               onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log('slide change')}            
+              onSlideChange={() => console.log('slide change')}        
             >
-            <SwiperSlide>
+            <SwiperSlide className='custom_transition6s'>
               <FeaturedSingleCard title ='Paid Search' heading = 'Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.' />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className='custom_transition6s'>
               <FeaturedSingleCard title ='Lead Generation' heading = 'Ullamcorper sit amet risus nullam eget felis eget nunc. Nunc non blandit massa enim nec dui. Lacus vel facilisis volutpat est velit. ' />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className='custom_transition6s'>
               <FeaturedSingleCard title ='Email Marketing' heading = 'Feugiat nisl pretium fusce id velit ut tortor pretium viverra. Magna fermentum iaculis eu non diam phasellus vestibulum lorem sed. ' />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className='custom_transition6s'>
               <FeaturedSingleCard title ='Video Marketing' heading = 'Est pellentesque elit ullamcorper dignissim cras. Nunc vel risus commodo viverra maecenas. Neque viverra justo nec ultrices dui.' />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className='custom_transition6s'>
               <FeaturedSingleCard title ='Graphic Design' heading = 'Montes nascetur ridiculus mus mauris vitae. Interdum posuere lorem ipsum dolor sit. Praesent semper feugiat nibh sed pulvinar. ' />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className='custom_transition6s'>
               <FeaturedSingleCard title ='Lead Capture ' heading = 'Massa ultricies mi quis hendrerit. Sem fringilla ut morbi tincidunt augue interdum velit euismod in. Nunc faucibus a pellentesque sit.' />
             </SwiperSlide>
           </Swiper>
