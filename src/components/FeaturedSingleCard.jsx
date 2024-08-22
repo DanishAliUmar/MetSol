@@ -2,7 +2,7 @@ import React from 'react'
 
 const FeaturedSingleCard = (props) => {
   return (
-    <div className='rounded-2xl border border-black group cursor-grab px-8 py-16 custom_transition'>
+    <div className='rounded-2xl border border-black group cursor-grab px-8 py-16 custom_transition6s'>
         <svg
             className='h-28 w-28 group-hover:fill-[#f8955b] fill-black custom_transition'
             xmlns="http://www.w3.org/2000/svg"
