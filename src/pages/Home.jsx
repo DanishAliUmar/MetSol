@@ -251,9 +251,11 @@ const Home = () => {
           </Swiper>
         </div>
       </section>
-      <section className="px-10 pb-20">
-        <p className='text-[#f8955b] font-semibold uppercase '>Featured Tools</p>
-        <h3 className='text-black font-semibold text-[40px] mt-3 leading-[54px] '>Special Tools For Business Growth</h3>
+      <section className="px-10 pb-20 space-y-10">
+        <div className=" space-y-3">
+          <p className='text-[#f8955b] font-semibold uppercase '>Featured Tools</p>
+          <h3 className='text-black font-semibold text-[40px] leading-[54px] '>Special Tools For Business Growth</h3>
+        </div>
         <Accordion type="single" collapsible className={'space-y-5'}>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-1">
             <AccordionTrigger className={'font-semibold text-xl'}>What Is Your Service Pricing Structure?</AccordionTrigger>
