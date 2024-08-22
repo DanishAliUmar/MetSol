@@ -4,15 +4,19 @@ import SpaceMan from '/Images/assets/slider-1-parallax-image-big.png';
 import AwardImage from '/Images/assets/award-image-2.jpg';
 import AwardImage2 from '/Images/assets/award-image-side.jpg';
 import groupedImage from '/Images/assets/grouped-image.png';
-import { Navigation, Pagination, Autoplay , Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import AgencyServicesSingleCard from '@/components/AgencyServicesSingleCard';
 import PortfolioSingleCard from '@/components/PortfolioSingleCard';
 import FeaturedSingleCard from '@/components/FeaturedSingleCard';
-
-
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 
 const Home = () => {
@@ -96,9 +100,9 @@ const Home = () => {
                 </div>
               </div> */}
               <div className="flex items-center gap-3 border border-black hover:border-[#f8955b] -rotate-90 group hover:bg-[#f8955b] custom_transition cursor-pointer w-fit bg-white p-3 z-50 top-20 -left-10 absolute rounded-full px-5">
-                  <Svgs.Play className={'fill-[#f8955b] group-hover:fill-white custom_transition '} width={14} />
-                  <p className="group-hover:text-white custom_transition uppercase">Watch Intro</p>
-                </div>
+                <Svgs.Play className={'fill-[#f8955b] group-hover:fill-white custom_transition '} width={14} />
+                <p className="group-hover:text-white custom_transition uppercase">Watch Intro</p>
+              </div>
               <img src={AwardImage} alt="" className="absolute w-full h-full rounded-3xl" />
               <img src={AwardImage2} alt="" className="awardImage2 absolute w-52 h-52 rounded-2xl outline outline-[14px] outline-white right-0 top-1/2 translate-x-1/2" />
             </div>
@@ -138,7 +142,7 @@ const Home = () => {
               <div className='max-w-max relative flex items-center justify-center'>
                 <img loading="lazy" decoding="async" src="https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-300x300.png" class="h-[150px] w-[150px] " alt="" srcset="https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-300x300.png 300w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-150x150.png 150w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-768x768.png 768w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward.png 800w" sizes="(max-width: 300px) 100vw, 300px" ></img>
                 <span className='flex items-center justify-center rounded-full h-[100px] w-[100px] bg-[#200233] absolute inset-0 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] '>
-                  <svg className='h-[34px] w-[34px] fill-[#f8955b] -rotate-45 ' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                  <svg className='h-[34px] w-[34px] fill-[#f8955b] -rotate-45 ' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
                 </span>
               </div>
             </div>
@@ -159,10 +163,10 @@ const Home = () => {
           </div>
         </div>
         <div className='flex gap-7 mt-20 custom_transition'>
-          <AgencyServicesSingleCard image = 'https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-1.jpg' text = 'Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
-          <AgencyServicesSingleCard image = 'https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-2.jpg' text = 'Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
-          <AgencyServicesSingleCard image = 'https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-3.jpg' text = 'Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
-          <AgencyServicesSingleCard image = 'https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-4.jpg' text = 'Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
+          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-1.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
+          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-2.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
+          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-3.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
+          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-4.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
         </div>
       </section>
       <section className='bg-black px-10 py-28 '>
@@ -170,79 +174,130 @@ const Home = () => {
         <h3 className='text-white font-semibold text-[40px] mt-3 leading-[54px] '>Business Development & Promotions</h3>
         <div className=' flex items-center justify-center'>
           <Swiper className='py-20'
-              modules={[Pagination, Navigation, Autoplay]}
-              spaceBetween={50}
-              slidesPerView={2}
-              navigation
-              pagination={{ clickable: true }}
-              centeredSlides={true}
-              loop={true}
-              autoplay={{
-                delay: 1800,
-                disableOnInteraction: false,
-              }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log('slide change')}            
-            >
+            modules={[Pagination, Navigation, Autoplay]}
+            spaceBetween={50}
+            slidesPerView={2}
+            navigation
+            pagination={{ clickable: true }}
+            centeredSlides={true}
+            loop={true}
+            autoplay={{
+              delay: 1800,
+              disableOnInteraction: false,
+            }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}
+          >
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-01.jpg' title ='Market Research' heading = 'Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-01.jpg' title='Market Research' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-02.jpg' title ='Business Strategy' heading = 'Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-02.jpg' title='Business Strategy' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-03.jpg' title ='Digital Security' heading = 'Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-03.jpg' title='Digital Security' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-04.jpg' title ='Market Research' heading = 'Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-04.jpg' title='Market Research' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-05.jpg' title ='Digital Marketing' heading = 'Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-05.jpg' title='Digital Marketing' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-06.jpg' title ='Market Research' heading = 'Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-06.jpg' title='Market Research' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
             </SwiperSlide>
           </Swiper>
         </div>
       </section>
-      <section className="px-10 py-28">
+      <section className="px-10 pt-20">
         <p className='text-[#f8955b] font-semibold uppercase '>Featured Tools</p>
         <h3 className='text-black font-semibold text-[40px] mt-3 leading-[54px] '>Special Tools For Business Growth</h3>
-        <div className='flex items-center justify-center Tools__slider'>
-        <Swiper className='py-20 custom_transition6s'
-              modules={[Autoplay]}
-              spaceBetween={50}
-              slidesPerView={3}
-              centeredSlides={true}
-              loop={true}
-              autoplay={{
-                delay: 1400,
-                disableOnInteraction: false,
-              }}
-              speed={1000}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log('slide change')}        
-            >
+        <div className='flex items-center justify-center Tools__slider select-none'>
+          <Swiper className='py-20 custom_transition6s min-h-[700px]'
+            modules={[Autoplay]}
+            spaceBetween={50}
+            slidesPerView={3}
+            grabCursor={false}
+            draggable={false}
+            allowTouchMove={false}
+            centeredSlides={true}
+            loop={true}
+            autoplay={{
+              delay: 1400,
+              disableOnInteraction: false,
+            }}
+            speed={1000}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}
+          >
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title ='Paid Search' heading = 'Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.' />
+              <FeaturedSingleCard title='Paid Search' heading='Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title ='Lead Generation' heading = 'Ullamcorper sit amet risus nullam eget felis eget nunc. Nunc non blandit massa enim nec dui. Lacus vel facilisis volutpat est velit. ' />
+              <FeaturedSingleCard title='Lead Generation' heading='Ullamcorper sit amet risus nullam eget felis eget nunc. Nunc non blandit massa enim nec dui. Lacus vel facilisis volutpat est velit. ' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title ='Email Marketing' heading = 'Feugiat nisl pretium fusce id velit ut tortor pretium viverra. Magna fermentum iaculis eu non diam phasellus vestibulum lorem sed. ' />
+              <FeaturedSingleCard title='Email Marketing' heading='Feugiat nisl pretium fusce id velit ut tortor pretium viverra. Magna fermentum iaculis eu non diam phasellus vestibulum lorem sed. ' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title ='Video Marketing' heading = 'Est pellentesque elit ullamcorper dignissim cras. Nunc vel risus commodo viverra maecenas. Neque viverra justo nec ultrices dui.' />
+              <FeaturedSingleCard title='Video Marketing' heading='Est pellentesque elit ullamcorper dignissim cras. Nunc vel risus commodo viverra maecenas. Neque viverra justo nec ultrices dui.' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title ='Graphic Design' heading = 'Montes nascetur ridiculus mus mauris vitae. Interdum posuere lorem ipsum dolor sit. Praesent semper feugiat nibh sed pulvinar. ' />
+              <FeaturedSingleCard title='Graphic Design' heading='Montes nascetur ridiculus mus mauris vitae. Interdum posuere lorem ipsum dolor sit. Praesent semper feugiat nibh sed pulvinar. ' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title ='Lead Capture ' heading = 'Massa ultricies mi quis hendrerit. Sem fringilla ut morbi tincidunt augue interdum velit euismod in. Nunc faucibus a pellentesque sit.' />
+              <FeaturedSingleCard title='Lead Capture ' heading='Massa ultricies mi quis hendrerit. Sem fringilla ut morbi tincidunt augue interdum velit euismod in. Nunc faucibus a pellentesque sit.' />
             </SwiperSlide>
           </Swiper>
         </div>
+      </section>
+      <section className="px-10 pb-20">
+        <p className='text-[#f8955b] font-semibold uppercase '>Featured Tools</p>
+        <h3 className='text-black font-semibold text-[40px] mt-3 leading-[54px] '>Special Tools For Business Growth</h3>
+        <Accordion type="single" collapsible className={'space-y-5'}>
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-1">
+            <AccordionTrigger className={'font-semibold text-xl'}>What Is Your Service Pricing Structure?</AccordionTrigger>
+            <AccordionContent>
+              Condimentum id venenatis a condimentum. Nunc congue nisi vitae suscipit tellus mauris a diam maecenas. Adipiscing bibendum est ultricies integer quis auctor elit.Commodo ullamcorper a lacus vestibulum sed. Mauris sit amet massa vitae.Egestas fringilla phasellus faucibus scelerisque eleifend. Egestas dui id ornare arcu odio.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-2">
+            <AccordionTrigger className={'font-semibold text-xl'}>What Are The Payment Options Do You Have?
+            </AccordionTrigger>
+            <AccordionContent>
+              Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Sit amet facilisis magna etiam tempor orci. Imperdiet nulla malesuada pellentesque elit. Adipiscing tristique risus nec feugiat. Proin sed libero enim sed faucibus.Ultricies lacus sed turpis tincidunt id. Urna duis convallis convallis tellus.
+
+
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-3">
+            <AccordionTrigger className={'font-semibold text-xl'}>Do You Follow All Guidelines & Norms?
+            </AccordionTrigger>
+            <AccordionContent>
+              Malesuada fames ac turpis egestas integer eget aliquet. Risus viverra adipiscing at in tellus. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Lectus proin nibh nisl condimentum.Lectus mauris ultrices eros in cursus turpis massa tincidunt dui. Tempor nec feugiat nisl pretium fusce id velit ut.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-4">
+            <AccordionTrigger className={'font-semibold text-xl'}>Do You Use Freelancers Or Your In-House Team?
+            </AccordionTrigger>
+            <AccordionContent>
+              Justo laoreet sit amet cursus sit amet dictum sit amet. Amet venenatis urna cursus eget nunc. Vitae elementum curabitur vitae nunc sed velit dignissim. Sit amet nisl purus in mollis nunc sed id semper. Rhoncus urna neque viverra justo nec ultrices dui sapien eget.Sed enim ut sem viverra aliquet eget sit amet tellus.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-5">
+            <AccordionTrigger className={'font-semibold text-xl'}>What Kind Of Marketing Techniques Do You Follow?</AccordionTrigger>
+            <AccordionContent>
+              Fringilla est ullamcorper eget nulla. Enim sed faucibus turpis in eu mi. Nibh tellus molestie nunc non blandit massa enim nec. Eros donec ac odio tempor orci dapibus ultrices. At augue eget arcu dictum varius duis at.Morbi leo urna molestie at. Egestas diam in arcu cursus euismod quis viverra bibendum arcu vitae nibh.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
+            <AccordionTrigger className={'font-semibold text-xl'}>Do You Provide Special Focus On Private Companies?</AccordionTrigger>
+            <AccordionContent>
+              Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Lacus viverra vitae congue eu. Dictum at tempor commodo ullamcorper a lacus. Maecenas ultricies mi eget mauris pharetra.Ut venenatis tellus in metus vulputate eu scelerisque felis. Orci eu lobortis etiam erat velit scelerisque elementum nibh.
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+
       </section>
     </>
   )
