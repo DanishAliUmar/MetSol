@@ -39,28 +39,28 @@ const Home = () => {
       <header className='min-h-[120vh] flex items-center relative lg:justify-between justify-center lg:flex-row flex-col overflow-hidden xl:gap-10 lg:gap-2 gap-10 !bg-cover !bg-center !bg-no-repeat p-10' style={{ background: 'url(/Images/assets/slider-1-parallax-bg.jpg)' }} >
         <img src={SpaceMan} className='absolute sm:left-24 -left-40 z-0 sm:scale-150 min-w-[1300px] max-w-[1300px]' style={{ bottom: (-scrollPosition + 700) / 3 }} alt="" />
         <div className=" space-y-6 absolute left-0 top-[40%] px-5 hidden md:block">
-          <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#f8955b] transition-all group">
-            <Svgs.X className={'size-5 fill-black group-hover:fill-white transition-all group-hover:scale-75'} />
+          <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#fae951] transition-all group">
+            <Svgs.X className={'size-5 fill-black group-hover: transition-all group-hover:scale-75'} />
           </div>
-          <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#f8955b] transition-all group">
-            <Svgs.YouTube className={'size-5 fill-black group-hover:fill-white transition-all group-hover:scale-75'} />
+          <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#fae951] transition-all group">
+            <Svgs.YouTube className={'size-5 fill-black group-hover: transition-all group-hover:scale-75'} />
           </div>
-          <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#f8955b] transition-all group">
-            <Svgs.FaceBook className={'size-5 fill-black group-hover:fill-white transition-all group-hover:scale-75'} />
+          <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#fae951] transition-all group">
+            <Svgs.FaceBook className={'size-5 fill-black group-hover: transition-all group-hover:scale-75'} />
           </div>
-          <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#f8955b] transition-all group">
-            <Svgs.Instagram className={'size-5 fill-black group-hover:fill-white transition-all group-hover:scale-75'} />
+          <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#fae951] transition-all group">
+            <Svgs.Instagram className={'size-5 fill-black group-hover: transition-all group-hover:scale-75'} />
           </div>
         </div>
         <div className="lg:flex-1 flex flex-col relative z-10 lg:pt-80">
           <div className="flex items-start md:gap-7 gap-3 md:pl-10">
-            <Svgs.Play className={'fill-[#f8955b] size-24 !h-10 rotate-90'} />
+            <Svgs.Play className={'fill-[#fae951] size-24 !h-10 rotate-90'} />
             <p className="text-white sm:min-w-80 lg:pr-0 md:pr-20">Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Egestas fringilla phasellus faucibus scelerisque. Nisl nisi scelerisque eu ultrices vitae auctor eu augue ut. Facilisis gravida neque convallis a. Phasellus vestibulum lorem sed risus ultricies tristique.            </p>
           </div>
         </div>
         <div className="xl:flex-1 relative z-10 flex items-center gap-2 pr-20">
           <div className="xl:space-y-10 space-y-5">
-            <h1 className="font-bold xl:text-9xl lg:text-7xl md:text-8xl text-6xl xl:leading-[1.2] lg:leading-[1] md:leading-[1.2] uppercase text-white">Global <br /> <span className='xl:pl-20 lg:pl-10 md:pl-20 text-[#f8955b]'>Agency</span></h1>
+            <h1 className="font-bold xl:text-9xl lg:text-7xl md:text-8xl text-6xl xl:leading-[1.2] lg:leading-[1] md:leading-[1.2] uppercase text-white">Global <br /> <span className='xl:pl-20 lg:pl-10 md:pl-20 text-[#fae951]'>Agency</span></h1>
             <div className="flex sm:items-center flex-col sm:flex-row xl:gap-6 gap-3 xl:pl-40 lg:pl-20 md:pl-40">
               <img src={groupedImage} className='w-32 h-auto' alt="" />
               <div className="text-white space-y-3">
@@ -79,15 +79,15 @@ const Home = () => {
         </div>
         <div className="hidden md:flex items-center absolute right-0 top-[40%] justify-center flex-col gap-10 cursor-pointer ">
           <p className="rotate-90 w-[90px] text-white cursor-pointer">Get In Touch</p>
-          <Svgs.EllipsisVertical className={'size-7 fill-[#f8955b]'} />
+          <Svgs.EllipsisVertical className={'size-7 fill-[#fae951]'} />
         </div>
       </header>
       <section className="px-10 py-28 space-y-20">
         <div className="flex items-center gap-20">
           <h2 className="text-4xl flex-1 font-medium capitalize leading-[1.4] tracking-wider">A Single Platform To Find World's Top Agency Services.</h2>
-          <div className="flex items-start flex-1 md:gap-6 gap-3 md:pl-10">
-            <Svgs.Play className={'fill-[#f8955b] size-24 !h-10 rotate-90'} />
-            <p className="tracking-wider leading-[2] text-[#757575]  ">Quis vel eros donec ac odio tempor. Sit amet consectetur adipiscing elit ut aliquam purus sit. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada.Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Lectus mauris ultrices eros in cursus turpis.</p>
+          <div className="flex items-start  flex-1 md:gap-7 gap-3 md:pl-10">
+            <Svgs.Play className={'fill-[#fae951] size-24 !h-10 rotate-90'} />
+            <p className="tracking-wider leading-[2]">Quis vel eros donec ac odio tempor. Sit amet consectetur adipiscing elit ut aliquam purus sit. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada.Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Lectus mauris ultrices eros in cursus turpis.</p>
           </div>
         </div>
         <div className="flex items-center">
@@ -140,7 +140,7 @@ const Home = () => {
             </div>
             <div className='flex flex-col justify-end pb-3'>
               <div className='max-w-max relative flex items-center justify-center'>
-                <img loading="lazy" decoding="async" src="https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-300x300.png" class="h-[150px] w-[150px] " alt="" srcset="https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-300x300.png 300w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-150x150.png 150w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-768x768.png 768w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward.png 800w" sizes="(max-width: 300px) 100vw, 300px" ></img>
+                <img loading="lazy" decoding="async" src="https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-300x300.png" className="h-[150px] w-[150px] " alt="" srcset="https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-300x300.png 300w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-150x150.png 150w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-768x768.png 768w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward.png 800w" sizes="(max-width: 300px) 100vw, 300px" ></img>
                 <span className='flex items-center justify-center rounded-full h-[100px] w-[100px] bg-[#200233] absolute inset-0 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] '>
                   <svg className='h-[34px] w-[34px] fill-[#f8955b] -rotate-45 ' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
                 </span>
