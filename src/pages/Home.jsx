@@ -306,6 +306,55 @@ const Home = () => {
                   <p className="font-light text-sm">Transform your business.</p>
                 </div>
               </div>
+              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border">
+                <img src={Slag} className='size-16 object-contain' alt="" />
+                <div className="space-y-1">
+                  <h5 className="font-bold text-lg">Slack</h5>
+                  <p className="font-light text-sm">Transform your business.</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border">
+                <img src={Slag} className='size-16 object-contain' alt="" />
+                <div className="space-y-1">
+                  <h5 className="font-bold text-lg">Slack</h5>
+                  <p className="font-light text-sm">Transform your business.</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border">
+                <img src={Slag} className='size-16 object-contain' alt="" />
+                <div className="space-y-1">
+                  <h5 className="font-bold text-lg">Slack</h5>
+                  <p className="font-light text-sm">Transform your business.</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border">
+                <img src={Slag} className='size-16 object-contain' alt="" />
+                <div className="space-y-1">
+                  <h5 className="font-bold text-lg">Slack</h5>
+                  <p className="font-light text-sm">Transform your business.</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border">
+                <img src={Slag} className='size-16 object-contain' alt="" />
+                <div className="space-y-1">
+                  <h5 className="font-bold text-lg">Slack</h5>
+                  <p className="font-light text-sm">Transform your business.</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border">
+                <img src={Slag} className='size-16 object-contain' alt="" />
+                <div className="space-y-1">
+                  <h5 className="font-bold text-lg">Slack</h5>
+                  <p className="font-light text-sm">Transform your business.</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border">
+                <img src={Slag} className='size-16 object-contain' alt="" />
+                <div className="space-y-1">
+                  <h5 className="font-bold text-lg">Slack</h5>
+                  <p className="font-light text-sm">Transform your business.</p>
+                </div>
+              </div>
             </div>
       </SectionLayout>
     </>
