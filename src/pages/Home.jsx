@@ -5,6 +5,7 @@ import AwardImage from '/Images/assets/award-image-2.jpg';
 import AwardImage2 from '/Images/assets/award-image-side.jpg';
 import CirclerText from '/Images/assets/rotate-backward-300x300.png';
 import ArrowRightUp from '/Images/assets/rotate-forward-300x300.png';
+import Slag from '/Images/assets/tool-img3.png';
 import groupedImage from '/Images/assets/grouped-image.png';
 import { Navigation, Pagination, Autoplay, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -296,8 +297,16 @@ const Home = () => {
         </Accordion>
 
       </SectionLayout>
-      <SectionLayout title={'Friendly Services'} className={'bg-[#f6f6f6]'} mainHeading={'Accelerate Your Growth With Our Digital Agency Services.'} subHeading={'Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Adipiscing vitae proin sagittis nisl rhoncus mattis. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Nec tincidunt praesent semper feugiat.'}>
-
+      <SectionLayout title={'Friendly Services'} className={''} mainHeading={'Accelerate Your Growth With Our Digital Agency Services.'} subHeading={'Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Adipiscing vitae proin sagittis nisl rhoncus mattis. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Nec tincidunt praesent semper feugiat.'}>
+            <div className="grid grid-cols-4 gap-5">
+              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border">
+                <img src={Slag} className='size-16 object-contain' alt="" />
+                <div className="space-y-1">
+                  <h5 className="font-bold text-lg">Slack</h5>
+                  <p className="font-light text-sm">Transform your business.</p>
+                </div>
+              </div>
+            </div>
       </SectionLayout>
     </>
   )
