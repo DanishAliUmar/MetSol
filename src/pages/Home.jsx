@@ -127,7 +127,7 @@ const Home = () => {
                     <p className="font-semibold">Branches</p>
                   </div>
                 </div>
-                <hr  className='border-b border-solid  border-black'/>
+                <hr className='border-b border-solid  border-black' />
                 <Button>About Us</Button>
               </div>
               <div className="size-36 relative sm:flex items-center justify-center hidden">
@@ -294,6 +294,9 @@ const Home = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+
+      </SectionLayout>
+      <SectionLayout title={'Friendly Services'} className={'bg-[#f6f6f6]'} mainHeading={'Accelerate Your Growth With Our Digital Agency Services.'} subHeading={'Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Adipiscing vitae proin sagittis nisl rhoncus mattis. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Nec tincidunt praesent semper feugiat.'}>
 
       </SectionLayout>
     </>
