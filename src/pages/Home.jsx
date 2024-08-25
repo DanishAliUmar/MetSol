@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import SpaceMan from '/Images/assets/slider-1-parallax-image-big.png';
 import AwardImage from '/Images/assets/award-image-2.jpg';
 import AwardImage2 from '/Images/assets/award-image-side.jpg';
+import CirclerText from '/Images/assets/rotate-backward-300x300.png';
+import ArrowRightUp from '/Images/assets/rotate-forward-300x300.png';
 import groupedImage from '/Images/assets/grouped-image.png';
 import { Navigation, Pagination, Autoplay, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,6 +13,8 @@ import 'swiper/css/pagination';
 import AgencyServicesSingleCard from '@/components/AgencyServicesSingleCard';
 import PortfolioSingleCard from '@/components/PortfolioSingleCard';
 import FeaturedSingleCard from '@/components/FeaturedSingleCard';
+import { Button } from "@/components/ui/button"
+
 import {
   Accordion,
   AccordionContent,
@@ -84,11 +88,11 @@ const Home = () => {
         </div>
       </header>
       <SectionLayout mainHeading={"A Single Platform To Find World's Top Agency Services."} subHeading={'Quis vel eros donec ac odio tempor. Sit amet consectetur adipiscing elit ut aliquam purus sit. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada.Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Lectus mauris ultrices eros in cursus turpis.'}>
-        <div className="flex w-full gap-10">
-          <div className="flex-[4]">
-            <div className="relative w-full h-[600px]">
-              <img src={AwardImage} alt="" className="absolute w-full h-full object-cover rounded-3xl " />
-              <img src={AwardImage} alt="" className="absolute size-60 top-1/2 right-0 translate-x-1/2 bg-white p-4 object-cover rounded-[30px] " />
+        <div className="flex lg:flex-row flex-col-reverse w-full gap-10">
+          <div className="lg:flex-[4] max-w-[calc(100%-7.5rem)]">
+            <div className="relative w-full sm:h-[600px] h-[400px]">
+              <img src={AwardImage} alt="" className="absolute sm:w-full w-[120%] h-full object-cover rounded-3xl " />
+              <img src={AwardImage2} alt="" className="absolute size-60 top-1/2 right-0 translate-x-1/2 bg-white p-4 sm:pr-4 pr-0 object-cover rounded-[30px] " />
               <div className="bg-white absolute -rotate-90 w-[210px] p-4 h-[80px] top-[30px] rounded-full left-[-90px] flex items-end justify-start ">
                 <div className="flex items-center gap-2 border-solid border-black border px-3 bg-white p-2 rounded-3xl">
                   <Svgs.Play className={'size-4'} />
@@ -97,40 +101,45 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="flex-[5] pl-24 pt-10">
+          <div className="lg:flex-[5] lg:pl-24 pt-10 space-y-10">
             <div className="space-y-2">
               <p className='text-[#ffb600] md:text-base text-sm font-semibold uppercase '>About Us</p>
               <h3 className='font-semibold md:text-[40px] sm:text-3xl text-2xl mt-3 md:leading-[54px] '>High Performing Digital Agency</h3>
               <p className='text-[#757575]  z-50 relative md:text-base text-sm'>Risus sed vulputate odio ut enim blandit volutpat. Sed cras ornare arcu dui vivamus arcu.</p>
             </div>
-            <div className="flex items-end">
-              <div className="grid grid-cols-2 gap-10 border-b border-solid py-10">
-                <div className="space-y-2">
-                  <h2 className="text-5xl font-semibold">50k+</h2>
-                  <p className="font-semibold">Global Clients</p>
+            <div className="flex items-end gap-5">
+              <div className="flex-1 space-y-10">
+                <div className="grid grid-cols-2 gap-10 ">
+                  <div className="space-y-2">
+                    <h2 className="text-5xl font-semibold">50k+</h2>
+                    <p className="font-semibold">Global Clients</p>
+                  </div>
+                  <div className="space-y-2">
+                    <h2 className="text-5xl font-semibold">25k</h2>
+                    <p className="font-semibold">Successful Projects</p>
+                  </div>
+                  <div className="space-y-2">
+                    <h2 className="text-5xl font-semibold">50k+</h2>
+                    <p className="font-semibold">On Going Projects</p>
+                  </div>
+                  <div className="space-y-2">
+                    <h2 className="text-5xl font-semibold">50k+</h2>
+                    <p className="font-semibold">Branches</p>
+                  </div>
                 </div>
-                <div className="space-y-2">
-                  <h2 className="text-5xl font-semibold">25k</h2>
-                  <p className="font-semibold">Successful Projects</p>
-                </div>
-                <div className="space-y-2">
-                  <h2 className="text-5xl font-semibold">50k+</h2>
-                  <p className="font-semibold">On Going Projects</p>
-                </div>
-                <div className="space-y-2">
-                  <h2 className="text-5xl font-semibold">50k+</h2>
-                  <p className="font-semibold">Branches</p>
-                </div>
+                <hr  className='border-b border-solid  border-black'/>
+                <Button>About Us</Button>
               </div>
-              <div className="size-40">
-                <img src="" alt="" />
+              <div className="size-36 relative sm:flex items-center justify-center hidden">
+                <img src={CirclerText} className='w-full h-full absolute left-0 top-0' alt="" />
+                <img src={ArrowRightUp} className='' alt="" />
               </div>
             </div>
           </div>
         </div>
       </SectionLayout>
       <SectionLayout title={'Agency Services'} className={'bg-[#f6f6f6]'} mainHeading={'Our Strategy & Patented Technology Serve As Our Driving Force.'} circle subHeading={'Nibh praesent tristique magna sit. Aliquam etiam erat velit scelerisque in dictum. Justo donec enim diam vulputate. Leo integer malesuada nunc vel.'}>
-        <div className='flex gap-7 custom_transition'>
+        <div className='lg:flex grid sm:grid-cols-2 grid-cols-1 gap-7 flex-wrap custom_transition'>
           <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-1.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
           <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-2.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
           <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-3.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
@@ -140,7 +149,7 @@ const Home = () => {
       </SectionLayout>
       <SectionLayout title={'Our Portfolio'} className={'bg-black text-white'} mainHeading={'Business Development & Promotions'}>
         <div className=' flex items-center justify-center'>
-          <Swiper className='py-20'
+          <Swiper className=''
             modules={[Pagination, Navigation, Autoplay]}
             spaceBetween={50}
             slidesPerView={2}
@@ -149,8 +158,21 @@ const Home = () => {
             centeredSlides={true}
             loop={true}
             autoplay={{
-              delay: 1800,
+              delay: 180000,
               disableOnInteraction: false,
+            }}
+            breakpoints={{
+              // when window width is >= 320px
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              // when window width is >= 640px
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              // you can add more breakpoints if needed
             }}
           >
             <SwiperSlide>
