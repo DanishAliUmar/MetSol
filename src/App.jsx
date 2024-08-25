@@ -10,11 +10,14 @@ import PricingPlan from './pages/PricingPlan';
 import ContactUs from './pages/ContactUs';
 import NotFound from './pages/NotFound'; // 404 Error page
 import Layout from './pages/Layout';
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Layout />}>
+      <Route path="/" element={<ErrorBoundary>
+        <Layout />
+      </ErrorBoundary>}>
         <Route index element={<Home />} />
         <Route path="about-us" element={<AboutUs />} />
         <Route path="our-services" element={<OurServices />} />

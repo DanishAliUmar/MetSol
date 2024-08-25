@@ -17,6 +17,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import SectionLayout from '@/components/SectionLayout/SectionLayout';
 
 
 const Home = () => {
@@ -82,96 +83,62 @@ const Home = () => {
           <Svgs.EllipsisVertical className={'size-7 fill-[#fae951]'} />
         </div>
       </header>
-      <section className="px-10 py-28 space-y-20">
-        <div className="flex items-center gap-20">
-          <h2 className="text-4xl flex-1 font-medium capitalize leading-[1.4] tracking-wider">A Single Platform To Find World's Top Agency Services.</h2>
-          <div className="flex items-start  flex-1 md:gap-7 gap-3 md:pl-10">
-            <Svgs.Play className={'fill-[#fae951] size-24 !h-10 rotate-90'} />
-            <p className="tracking-wider leading-[2]">Quis vel eros donec ac odio tempor. Sit amet consectetur adipiscing elit ut aliquam purus sit. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada.Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Lectus mauris ultrices eros in cursus turpis.</p>
-          </div>
-        </div>
-        <div className="flex items-center">
-          <div className='flex-1'>
-            <div className="relative w-[560px] h-[635px]">
-              {/* <div class="mx-auto bg-[#fff] h-[46px] top-24 absolute left-0 -rotate-90 w-[230px] rounded-bl-[22px] rounded-br-[22px] flex items-center justify-center z-50">
-                <div className="flex items-center gap-3 border border-black hover:border-[#f8955b] group hover:bg-[#f8955b] custom_transition cursor-pointer w-fit bg-white p-3 rounded-full px-5">
-                  <Svgs.Play className={'fill-[#f8955b] group-hover:fill-white custom_transition '} width={14} />
-                  <p className="group-hover:text-white custom_transition uppercase">Watch Intro</p>
-                </div>
-              </div> */}
-              <div className="flex items-center gap-3 border border-black hover:border-[#f8955b] -rotate-90 group hover:bg-[#f8955b] custom_transition cursor-pointer w-fit bg-white p-3 z-50 top-20 -left-10 absolute rounded-full px-5">
-                <Svgs.Play className={'fill-[#f8955b] group-hover:fill-white custom_transition '} width={14} />
-                <p className="group-hover:text-white custom_transition uppercase">Watch Intro</p>
-              </div>
-              <img src={AwardImage} alt="" className="absolute w-full h-full rounded-3xl" />
-              <img src={AwardImage2} alt="" className="awardImage2 absolute w-52 h-52 rounded-2xl outline outline-[14px] outline-white right-0 top-1/2 translate-x-1/2" />
-            </div>
-          </div>
-          <div className='flex-1 flex gap-6'>
-            <div className='flex-1'>
-              <p className='text-[#f8955b] font-semibold uppercase '>About Us</p>
-              <h3 className='text-black font-semibold text-4xl mt-3 '>High Performing Digital Agency</h3>
-              <p className='text-[#757575] mt-4 text-lg '>Risus sed vulputate odio ut enim blandit volutpat. Sed cras ornare arcu dui vivamus arcu.</p>
-              <div className='py-12 border-b border-black'>
-                <div className='flex '>
-                  <div className='flex-1'>
-                    <h3 className='font-bold text-5xl'>50k+</h3>
-                    <p className='font-semibold text-black mt-4 '>Successful Projects</p>
-                  </div>
-                  <div className='flex-1'>
-                    <h3 className='font-bold text-5xl'>25k</h3>
-                    <p className='font-semibold text-black mt-4 '>Global Clients</p>
-                  </div>
-                </div>
-                <div className='flex mt-12 '>
-                  <div className='flex-1'>
-                    <h3 className='font-bold text-5xl'>15k+</h3>
-                    <p className='font-semibold text-black mt-4 '>On Going Projects</p>
-                  </div>
-                  <div className='flex-1'>
-                    <h3 className='font-bold text-5xl'>80+</h3>
-                    <p className='font-semibold text-black mt-4 '>Branches</p>
-                  </div>
+      <SectionLayout mainHeading={"A Single Platform To Find World's Top Agency Services."} subHeading={'Quis vel eros donec ac odio tempor. Sit amet consectetur adipiscing elit ut aliquam purus sit. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada.Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Lectus mauris ultrices eros in cursus turpis.'}>
+        <div className="flex w-full gap-10">
+          <div className="flex-[4]">
+            <div className="relative w-full h-[600px]">
+              <img src={AwardImage} alt="" className="absolute w-full h-full object-cover rounded-3xl " />
+              <img src={AwardImage} alt="" className="absolute size-60 top-1/2 right-0 translate-x-1/2 bg-white p-4 object-cover rounded-[30px] " />
+              <div className="bg-white absolute -rotate-90 w-[210px] p-4 h-[80px] top-[30px] rounded-full left-[-90px] flex items-end justify-start ">
+                <div className="flex items-center gap-2 border-solid border-black border px-3 bg-white p-2 rounded-3xl">
+                  <Svgs.Play className={'size-4'} />
+                  <p className="uppercase font-light">Watch Intro</p>
                 </div>
               </div>
-              <button className='mt-10 rounded-full px-10 py-3 flex items-center justify-center bg-[#f8955b] cursor-pointer custom_transition hover:bg-black text-white '>
-                About Us
-              </button>
             </div>
-            <div className='flex flex-col justify-end pb-3'>
-              <div className='max-w-max relative flex items-center justify-center'>
-                <img loading="lazy" decoding="async" src="https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-300x300.png" className="h-[150px] w-[150px] " alt="" srcset="https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-300x300.png 300w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-150x150.png 150w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward-768x768.png 768w, https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/rotate-backward.png 800w" sizes="(max-width: 300px) 100vw, 300px" ></img>
-                <span className='flex items-center justify-center rounded-full h-[100px] w-[100px] bg-[#200233] absolute inset-0 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] '>
-                  <svg className='h-[34px] w-[34px] fill-[#f8955b] -rotate-45 ' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
-                </span>
+          </div>
+          <div className="flex-[5] pl-24 pt-10">
+            <div className="space-y-2">
+              <p className='text-[#f8955b] md:text-base text-sm font-semibold uppercase '>About Us</p>
+              <h3 className='font-semibold md:text-[40px] sm:text-3xl text-2xl mt-3 md:leading-[54px] '>High Performing Digital Agency</h3>
+              <p className='text-[#757575]  z-50 relative md:text-base text-sm'>Risus sed vulputate odio ut enim blandit volutpat. Sed cras ornare arcu dui vivamus arcu.</p>
+            </div>
+            <div className="flex items-end">
+              <div className="grid grid-cols-2 gap-10 border-b border-solid py-10">
+                <div className="space-y-2">
+                  <h2 className="text-5xl font-semibold">50k+</h2>
+                  <p className="font-semibold">Global Clients</p>
+                </div>
+                <div className="space-y-2">
+                  <h2 className="text-5xl font-semibold">25k</h2>
+                  <p className="font-semibold">Successful Projects</p>
+                </div>
+                <div className="space-y-2">
+                  <h2 className="text-5xl font-semibold">50k+</h2>
+                  <p className="font-semibold">On Going Projects</p>
+                </div>
+                <div className="space-y-2">
+                  <h2 className="text-5xl font-semibold">50k+</h2>
+                  <p className="font-semibold">Branches</p>
+                </div>
+              </div>
+              <div className="size-40">
+                <img src="" alt="" />
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section className='bg-[#f6f6f6] px-10 py-28 '>
-        <div className='flex items-center gap-14'>
-          <div className='flex-1'>
-            <p className='text-[#f8955b] font-semibold uppercase '>Agency Services</p>
-            <h3 className='text-black font-semibold text-[40px] mt-3 leading-[54px] '>Our Strategy & Patented Technology Serve As Our Driving Force.</h3>
-          </div>
-          <div className='flex-1 relative'>
-            <div className='flex items-center justify-center absolute -top-10 w-full z-0'>
-              <div className='rounded-full bg-[#eeeeee] h-[170px] w-[170px]'></div>
-            </div>
-            <p className='text-[#757575] max-w-[400px] ml-auto z-50 relative'>Nibh praesent tristique magna sit. Aliquam etiam erat velit scelerisque in dictum. Justo donec enim diam vulputate. Leo integer malesuada nunc vel.</p>
-          </div>
-        </div>
-        <div className='flex gap-7 mt-20 custom_transition'>
+      </SectionLayout>
+      <SectionLayout title={'Agency Services'} className={'bg-[#f6f6f6]'} mainHeading={'Our Strategy & Patented Technology Serve As Our Driving Force.'} circle subHeading={'Nibh praesent tristique magna sit. Aliquam etiam erat velit scelerisque in dictum. Justo donec enim diam vulputate. Leo integer malesuada nunc vel.'}>
+        <div className='flex gap-7 custom_transition'>
           <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-1.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
           <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-2.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
           <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-3.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
           <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-4.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
         </div>
-      </section>
-      <section className='bg-black px-10 py-28 '>
-        <p className='text-[#f8955b] font-semibold uppercase '>Our Portfolio</p>
-        <h3 className='text-white font-semibold text-[40px] mt-3 leading-[54px] '>Business Development & Promotions</h3>
+
+      </SectionLayout>
+      <SectionLayout title={'Our Portfolio'} className={'bg-black text-white'} mainHeading={'Business Development & Promotions'}>
         <div className=' flex items-center justify-center'>
           <Swiper className='py-20'
             modules={[Pagination, Navigation, Autoplay]}
@@ -185,8 +152,6 @@ const Home = () => {
               delay: 1800,
               disableOnInteraction: false,
             }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
           >
             <SwiperSlide>
               <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-01.jpg' title='Market Research' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
@@ -208,10 +173,8 @@ const Home = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-      </section>
-      <section className="px-10 pt-20">
-        <p className='text-[#f8955b] font-semibold uppercase '>Featured Tools</p>
-        <h3 className='text-black font-semibold text-[40px] mt-3 leading-[54px] '>Special Tools For Business Growth</h3>
+      </SectionLayout>
+      <SectionLayout title={'Featured Tools'} className={''} mainHeading={'Special Tools For Business Growth'}>
         <div className='flex items-center justify-center Tools__slider select-none'>
           <Swiper className='py-20 custom_transition6s min-h-[700px]'
             modules={[Autoplay]}
@@ -250,21 +213,18 @@ const Home = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-      </section>
-      <section className="px-10 pb-20 space-y-10">
-        <div className=" space-y-3">
-          <p className='text-[#f8955b] font-semibold uppercase '>Featured Tools</p>
-          <h3 className='text-black font-semibold text-[40px] leading-[54px] '>Special Tools For Business Growth</h3>
-        </div>
-        <Accordion type="single" collapsible className={'space-y-5'}>
+      </SectionLayout>
+
+      <SectionLayout title={'Featured Tools'} className={'bg-[#f6f6f6]'} mainHeading={'Special Tools For Business Growth'}>
+        <Accordion type="single" collapsible className={'space-y-5 bg-white'}>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-1">
-            <AccordionTrigger className={'font-semibold text-xl'}>What Is Your Service Pricing Structure?</AccordionTrigger>
+            <AccordionTrigger className={'font-bold text-xl'}>What Is Your Service Pricing Structure?</AccordionTrigger>
             <AccordionContent>
               Condimentum id venenatis a condimentum. Nunc congue nisi vitae suscipit tellus mauris a diam maecenas. Adipiscing bibendum est ultricies integer quis auctor elit.Commodo ullamcorper a lacus vestibulum sed. Mauris sit amet massa vitae.Egestas fringilla phasellus faucibus scelerisque eleifend. Egestas dui id ornare arcu odio.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-2">
-            <AccordionTrigger className={'font-semibold text-xl'}>What Are The Payment Options Do You Have?
+            <AccordionTrigger className={'font-bold text-xl'}>What Are The Payment Options Do You Have?
             </AccordionTrigger>
             <AccordionContent>
               Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Sit amet facilisis magna etiam tempor orci. Imperdiet nulla malesuada pellentesque elit. Adipiscing tristique risus nec feugiat. Proin sed libero enim sed faucibus.Ultricies lacus sed turpis tincidunt id. Urna duis convallis convallis tellus.
@@ -273,34 +233,34 @@ const Home = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-3">
-            <AccordionTrigger className={'font-semibold text-xl'}>Do You Follow All Guidelines & Norms?
+            <AccordionTrigger className={'font-bold text-xl'}>Do You Follow All Guidelines & Norms?
             </AccordionTrigger>
             <AccordionContent>
               Malesuada fames ac turpis egestas integer eget aliquet. Risus viverra adipiscing at in tellus. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Lectus proin nibh nisl condimentum.Lectus mauris ultrices eros in cursus turpis massa tincidunt dui. Tempor nec feugiat nisl pretium fusce id velit ut.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-4">
-            <AccordionTrigger className={'font-semibold text-xl'}>Do You Use Freelancers Or Your In-House Team?
+            <AccordionTrigger className={'font-bold text-xl'}>Do You Use Freelancers Or Your In-House Team?
             </AccordionTrigger>
             <AccordionContent>
               Justo laoreet sit amet cursus sit amet dictum sit amet. Amet venenatis urna cursus eget nunc. Vitae elementum curabitur vitae nunc sed velit dignissim. Sit amet nisl purus in mollis nunc sed id semper. Rhoncus urna neque viverra justo nec ultrices dui sapien eget.Sed enim ut sem viverra aliquet eget sit amet tellus.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-5">
-            <AccordionTrigger className={'font-semibold text-xl'}>What Kind Of Marketing Techniques Do You Follow?</AccordionTrigger>
+            <AccordionTrigger className={'font-bold text-xl'}>What Kind Of Marketing Techniques Do You Follow?</AccordionTrigger>
             <AccordionContent>
               Fringilla est ullamcorper eget nulla. Enim sed faucibus turpis in eu mi. Nibh tellus molestie nunc non blandit massa enim nec. Eros donec ac odio tempor orci dapibus ultrices. At augue eget arcu dictum varius duis at.Morbi leo urna molestie at. Egestas diam in arcu cursus euismod quis viverra bibendum arcu vitae nibh.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
-            <AccordionTrigger className={'font-semibold text-xl'}>Do You Provide Special Focus On Private Companies?</AccordionTrigger>
+            <AccordionTrigger className={'font-bold text-xl'}>Do You Provide Special Focus On Private Companies?</AccordionTrigger>
             <AccordionContent>
               Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Lacus viverra vitae congue eu. Dictum at tempor commodo ullamcorper a lacus. Maecenas ultricies mi eget mauris pharetra.Ut venenatis tellus in metus vulputate eu scelerisque felis. Orci eu lobortis etiam erat velit scelerisque elementum nibh.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
 
-      </section>
+      </SectionLayout>
     </>
   )
 }
