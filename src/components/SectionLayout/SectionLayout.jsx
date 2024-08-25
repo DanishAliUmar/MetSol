@@ -6,10 +6,10 @@ const SectionLayout = ({ className, title, mainHeading, circle, triangle, subHea
             <div className='flex items-center md:gap-14 gap-5 lg:flex-row flex-col'>
                 <div className='flex-1'>
                     {title &&
-                        <p className='text-[#f8955b] md:text-base text-sm font-semibold uppercase '>{title}</p>
+                        <p className='text-[#ffb600] md:text-base text-sm font-semibold uppercase '>{title}</p>
                     }
                     {mainHeading &&
-                        <h3 className='font-semibold md:text-[40px] sm:text-3xl text-2xl mt-3 md:leading-[54px] '>{mainHeading}</h3>
+                        <h3 className=' text-[#004a86] font-semibold md:text-[40px] sm:text-3xl text-2xl mt-3 md:leading-[54px] '>{mainHeading}</h3>
                     }
                 </div>
                 <div className='flex-1 relative'>
@@ -20,7 +20,7 @@ const SectionLayout = ({ className, title, mainHeading, circle, triangle, subHea
                     }
                     {subHeading &&
                         <div className="flex !items-start  flex-1 gap-3 " style={{alignItems:"flex-start"}}>
-                            <Svgs.Play className={'fill-[#fae951] size-24 h-[1.6rem] -rotate-[30deg]'} />
+                            <Svgs.Play className={'fill-[#fae951] size-28 h-[2rem] -rotate-[30deg]'} />
                             <p className='text-[#757575]  z-50 relative md:text-base text-sm'>{subHeading}</p>
                         </div>
                     }
