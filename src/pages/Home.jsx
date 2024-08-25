@@ -158,7 +158,7 @@ const Home = () => {
             centeredSlides={true}
             loop={true}
             autoplay={{
-              delay: 180000,
+              delay: 1800,
               disableOnInteraction: false,
             }}
             breakpoints={{
