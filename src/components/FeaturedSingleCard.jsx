@@ -4,7 +4,7 @@ const FeaturedSingleCard = (props) => {
   return (
     <div className='rounded-2xl border border-black group cursor-grab px-8 py-16 custom_transition6s'>
         <svg
-            className='h-28 w-28 group-hover:fill-[#f8955b] fill-black custom_transition'
+            className='h-28 w-28 group-hover:fill-[#004a86] fill-[black] custom_transition'
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 200 200"
@@ -20,7 +20,7 @@ const FeaturedSingleCard = (props) => {
             <rect x="24" y="71.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -38.0153 52.0736)" width="39.7" height="1.5"></rect>
             <rect x="108.2" y="155.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -72.902 136.2975)" width="39.7" height="1.5"></rect>
         </svg>
-        <h3 className='text-black font-semibold text-3xl mt-6 group-hover:text-[#f8955b] custom_transition '>{props.title}</h3>
+        <h3 className='text-black font-semibold text-3xl mt-6 group-hover:text-[#ffb600] custom_transition '>{props.title}</h3>
         <p className='text-[#757575] text-[17px] mt-7'>{props.heading}</p>
     </div>
   )
