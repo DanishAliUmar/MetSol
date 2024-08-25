@@ -139,7 +139,7 @@ const Home = () => {
         </div>
       </SectionLayout>
       <SectionLayout title={'Agency Services'} className={'bg-[#f6f6f6]'} mainHeading={'Our Strategy & Patented Technology Serve As Our Driving Force.'} circle subHeading={'Nibh praesent tristique magna sit. Aliquam etiam erat velit scelerisque in dictum. Justo donec enim diam vulputate. Leo integer malesuada nunc vel.'}>
-        <div className='flex gap-7 custom_transition'>
+        <div className='lg:flex grid sm:grid-cols-2 grid-cols-1 gap-7 flex-wrap custom_transition'>
           <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-1.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
           <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-2.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
           <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-3.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
@@ -149,7 +149,7 @@ const Home = () => {
       </SectionLayout>
       <SectionLayout title={'Our Portfolio'} className={'bg-black text-white'} mainHeading={'Business Development & Promotions'}>
         <div className=' flex items-center justify-center'>
-          <Swiper className='py-20'
+          <Swiper className=''
             modules={[Pagination, Navigation, Autoplay]}
             spaceBetween={50}
             slidesPerView={2}
@@ -158,8 +158,21 @@ const Home = () => {
             centeredSlides={true}
             loop={true}
             autoplay={{
-              delay: 1800,
+              delay: 180000,
               disableOnInteraction: false,
+            }}
+            breakpoints={{
+              // when window width is >= 320px
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              // when window width is >= 640px
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              // you can add more breakpoints if needed
             }}
           >
             <SwiperSlide>

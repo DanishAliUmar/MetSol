@@ -14,7 +14,7 @@ const SectionLayout = ({ className, title, mainHeading, circle, triangle, subHea
                 </div>
                 <div className='flex-1 relative'>
                     {circle &&
-                        <div className='flex items-center justify-center absolute -top-10 w-full z-0'>
+                        <div className='lg:flex items-center justify-center absolute -top-10 w-full z-0 hidden'>
                             <div className='rounded-full bg-[#eeeeee] h-[170px] w-[170px]'></div>
                         </div>
                     }
