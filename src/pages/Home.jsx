@@ -149,7 +149,7 @@ const Home = () => {
       </SectionLayout>
       <SectionLayout title={'Our Portfolio'} className={'bg-black text-white'} mainHeading={'Business Development & Promotions'}>
         <div className=' flex items-center justify-center'>
-          <Swiper className=''
+          <Swiper className='portfolio__slider'
             modules={[Pagination, Navigation, Autoplay]}
             spaceBetween={50}
             slidesPerView={2}
