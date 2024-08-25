@@ -122,9 +122,9 @@ const Home = () => {
                   <p className="font-semibold">Branches</p>
                 </div>
               </div>
-              <div className="size-40">
+              {/* <div className="size-40">
                 <img src="" alt="" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
