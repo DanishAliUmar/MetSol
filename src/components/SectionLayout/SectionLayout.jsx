@@ -12,7 +12,7 @@ const SectionLayout = ({ className, title, mainHeading, circle, triangle, subHea
                         <h3 className='font-semibold md:text-[40px] sm:text-3xl text-2xl mt-3 md:leading-[54px] '>{mainHeading}</h3>
                     }
                 </div>
-                <d iv className='flex-1 relative'>
+                <div className='flex-1 relative'>
                     {circle &&
                         <div className='flex items-center justify-center absolute -top-10 w-full z-0'>
                             <div className='rounded-full bg-[#eeeeee] h-[170px] w-[170px]'></div>
@@ -24,7 +24,7 @@ const SectionLayout = ({ className, title, mainHeading, circle, triangle, subHea
                             <p className='text-[#757575]  z-50 relative md:text-base text-sm'>{subHeading}</p>
                         </div>
                     }
-                </d>
+                </div>
             </div>
             {children}
         </section >
