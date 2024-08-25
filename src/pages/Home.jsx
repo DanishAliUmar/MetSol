@@ -197,10 +197,25 @@ const Home = () => {
         </div>
       </SectionLayout>
       <SectionLayout title={'Featured Tools'} className={''} mainHeading={'Special Tools For Business Growth'}>
-        <div className='flex items-center justify-center Tools__slider select-none'>
-          <Swiper className='py-20 custom_transition6s min-h-[700px]'
+        <div className='flex items-center justify-center Tools__slider select-none lg:px-0 sm:px-10 pl-2'>
+          <Swiper className='custom_transition6s min-h-[540px]'
             modules={[Autoplay]}
             spaceBetween={50}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+              // you can add more breakpoints if needed
+            }}
             slidesPerView={3}
             grabCursor={false}
             draggable={false}
@@ -238,7 +253,7 @@ const Home = () => {
       </SectionLayout>
 
       <SectionLayout title={'COMMON QUESTIONS'} className={'bg-[#f6f6f6]'} mainHeading={'About Our Projects & Services'}>
-        <Accordion type="single" collapsible className={'space-y-5 bg-white'}>
+        <Accordion type="single" collapsible className={'space-y-5 bg-[#f6f6f6'}>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-1">
             <AccordionTrigger className={'font-bold text-xl'}>What Is Your Service Pricing Structure?</AccordionTrigger>
             <AccordionContent>
