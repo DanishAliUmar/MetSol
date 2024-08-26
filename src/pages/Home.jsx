@@ -298,65 +298,95 @@ const Home = () => {
 
       </SectionLayout>
       <SectionLayout title={'Friendly Services'} className={''} mainHeading={'Accelerate Your Growth With Our Digital Agency Services.'} subHeading={'Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Adipiscing vitae proin sagittis nisl rhoncus mattis. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Nec tincidunt praesent semper feugiat.'}>
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
-              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white cursor-pointer">
-                <img src={Slag} className='size-16 object-contain' alt="" />
-                <div className="space-y-1">
-                  <h5 className="font-bold text-lg">Slack</h5>
-                  <p className="font-light text-sm">Transform your business.</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white cursor-pointer">
-                <img src={Slag} className='size-16 object-contain' alt="" />
-                <div className="space-y-1">
-                  <h5 className="font-bold text-lg">Slack</h5>
-                  <p className="font-light text-sm">Transform your business.</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white cursor-pointer">
-                <img src={Slag} className='size-16 object-contain' alt="" />
-                <div className="space-y-1">
-                  <h5 className="font-bold text-lg">Slack</h5>
-                  <p className="font-light text-sm">Transform your business.</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white cursor-pointer">
-                <img src={Slag} className='size-16 object-contain' alt="" />
-                <div className="space-y-1">
-                  <h5 className="font-bold text-lg">Slack</h5>
-                  <p className="font-light text-sm">Transform your business.</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white cursor-pointer">
-                <img src={Slag} className='size-16 object-contain' alt="" />
-                <div className="space-y-1">
-                  <h5 className="font-bold text-lg">Slack</h5>
-                  <p className="font-light text-sm">Transform your business.</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white cursor-pointer">
-                <img src={Slag} className='size-16 object-contain' alt="" />
-                <div className="space-y-1">
-                  <h5 className="font-bold text-lg">Slack</h5>
-                  <p className="font-light text-sm">Transform your business.</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white cursor-pointer">
-                <img src={Slag} className='size-16 object-contain' alt="" />
-                <div className="space-y-1">
-                  <h5 className="font-bold text-lg">Slack</h5>
-                  <p className="font-light text-sm">Transform your business.</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white cursor-pointer">
-                <img src={Slag} className='size-16 object-contain' alt="" />
-                <div className="space-y-1">
-                  <h5 className="font-bold text-lg">Slack</h5>
-                  <p className="font-light text-sm">Transform your business.</p>
-                </div>
-              </div>
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={Slag} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Slack</h5>
+              <p className="font-light text-sm">Transform your business.</p>
             </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={Slag} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Slack</h5>
+              <p className="font-light text-sm">Transform your business.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={Slag} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Slack</h5>
+              <p className="font-light text-sm">Transform your business.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={Slag} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Slack</h5>
+              <p className="font-light text-sm">Transform your business.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={Slag} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Slack</h5>
+              <p className="font-light text-sm">Transform your business.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={Slag} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Slack</h5>
+              <p className="font-light text-sm">Transform your business.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={Slag} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Slack</h5>
+              <p className="font-light text-sm">Transform your business.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={Slag} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Slack</h5>
+              <p className="font-light text-sm">Transform your business.</p>
+            </div>
+          </div>
+        </div>
       </SectionLayout>
+
+      <div className="flex items-center gap-10 whitespace-nowrap overflow-x-hidden">
+        <p className="">
+          Google Drive
+        </p>
+        <p className="">
+          Elevate your business Saas
+        </p>
+        <p className="">
+          technology
+        </p>
+        <p className="">
+          cost-effective
+        </p>
+        <p className="">
+          fresh ideas
+        </p>
+        <p className="">
+          Full-service
+        </p>
+        <p className="">
+          technology
+        </p>
+        <p className="">
+          cost-effective
+        </p>
+        <p className="">
+          fresh ideas
+        </p>
+      </div>
     </>
   )
 }
