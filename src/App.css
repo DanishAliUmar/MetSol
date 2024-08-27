@@ -60,23 +60,14 @@
 
 .marque__slider{
   width: 100%;
-  border: 1px solid red;
-  height: var(--height);
   overflow: hidden;
-}
-.marque__slider .list{
-  display: flex;
-  width: 100%;
-  min-width: calc(var(--width) * var(--quantity));
-  position: relative;
 }
 .marque__slider .list .item{
   width: var(--width);
-  height: var(--height);
   position: absolute;
   left: 100%;
-  animation: autoRun 8s linear infinite;
-  animation-delay: calc((-8s / var(--quantity)) * (var(--position) - 1));
+  animation: autoRun 40s linear infinite;
+  animation-delay: calc((-40s / var(--quantity)) * (var(--position) - 1));
 }
 
 @keyframes autoRun{

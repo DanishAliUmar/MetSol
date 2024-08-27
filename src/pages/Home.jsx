@@ -358,48 +358,47 @@ const Home = () => {
         </div>
       </SectionLayout>
 
-      <div className="marque__slider" style={{
-        '--width': "400px",
-        '--height': "50px",
+      <div className="marque__slider bg-[#F8955B] flex items-center w-full h-24" style={{
+        '--width': "800px",
         '--quantity': 8
       }}>
-        <div className="list">
-          <div className="item" style={{ '--position': 1 }}>
+        <div className="list flex text-center font-bold uppercase text-5xl w-full h-full relative max-w-[calc(--width*--quantity]">
+          <div className="item h-full flex items-center" style={{ '--position': 1 }}>
             <p className="">
               fresh ideas
             </p>
           </div>
-          <div className="item" style={{ '--position': 2 }}>
+          <div className="item h-full flex items-center" style={{ '--position': 2 }}>
             <p className="">
               *
             </p>
           </div>
-          <div className="item" style={{ '--position': 3 }}>
+          <div className="item h-full flex items-center" style={{ '--position': 3 }}>
             <p className="">
               Full-service
             </p>
           </div>
-          <div className="item" style={{ '--position': 4 }}>
+          <div className="item h-full flex items-center" style={{ '--position': 4 }}>
             <p className="">
               *
             </p>
           </div>
-          <div className="item" style={{ '--position': 5 }}>
+          <div className="item h-full flex items-center" style={{ '--position': 5 }}>
             <p className="">
               technology
             </p>
           </div>
-          <div className="item" style={{ '--position': 6 }}>
+          <div className="item h-full flex items-center" style={{ '--position': 6 }}>
             <p className="">
               *
             </p>
           </div>
-          <div className="item" style={{ '--position': 7 }}>
+          <div className="item h-full flex items-center" style={{ '--position': 7 }}>
             <p className="">
               cost-effective
             </p>
           </div>
-          <div className="item" style={{ '--position': 8 }}>
+          <div className="item h-full flex items-center" style={{ '--position': 8 }}>
             <p className="">
               *
             </p>
