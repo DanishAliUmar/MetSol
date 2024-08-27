@@ -361,57 +361,27 @@ const Home = () => {
       <div className="slider" style={{
         '--width': "100px",
         '--height': "50px",
-        '--quantiy': "10"
+        '--quantity': 10
       }}>
         <div className="list">
-          <div className="item" style={{'--position': 1}}>
+          <div className="item" style={{ '--position': 1 }}>
             <p className="">
-              Google Drive
+              fresh ideas
             </p>
           </div>
-          <div className="item" style={{'--position': 2}}>
+          <div className="item" style={{ '--position': 2 }}>
             <p className="">
-              Google Drive
+              Full-service
             </p>
           </div>
-          <div className="item" style={{'--position': 3}}>
+          <div className="item" style={{ '--position': 3 }}>
             <p className="">
-              Google Drive
+              technology
             </p>
           </div>
-          <div className="item" style={{'--position': 4}}>
+          <div className="item" style={{ '--position': 4 }}>
             <p className="">
-              Google Drive
-            </p>
-          </div>
-          <div className="item" style={{'--position': 5}}>
-            <p className="">
-              Google Drive
-            </p>
-          </div>
-          <div className="item" style={{'--position': 6}}>
-            <p className="">
-              Google Drive
-            </p>
-          </div>
-          <div className="item" style={{'--position': 7}}>
-            <p className="">
-              Google Drive
-            </p>
-          </div>
-          <div className="item" style={{'--position': 8}}>
-            <p className="">
-              Google Drive
-            </p>
-          </div>
-          <div className="item" style={{'--position': 9}}>
-            <p className="">
-              Google Drive
-            </p>
-          </div>
-          <div className="item" style={{'--position': 10}}>
-            <p className="">
-              Google Drive
+              cost-effective
             </p>
           </div>
         </div>
