@@ -361,7 +361,7 @@ const Home = () => {
       <div className="slider" style={{
         '--width': "400px",
         '--height': "50px",
-        '--quantity': 10
+        '--quantity': 8
       }}>
         <div className="list">
           <div className="item" style={{ '--position': 1 }}>
