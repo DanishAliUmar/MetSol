@@ -302,8 +302,43 @@ const Home = () => {
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
             <img src={Slag} className='size-16 object-contain' alt="" />
             <div className="space-y-1">
-              <h5 className="font-bold text-lg">Slack</h5>
-              <p className="font-light text-sm">Transform your business.</p>
+              <h5 className="font-bold text-lg">MailChimp</h5>
+              <p className="font-light text-sm">The digital empire your business.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={Slag} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Google Analytics</h5>
+              <p className="font-light text-sm">Devoted to helping your business.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={Slag} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Amplitude</h5>
+              <p className="font-light text-sm">Accelerate your growth</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={Slag} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Google Analytics</h5>
+              <p className="font-light text-sm">Quality software for businesses.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={Slag} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Hubspot</h5>
+              <p className="font-light text-sm">Invest in the future of your business.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={Slag} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Dropbox</h5>
+              <p className="font-light text-sm">Innovative solutions for businesses.</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
@@ -316,43 +351,8 @@ const Home = () => {
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
             <img src={Slag} className='size-16 object-contain' alt="" />
             <div className="space-y-1">
-              <h5 className="font-bold text-lg">Slack</h5>
-              <p className="font-light text-sm">Transform your business.</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={Slag} className='size-16 object-contain' alt="" />
-            <div className="space-y-1">
-              <h5 className="font-bold text-lg">Slack</h5>
-              <p className="font-light text-sm">Transform your business.</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={Slag} className='size-16 object-contain' alt="" />
-            <div className="space-y-1">
-              <h5 className="font-bold text-lg">Slack</h5>
-              <p className="font-light text-sm">Transform your business.</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={Slag} className='size-16 object-contain' alt="" />
-            <div className="space-y-1">
-              <h5 className="font-bold text-lg">Slack</h5>
-              <p className="font-light text-sm">Transform your business.</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={Slag} className='size-16 object-contain' alt="" />
-            <div className="space-y-1">
-              <h5 className="font-bold text-lg">Slack</h5>
-              <p className="font-light text-sm">Transform your business.</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={Slag} className='size-16 object-contain' alt="" />
-            <div className="space-y-1">
-              <h5 className="font-bold text-lg">Slack</h5>
-              <p className="font-light text-sm">Transform your business.</p>
+              <h5 className="font-bold text-lg">Google Drive</h5>
+              <p className="font-light text-sm">Elevate your business Saas</p>
             </div>
           </div>
         </div>
