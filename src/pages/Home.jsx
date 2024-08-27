@@ -404,16 +404,6 @@ const Home = () => {
               *
             </p>
           </div>
-          <div className="item" style={{ '--position': 9 }}>
-            <p className="">
-              cost-effective
-            </p>
-          </div>
-          <div className="item" style={{ '--position': 10 }}>
-            <p className="">
-              *
-            </p>
-          </div>
         </div>
       </div>
     </>
