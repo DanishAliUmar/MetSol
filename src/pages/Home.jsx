@@ -359,7 +359,7 @@ const Home = () => {
       </SectionLayout>
 
       <div className="slider" style={{
-        '--width': "100px",
+        '--width': "400px",
         '--height': "50px",
         '--quantity': 10
       }}>
@@ -371,17 +371,47 @@ const Home = () => {
           </div>
           <div className="item" style={{ '--position': 2 }}>
             <p className="">
-              Full-service
+              *
             </p>
           </div>
           <div className="item" style={{ '--position': 3 }}>
             <p className="">
-              technology
+              Full-service
             </p>
           </div>
           <div className="item" style={{ '--position': 4 }}>
             <p className="">
+              *
+            </p>
+          </div>
+          <div className="item" style={{ '--position': 5 }}>
+            <p className="">
+              technology
+            </p>
+          </div>
+          <div className="item" style={{ '--position': 6 }}>
+            <p className="">
+              *
+            </p>
+          </div>
+          <div className="item" style={{ '--position': 7 }}>
+            <p className="">
               cost-effective
+            </p>
+          </div>
+          <div className="item" style={{ '--position': 8 }}>
+            <p className="">
+              *
+            </p>
+          </div>
+          <div className="item" style={{ '--position': 9 }}>
+            <p className="">
+              cost-effective
+            </p>
+          </div>
+          <div className="item" style={{ '--position': 10 }}>
+            <p className="">
+              *
             </p>
           </div>
         </div>
