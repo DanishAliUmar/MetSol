@@ -58,19 +58,19 @@
   }
 
 
-.slider{
+.marque__slider{
   width: 100%;
   border: 1px solid red;
   height: var(--height);
   overflow: hidden;
 }
-.slider .list{
+.marque__slider .list{
   display: flex;
   width: 100%;
   min-width: calc(var(--width) * var(--quantity));
   position: relative;
 }
-.slider .list .item{
+.marque__slider .list .item{
   width: var(--width);
   height: var(--height);
   position: absolute;
@@ -88,13 +88,10 @@
   }
 }
 
-.slider .list .item p{
+.marque__slider .list .item p{
   width: 100%;
 
 }
-.slider:hover .item{
+.marque__slider:hover .item{
   animation-play-state: paused!important;
-}
-.slider.item:hover{
-  color:#ffb600 ;
 }

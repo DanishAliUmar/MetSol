@@ -358,7 +358,7 @@ const Home = () => {
         </div>
       </SectionLayout>
 
-      <div className="slider" style={{
+      <div className="marque__slider" style={{
         '--width': "400px",
         '--height': "50px",
         '--quantity': 8
