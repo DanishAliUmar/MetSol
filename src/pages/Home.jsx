@@ -366,10 +366,10 @@ const Home = () => {
       </SectionLayout>
 
       <div className="marque__slider bg-[#F8955B] flex items-center w-full h-24" style={{
-        '--width': "800px",
-        '--quantity': 8
+        // '--width': "800px",
+        // '--quantity': 8
       }}>
-        <div className="list flex text-center font-bold uppercase text-5xl w-full h-full relative max-w-[calc(--width*--quantity]">
+        <div className="list flex text-center font-bold uppercase md:text-5xl sm:text-3xl text-xl w-full h-full relative max-w-[calc(--width*--quantity]">
           <div className="item h-full flex items-center" style={{ '--position': 1 }}>
             <p className="">
               fresh ideas

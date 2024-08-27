@@ -1,4 +1,22 @@
-  .custom_transition {
+:root{
+  --width: 800px;
+  --quantity: 8
+}
+
+
+@media (max-width: 768px) {
+  :root {
+    --width: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --width: 300px;
+  }
+}
+
+.custom_transition {
     transition: all 0.4s ease-in-out !important;
   }
 
