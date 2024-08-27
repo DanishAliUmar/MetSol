@@ -358,34 +358,63 @@ const Home = () => {
         </div>
       </SectionLayout>
 
-      <div className="flex items-center gap-10 whitespace-nowrap overflow-x-hidden">
-        <p className="">
-          Google Drive
-        </p>
-        <p className="">
-          Elevate your business Saas
-        </p>
-        <p className="">
-          technology
-        </p>
-        <p className="">
-          cost-effective
-        </p>
-        <p className="">
-          fresh ideas
-        </p>
-        <p className="">
-          Full-service
-        </p>
-        <p className="">
-          technology
-        </p>
-        <p className="">
-          cost-effective
-        </p>
-        <p className="">
-          fresh ideas
-        </p>
+      <div className="slider" style={{
+        '--width': "100px",
+        '--height': "50px",
+        '--quantiy': "10"
+      }}>
+        <div className="list">
+          <div className="item" style={{'--position': 1}}>
+            <p className="">
+              Google Drive
+            </p>
+          </div>
+          <div className="item" style={{'--position': 2}}>
+            <p className="">
+              Google Drive
+            </p>
+          </div>
+          <div className="item" style={{'--position': 3}}>
+            <p className="">
+              Google Drive
+            </p>
+          </div>
+          <div className="item" style={{'--position': 4}}>
+            <p className="">
+              Google Drive
+            </p>
+          </div>
+          <div className="item" style={{'--position': 5}}>
+            <p className="">
+              Google Drive
+            </p>
+          </div>
+          <div className="item" style={{'--position': 6}}>
+            <p className="">
+              Google Drive
+            </p>
+          </div>
+          <div className="item" style={{'--position': 7}}>
+            <p className="">
+              Google Drive
+            </p>
+          </div>
+          <div className="item" style={{'--position': 8}}>
+            <p className="">
+              Google Drive
+            </p>
+          </div>
+          <div className="item" style={{'--position': 9}}>
+            <p className="">
+              Google Drive
+            </p>
+          </div>
+          <div className="item" style={{'--position': 10}}>
+            <p className="">
+              Google Drive
+            </p>
+          </div>
+        </div>
       </div>
     </>
   )
