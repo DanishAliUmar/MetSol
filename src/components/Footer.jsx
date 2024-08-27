@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const Footer = () => {
   return (
-    <footer className="px-5 md:py-28 sm:py-16 py-10 bg-black">
+    <footer className="px-5 md:pt-28 sm:pt-16 pt-10 pb-10 bg-black">
       <div className="flex items-center justify-between border-none md:gap-10 sm:gap-6 gap-4 flex-wrap">
         <div className="flex items-center gap-10"><span className="md:text-6xl sm:text-4xl text-3xl font-bold" style={{ WebkitTextStrokeColor: "white", WebkitTextStrokeWidth: "2px" }}>DROP US A MAIL</span> <span className=""><Svgs.ArrowUpLong className={'md:size-14 sm:size-12 size-10 rotate-45 fill-[#F8955B]'} /></span></div>
         <Button className={'hover:!bg-white hover:!text-black'}>Get In Touch</Button>
@@ -50,10 +50,19 @@ const Footer = () => {
           <div className="space-y-4">
             <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">3F Mitaka Takagi Building, Musashino-shi,80-0006 Japan</p>
             <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Info@example.com</p>
-            <p className="flex items-center gap-3"><Facebook className="bg-white hover:bg-[#f8955B] cursor-pointer stroke-black size-8 rounded-full p-[6px]"/> <InstagramIcon className="bg-white hover:bg-[#f8955B] cursor-pointer stroke-black size-8 rounded-full p-[6px]"/> <X className="bg-white hover:bg-[#f8955B] cursor-pointer stroke-black size-8 rounded-full p-[6px]"/> <Youtube className="bg-white hover:bg-[#f8955B] cursor-pointer stroke-black size-8 rounded-full p-[6px]"/></p>
+            <p className="flex items-center gap-3"><Facebook className="bg-white hover:bg-[#f8955B] cursor-pointer stroke-black size-8 rounded-full p-[6px]" /> <InstagramIcon className="bg-white hover:bg-[#f8955B] cursor-pointer stroke-black size-8 rounded-full p-[6px]" /> <X className="bg-white hover:bg-[#f8955B] cursor-pointer stroke-black size-8 rounded-full p-[6px]" /> <Youtube className="bg-white hover:bg-[#f8955B] cursor-pointer stroke-black size-8 rounded-full p-[6px]" /></p>
           </div>
         </div>
-       
+
+      </div>
+      <hr className="border-b border-solid border-white/40 my-10" />
+      <div className="flex items-center justify-between md:flex-row flex-col  gap-2 text-white">
+        <p className="">All Right Reserved © 2024 <span className="cursor-pointer border-b w-fit">MetsoleTech </span></p>
+        <p className="flex items-center gap-4">
+        <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Privacy Policy</p>
+        <p className="">/</p>
+        <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Terms & Conditions</p>
+        </p>
       </div>
     </footer>
   );
