@@ -6,9 +6,53 @@ import { Button } from "./ui/button";
 const Footer = () => {
   return (
     <footer className="px-5 md:py-28 sm:py-16 py-10 bg-black">
-      <div className="flex items-center justify-between gap-10">
-        <div className="flex items-center gap-10"><span className="text-6xl font-bold" style={{WebkitTextStrokeColor:"white",WebkitTextStrokeWidth:"2px"}}>DROP US A MAIL</span> <span className=""><Svgs.ArrowUpLong className={'size-14 rotate-45 fill-[#F8955B]'}/></span></div>
+      <div className="flex items-center justify-between border-none md:gap-10 sm:gap-6 gap-4 flex-wrap">
+        <div className="flex items-center gap-10"><span className="md:text-6xl sm:text-4xl text-3xl font-bold" style={{ WebkitTextStrokeColor: "white", WebkitTextStrokeWidth: "2px" }}>DROP US A MAIL</span> <span className=""><Svgs.ArrowUpLong className={'md:size-14 sm:size-12 size-10 rotate-45 fill-[#F8955B]'} /></span></div>
         <Button className={'hover:!bg-white hover:!text-black'}>Get In Touch</Button>
+      </div>
+      <hr className="border-b border-solid border-white/40 my-10" />
+      <div className="grid grid-cols-6 text-white gap-10">
+        <div className="col-span-2">
+          <h2 className="font-bold text-4xl h-20">G.<span className="text-[#F8955B]">O</span>.A.<span className="text-[#F8955B]">T</span></h2>
+          <p className="">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div className="">
+          <h4 className="font-bold text-xl h-20 text-[#F8955B]">Company</h4>
+          <div className="space-y-4">
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Home</p>
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Services</p>
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Portfolio</p>
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Contact</p>
+          </div>
+        </div>
+        <div className="">
+          <h4 className="font-bold text-xl h-20 text-[#F8955B]">Product</h4>
+          <div className="space-y-4">
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Integration</p>
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Customers</p>
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Case Studies</p>
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Our Blog</p>
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Careers</p>
+          </div>
+        </div>
+        <div className="">
+          <h4 className="font-bold text-xl h-20 text-[#F8955B]">Legal</h4>
+          <div className="space-y-4">
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">404 Error Pages</p>
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Password Protected</p>
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Business Guide</p>
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Licensing</p>
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Online Community</p>
+          </div>
+        </div>
+        <div className="">
+          <h4 className="font-bold text-xl h-20 text-[#F8955B]">Japan Agency</h4>
+          <div className="space-y-4">
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">3F Mitaka Takagi Building, Musashino-shi,80-0006 Japan</p>
+            <p className="cursor-pointer hover:text-[#f8955B] hover:border-b border-solid w-fit transition-all border-[#F8955B]">Info@example.com</p>
+          </div>
+        </div>
+       
       </div>
     </footer>
   );
