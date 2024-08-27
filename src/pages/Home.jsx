@@ -5,7 +5,14 @@ import AwardImage from '/Images/assets/award-image-2.jpg';
 import AwardImage2 from '/Images/assets/award-image-side.jpg';
 import CirclerText from '/Images/assets/rotate-backward-300x300.png';
 import ArrowRightUp from '/Images/assets/rotate-forward-300x300.png';
-import Slag from '/Images/assets/tool-img3.png';
+import ToolImg1 from '/Images/assets/tool-img1.png';
+import ToolImg2 from '/Images/assets/tool-img2.png';
+import ToolImg3 from '/Images/assets/tool-img3.png';
+import ToolImg4 from '/Images/assets/tool-img4.png';
+import ToolImg5 from '/Images/assets/tool-img5.png';
+import ToolImg6 from '/Images/assets/tool-img6.png';
+import ToolImg7 from '/Images/assets/tool-img7.png';
+import ToolImg8 from '/Images/assets/tool-img8.png';
 import groupedImage from '/Images/assets/grouped-image.png';
 import { Navigation, Pagination, Autoplay, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -300,56 +307,56 @@ const Home = () => {
       <SectionLayout title={'Friendly Services'} className={''} mainHeading={'Accelerate Your Growth With Our Digital Agency Services.'} subHeading={'Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Adipiscing vitae proin sagittis nisl rhoncus mattis. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Nec tincidunt praesent semper feugiat.'}>
         <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={Slag} className='size-16 object-contain' alt="" />
+            <img src={ToolImg1} className='size-16 object-contain' alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">MailChimp</h5>
               <p className="font-light text-sm">The digital empire your business.</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={Slag} className='size-16 object-contain' alt="" />
+            <img src={ToolImg2} className='size-16 object-contain' alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">Google Analytics</h5>
               <p className="font-light text-sm">Devoted to helping your business.</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={Slag} className='size-16 object-contain' alt="" />
+            <img src={ToolImg3} className='size-16 object-contain' alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">Amplitude</h5>
               <p className="font-light text-sm">Accelerate your growth</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={Slag} className='size-16 object-contain' alt="" />
+            <img src={ToolImg4} className='size-16 object-contain' alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">Google Analytics</h5>
               <p className="font-light text-sm">Quality software for businesses.</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={Slag} className='size-16 object-contain' alt="" />
+            <img src={ToolImg5} className='size-16 object-contain' alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">Hubspot</h5>
               <p className="font-light text-sm">Invest in the future of your business.</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={Slag} className='size-16 object-contain' alt="" />
+            <img src={ToolImg6} className='size-16 object-contain' alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">Dropbox</h5>
               <p className="font-light text-sm">Innovative solutions for businesses.</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={Slag} className='size-16 object-contain' alt="" />
+            <img src={ToolImg7} className='size-16 object-contain' alt="" />
             <div className="space-y-1">
-              <h5 className="font-bold text-lg">Slack</h5>
+              <h5 className="font-bold text-lg">ToolImg1</h5>
               <p className="font-light text-sm">Transform your business.</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={Slag} className='size-16 object-contain' alt="" />
+            <img src={ToolImg8} className='size-16 object-contain' alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">Google Drive</h5>
               <p className="font-light text-sm">Elevate your business Saas</p>
