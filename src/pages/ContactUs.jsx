@@ -9,7 +9,7 @@ import HeaderLayout from '@/components/SectionLayout/HeaderLayout';
 const ContactUs = () => {
     return (
         <>
-          <HeaderLayout/>
+          <HeaderLayout heading={'Contact Us'} page={'Contact Us'}/>
         </>
     )
 }
