@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 
 const HeaderLayout = ({ heading, page, bgImage }) => {
     return (
-        <div className='flex items-center justify-center flex-col gap-10 h-96 !bg-cover !bg-center !bg-no-repeat p-10 !text-white' style={{ background: 'url(/Images/assets/breadcrumb-common.jpg)' }}>
+        <div className='flex items-center justify-center flex-col gap-5 h-96 !bg-cover !bg-center !bg-no-repeat !text-white' style={{ background: 'url(/Images/assets/breadcrumb-common.jpg)' }}>
             <h1 className="text-5xl font-semibold">{heading}</h1>
             <Breadcrumb className={'!text-white'}>
                 <BreadcrumbList>
