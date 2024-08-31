@@ -16,12 +16,24 @@ const ContactUs = () => {
             <HeaderLayout heading={'Contact Us'} page={'Contact Us'} />
             <SectionLayout title={'Contact Us'} className={'bg-white'} mainHeading={'Reach Us For Instant Service'} subHeading={'Consectetur libero id faucibus nisl tincidunt eget. Sed augue lacus viverra vitae congue. Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Nibh praesent tristique magna sit amet.Amet dictum sit amet justo donec.'} >
                 <div className="flex items-center gap-10">
-                    <div className="p-10 bg-[#f6f6f6] flex-1">
+                    <div className="p-10 space-y-6 bg-[#f6f6f6] flex-1">
                         <Input
-                            placeholder='Email'
+                            placeholder='Your Name'
+                            type='text'
+                            name="name"
+                            className={'!p-5 !py-8 placeholder:text-lg text-lg'}
+                        />
+                        <Input
+                            placeholder='Your Phone Number'
+                            type='number'
+                            name="phone_number"
+                            className={'!p-5 !py-8 placeholder:text-lg text-lg'}
+                        />
+                        <Input
+                            placeholder='Your Email'
                             type='email'
                             name="email"
-                            className={''}
+                            className={'!p-5 !py-8 placeholder:text-lg text-lg'}
                         />
                     </div>
                     <div className="p-12 bg-[#F8955B] text-white space-y-4 w-[430px]">
