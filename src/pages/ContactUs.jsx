@@ -7,6 +7,8 @@ import HeaderLayout from '@/components/SectionLayout/HeaderLayout';
 import SectionLayout from '@/components/SectionLayout/SectionLayout';
 import { Facebook, InstagramIcon, X, Youtube } from 'lucide-react';
 import { Input } from '@/components/ui/input';
+import { Textarea } from "@/components/ui/textarea"
+import { Label } from '@/components/ui/label';
 
 const ContactUs = () => {
 
@@ -35,6 +37,10 @@ const ContactUs = () => {
                             name="email"
                             className={'!p-5 !py-8 placeholder:text-lg text-lg'}
                         />
+                        <div className="grid w-full gap-1.5">
+                            <Label htmlFor="message">Your message</Label>
+                            <Textarea placeholder="Type your message here." id="message" />
+                        </div>
                     </div>
                     <div className="p-12 bg-[#F8955B] text-white space-y-4 w-[430px]">
                         <h2 className="text-5xl font-medium">Say Hello!</h2>
