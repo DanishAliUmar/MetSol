@@ -5,30 +5,7 @@ import Contactimage2 from '/Images/Contact/Contactimage2.jpg';
 import HeaderLayout from '@/components/SectionLayout/HeaderLayout';
 import SectionLayout from '@/components/SectionLayout/SectionLayout';
 
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
-
-const formSchema = z.object({
-    username: z.string().min(2).max(50),
-})
-
-
 const ContactUs = () => {
-
-  // 1. Define your form.
-  const form = useForm({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-        username: "",
-    },
-});
-
-// 2. Define a submit handler.
-function onSubmit(values) {
-    // Do something with the form values.
-    console.log(values);
-}
 
 
     return (
