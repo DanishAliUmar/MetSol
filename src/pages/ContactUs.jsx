@@ -5,10 +5,11 @@ import Contactimage2 from '/Images/Contact/Contactimage2.jpg';
 import contactPerson from '/Images/assets/contact-page-image-1.jpg';
 import HeaderLayout from '@/components/SectionLayout/HeaderLayout';
 import SectionLayout from '@/components/SectionLayout/SectionLayout';
-import { Facebook, InstagramIcon, X, Youtube } from 'lucide-react';
+import { Facebook, InstagramIcon, PhoneCallIcon, X, Youtube } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from '@/components/ui/label';
+import { Button } from '@/components/ui/button';
 
 const ContactUs = () => {
 
@@ -16,8 +17,8 @@ const ContactUs = () => {
     return (
         <>
             <HeaderLayout heading={'Contact Us'} page={'Contact Us'} />
-            <SectionLayout title={'Contact Us'} className={'bg-white'} mainHeading={'Reach Us For Instant Service'} subHeading={'Consectetur libero id faucibus nisl tincidunt eget. Sed augue lacus viverra vitae congue. Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Nibh praesent tristique magna sit amet.Amet dictum sit amet justo donec.'} >
-                <div className="flex items-center gap-10">
+            <SectionLayout title={'Contact Us'} className={'bg-white !pb-0'} mainHeading={'Reach Us For Instant Service'} subHeading={'Consectetur libero id faucibus nisl tincidunt eget. Sed augue lacus viverra vitae congue. Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Nibh praesent tristique magna sit amet.Amet dictum sit amet justo donec.'} >
+                <div className="flex items-start gap-10">
                     <div className="p-10 space-y-6 bg-[#f6f6f6] flex-1">
                         <Input
                             placeholder='Your Name'
@@ -38,6 +39,7 @@ const ContactUs = () => {
                             className={'!p-5 !py-8 placeholder:text-lg text-lg'}
                         />
                         <Textarea placeholder="Type your message here." className={'!p-5 min-h-40 max-h-80 placeholder:text-lg text-lg'} id="message" />
+                        <Button className={'uppercase'}>Let's Talks</Button>
                     </div>
                     <div className="p-12 bg-[#F8955B] text-white space-y-4 w-[430px]">
                         <h2 className="text-5xl font-medium">Say Hello!</h2>
@@ -49,6 +51,50 @@ const ContactUs = () => {
                             <p className="">support@example.com</p>
                         </div>
                         <p className="flex items-center gap-3"><Facebook className="hover:bg-white border-white border bg-[#f8955B] cursor-pointer hover:stroke-[#f8955B] stroke-white size-8 rounded-full p-[6px]" /> <InstagramIcon className="hover:bg-white border-white border bg-[#f8955B] cursor-pointer hover:stroke-[#f8955B] stroke-white size-8 rounded-full p-[6px]" /> <X className="hover:bg-white border-white border bg-[#f8955B] cursor-pointer hover:stroke-[#f8955B] stroke-white size-8 rounded-full p-[6px]" /> <Youtube className="hover:bg-white border-white border bg-[#f8955B] cursor-pointer hover:stroke-[#f8955B] stroke-white size-8 rounded-full p-[6px]" /></p>
+                    </div>
+                </div>
+            </SectionLayout>
+            <SectionLayout title={'Address'} className={'bg-white'} mainHeading={'GOAT Agency Office Locations'} >
+                <div className="flex items-center justify-between gap-10 flex-wrap">
+                    <div className="flex gap-4">
+                        <div className="flex items-center justify-center size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
+                        <div className="space-y-4">
+                            <h4 className="text-xl font-bold">Mobile Number</h4>
+                            <div className="">
+                                <p className="">+00 (0)12 3456 789</p>
+                                <p className="">+00 (0)12 3456 897</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex gap-4">
+                        <div className="flex items-center justify-center size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
+                        <div className="space-y-4">
+                            <h4 className="text-xl font-bold">Mobile Number</h4>
+                            <div className="">
+                                <p className="">+00 (0)12 3456 789</p>
+                                <p className="">+00 (0)12 3456 897</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex gap-4">
+                        <div className="flex items-center justify-center size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
+                        <div className="space-y-4">
+                            <h4 className="text-xl font-bold">Mobile Number</h4>
+                            <div className="">
+                                <p className="">+00 (0)12 3456 789</p>
+                                <p className="">+00 (0)12 3456 897</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex gap-4">
+                        <div className="flex items-center justify-center size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
+                        <div className="space-y-4">
+                            <h4 className="text-xl font-bold">Mobile Number</h4>
+                            <div className="">
+                                <p className="">+00 (0)12 3456 789</p>
+                                <p className="">+00 (0)12 3456 897</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </SectionLayout>
