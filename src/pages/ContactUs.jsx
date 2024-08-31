@@ -37,7 +37,7 @@ const ContactUs = () => {
                             name="email"
                             className={'!p-5 !py-8 placeholder:text-lg text-lg'}
                         />
-                        <Textarea placeholder="Type your message here." id="message" />
+                        <Textarea placeholder="Type your message here." className={'!p-5 min-h-40 max-h-80 placeholder:text-lg text-lg'} id="message" />
                     </div>
                     <div className="p-12 bg-[#F8955B] text-white space-y-4 w-[430px]">
                         <h2 className="text-5xl font-medium">Say Hello!</h2>
