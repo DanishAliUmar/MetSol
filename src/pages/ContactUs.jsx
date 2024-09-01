@@ -1,16 +1,20 @@
 import React from 'react'
 import Svgs from '@/Assets/svgs';
 import Contact from '/Images/Contact/Contact.jpg';
-import Contactimage2 from '/Images/Contact/Contactimage2.jpg';
+import Slide__Image__1 from '/Images/assets/home-1-team-03.jpg';
 import contactPerson from '/Images/assets/contact-page-image-1.jpg';
 import HeaderLayout from '@/components/SectionLayout/HeaderLayout';
 import SectionLayout from '@/components/SectionLayout/SectionLayout';
-import { Facebook, InstagramIcon, PhoneCallIcon, X, Youtube } from 'lucide-react';
+import { Facebook, Instagram, InstagramIcon, PhoneCallIcon, X, Youtube } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Textarea } from "@/components/ui/textarea"
-import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay, Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import FeaturedSingleCard from '@/components/FeaturedSingleCard';
+
 const ContactUs = () => {
 
 
@@ -57,7 +61,7 @@ const ContactUs = () => {
             <SectionLayout title={'Address'} className={'bg-white'} mainHeading={'GOAT Agency Office Locations'} >
                 <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
                     <div className="flex gap-4">
-                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
+                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]' />}</div>
                         <div className="space-y-4">
                             <h4 className="text-xl font-bold">Head Office</h4>
                             <div className="">
@@ -66,7 +70,7 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className="flex gap-4">
-                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
+                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]' />}</div>
                         <div className="space-y-4">
                             <h4 className="text-xl font-bold">Mobile Number</h4>
                             <div className="">
@@ -76,7 +80,7 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className="flex gap-4">
-                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
+                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]' />}</div>
                         <div className="space-y-4">
                             <h4 className="text-xl font-bold">Have Quires ?</h4>
                             <div className="">
@@ -85,7 +89,7 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className="flex gap-4">
-                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
+                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]' />}</div>
                         <div className="space-y-4">
                             <h4 className="text-xl font-bold">Contact Support</h4>
                             <div className="">
@@ -96,6 +100,87 @@ const ContactUs = () => {
                     </div>
                 </div>
             </SectionLayout>
+            <div className="">
+                <div className='flex items-center justify-center select-none p-10 px-5'>
+                    <Swiper className=''
+                        modules={[Autoplay]}
+                        spaceBetween={50}
+                        breakpoints={{
+                            100: {
+                                slidesPerView: 1,
+                                spaceBetween: 100,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                                spaceBetween: 30,
+                            },
+                            1024: {
+                                slidesPerView: 5,
+                                spaceBetween: 50,
+                            },
+                            // you can add more breakpoints if needed
+                        }}
+                        slidesPerView={5}
+                        centeredSlides={true}
+                        loop={true}
+                        autoplay={{
+                            delay: 140000,
+                            disableOnInteraction: false,
+                        }}
+                        speed={1000}
+                        onSwiper={(swiper) => console.log(swiper)}
+                    >
+                        <SwiperSlide className='!w-full md:!w-[33%] relative lg:!w-1/4 xl:!w-[20%] flex items-center justify-center'>
+                            <div className="!size-72 group cursor-pointer rounded-2xl overflow-hidden border-black border-solid border">
+                                <img src={Slide__Image__1} className='w-full h-full' alt="" />
+                                <div className="absolute group-hover:scale-100 scale-0 rounded-2xl duration-500  w-full h-full left-0 top-0 bg-black/10">
+                                    {<Instagram className='stroke-white group-hover:bg-[#F8955B] rounded-full size-16 p-3 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' />}
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='!w-full md:!w-[33%] relative lg:!w-1/4 xl:!w-[20%] flex items-center justify-center'>
+                            <div className="!size-72 group cursor-pointer rounded-2xl overflow-hidden border-black border-solid border">
+                                <img src={Slide__Image__1} className='w-full h-full' alt="" />
+                                <div className="absolute group-hover:scale-100 scale-0 rounded-2xl duration-500  w-full h-full left-0 top-0 bg-black/10">
+                                    {<Instagram className='stroke-white group-hover:bg-[#F8955B] rounded-full size-16 p-3 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' />}
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='!w-full md:!w-[33%] relative lg:!w-1/4 xl:!w-[20%] flex items-center justify-center'>
+                            <div className="!size-72 group cursor-pointer rounded-2xl overflow-hidden border-black border-solid border">
+                                <img src={Slide__Image__1} className='w-full h-full' alt="" />
+                                <div className="absolute group-hover:scale-100 scale-0 rounded-2xl duration-500  w-full h-full left-0 top-0 bg-black/10">
+                                    {<Instagram className='stroke-white group-hover:bg-[#F8955B] rounded-full size-16 p-3 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' />}
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='!w-full md:!w-[33%] relative lg:!w-1/4 xl:!w-[20%] flex items-center justify-center'>
+                            <div className="!size-72 group cursor-pointer rounded-2xl overflow-hidden border-black border-solid border">
+                                <img src={Slide__Image__1} className='w-full h-full' alt="" />
+                                <div className="absolute group-hover:scale-100 scale-0 rounded-2xl duration-500  w-full h-full left-0 top-0 bg-black/10">
+                                    {<Instagram className='stroke-white group-hover:bg-[#F8955B] rounded-full size-16 p-3 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' />}
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='!w-full md:!w-[33%] relative lg:!w-1/4 xl:!w-[20%] flex items-center justify-center'>
+                            <div className="!size-72 group cursor-pointer rounded-2xl overflow-hidden border-black border-solid border">
+                                <img src={Slide__Image__1} className='w-full h-full' alt="" />
+                                <div className="absolute group-hover:scale-100 scale-0 rounded-2xl duration-500  w-full h-full left-0 top-0 bg-black/10">
+                                    {<Instagram className='stroke-white group-hover:bg-[#F8955B] rounded-full size-16 p-3 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' />}
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='!w-full md:!w-[33%] relative lg:!w-1/4 xl:!w-[20%] flex items-center justify-center'>
+                            <div className="!size-72 group cursor-pointer rounded-2xl overflow-hidden border-black border-solid border">
+                                <img src={Slide__Image__1} className='w-full h-full' alt="" />
+                                <div className="absolute group-hover:scale-100 scale-0 rounded-2xl duration-500  w-full h-full left-0 top-0 bg-black/10">
+                                    {<Instagram className='stroke-white group-hover:bg-[#F8955B] rounded-full size-16 p-3 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' />}
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </div>
         </>
     )
 }
