@@ -10,7 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
-
+import { Swiper, SwiperSlide } from "swiper/react";
 const ContactUs = () => {
 
 
@@ -18,8 +18,8 @@ const ContactUs = () => {
         <>
             <HeaderLayout heading={'Contact Us'} page={'Contact Us'} />
             <SectionLayout title={'Contact Us'} className={'bg-white !pb-0'} mainHeading={'Reach Us For Instant Service'} subHeading={'Consectetur libero id faucibus nisl tincidunt eget. Sed augue lacus viverra vitae congue. Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Nibh praesent tristique magna sit amet.Amet dictum sit amet justo donec.'} >
-                <div className="flex items-start gap-10">
-                    <div className="p-10 space-y-6 bg-[#f6f6f6] flex-1">
+                <div className="flex items-start lg:flex-row flex-col-reverse gap-10">
+                    <div className="p-10 space-y-6 bg-[#f6f6f6] flex-1 w-full">
                         <Input
                             placeholder='Your Name'
                             type='text'
@@ -41,12 +41,12 @@ const ContactUs = () => {
                         <Textarea placeholder="Type your message here." className={'!p-5 min-h-40 max-h-80 placeholder:text-lg text-lg'} id="message" />
                         <Button className={'uppercase'}>Let's Talks</Button>
                     </div>
-                    <div className="p-12 bg-[#F8955B] text-white space-y-4 w-[430px]">
+                    <div className="p-12 bg-[#F8955B] text-white space-y-4 lg:w-[430px] w-full">
                         <h2 className="text-5xl font-medium">Say Hello!</h2>
                         <p className="">Lectus sit amet est placerat in. Tempor orci eu lobortis elementum nibh.</p>
                         <img src={contactPerson} className='w-full h-auto object-cover' alt="" />
                         <h4 className="text-3xl font-medium">Inquiries</h4>
-                        <div className="flex items-center gap-5">
+                        <div className="flex items-center flex-wrap sm:flex-nowrap gap-5 gap-y-2">
                             <p className="">info@example.com</p>
                             <p className="">support@example.com</p>
                         </div>
@@ -55,9 +55,18 @@ const ContactUs = () => {
                 </div>
             </SectionLayout>
             <SectionLayout title={'Address'} className={'bg-white'} mainHeading={'GOAT Agency Office Locations'} >
-                <div className="flex items-center justify-between gap-10 flex-wrap">
+                <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
                     <div className="flex gap-4">
-                        <div className="flex items-center justify-center size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
+                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
+                        <div className="space-y-4">
+                            <h4 className="text-xl font-bold">Head Office</h4>
+                            <div className="">
+                                <p className="">No: 58 A, East Madison Street, Baltimore, MD, USA 4508 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex gap-4">
+                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
                         <div className="space-y-4">
                             <h4 className="text-xl font-bold">Mobile Number</h4>
                             <div className="">
@@ -67,32 +76,21 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className="flex gap-4">
-                        <div className="flex items-center justify-center size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
+                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
                         <div className="space-y-4">
-                            <h4 className="text-xl font-bold">Mobile Number</h4>
+                            <h4 className="text-xl font-bold">Have Quires ?</h4>
                             <div className="">
-                                <p className="">+00 (0)12 3456 789</p>
-                                <p className="">+00 (0)12 3456 897</p>
+                                <p className="">Seestrasse St, Zurich, CH</p>
                             </div>
                         </div>
                     </div>
                     <div className="flex gap-4">
-                        <div className="flex items-center justify-center size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
+                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
                         <div className="space-y-4">
-                            <h4 className="text-xl font-bold">Mobile Number</h4>
+                            <h4 className="text-xl font-bold">Contact Support</h4>
                             <div className="">
-                                <p className="">+00 (0)12 3456 789</p>
-                                <p className="">+00 (0)12 3456 897</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex gap-4">
-                        <div className="flex items-center justify-center size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]'/>}</div>
-                        <div className="space-y-4">
-                            <h4 className="text-xl font-bold">Mobile Number</h4>
-                            <div className="">
-                                <p className="">+00 (0)12 3456 789</p>
-                                <p className="">+00 (0)12 3456 897</p>
+                                <p className="">info@example.com</p>
+                                <p className="">support@example.com</p>
                             </div>
                         </div>
                     </div>
