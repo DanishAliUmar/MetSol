@@ -1,9 +1,10 @@
+import HeaderLayout from '@/components/SectionLayout/HeaderLayout'
 import React from 'react'
 
 const AboutUs = () => {
   return (
     <div>
-      AboutUs
+      <HeaderLayout heading={'About Us'} page={'About Us'} />
     </div>
   )
 }

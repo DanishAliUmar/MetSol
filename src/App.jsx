@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import OurServices from './pages/OurServices';
 import Faq from './pages/Faq';
-import PricingPlan from './pages/PricingPlan';
+import Portfolio from './pages/Portfolio';
 import ContactUs from './pages/ContactUs';
 import NotFound from './pages/NotFound'; // 404 Error page
 import Layout from './pages/Layout';
@@ -22,7 +22,7 @@ function App() {
         <Route path="about-us" element={<AboutUs />} />
         <Route path="our-services" element={<OurServices />} />
         <Route path="faq" element={<Faq />} />
-        <Route path="pricing-plan" element={<PricingPlan />} />
+        <Route path="portfolio" element={<Portfolio />} />
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="*" element={<NotFound />} /> {/* 404 Error page */}
       </Route>
