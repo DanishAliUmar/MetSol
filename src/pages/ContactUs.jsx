@@ -99,8 +99,22 @@ const ContactUs = () => {
                         </div>
                     </div>
                 </div>
+                <div className="w-fit h-full mx-auto">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27219.527274414948!2d74.32631253237793!3d31.484562507356756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904105ec589ff%3A0x67af359ad6cad4b3!2sModel%20Town%20Park!5e0!3m2!1sen!2s!4v1725218388270!5m2!1sen!2s"
+                        className="!w-[90vw] md:h-[450px] h-[300px] border-0"
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Google Map"
+                    ></iframe>
+                </div>
             </SectionLayout>
-            <div className="">
+            <div className="space-y-10">
+                <div className="font-semibold text-center space-y-3">
+                    <h3 className="text-[#f8955B] uppercase">Join Our Insta</h3>
+                    <h2 className="text-4xl">Our Instagram</h2>
+                </div>
                 <div className='flex items-center justify-center select-none p-10 px-5'>
                     <Swiper className=''
                         modules={[Autoplay]}
