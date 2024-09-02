@@ -216,7 +216,7 @@ const Home = () => {
             onSlideChange={() => console.log('slide change')}
           >
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title='Paid Search' heading='Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.' />
+              <FeaturedSingleCard title='Paid Search' svgs={<Svgs.Plus className={'size-4'}/>} heading='Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
               <FeaturedSingleCard title='Lead Generation' heading='Ullamcorper sit amet risus nullam eget felis eget nunc. Nunc non blandit massa enim nec dui. Lacus vel facilisis volutpat est velit. ' />
