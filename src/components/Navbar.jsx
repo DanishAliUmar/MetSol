@@ -36,21 +36,30 @@ const Navbar = () => {
           <li className="mx-4">
             <Link to="/about-us" className="group hover:text-[#ffb600] text-white">About Us<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
           </li>
-          <li className="mx-4">
+          {/* <li className="mx-4">
             <DropdownMenu>
               <DropdownMenuTrigger className='focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none'>
-                <div className="group hover:text-[#ffb600] text-white">Services<div className ="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></div></DropdownMenuTrigger>
+                <div className="group hover:text-[#ffb600] text-white">Services<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></div></DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuLabel>Our Services</DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>Branding</DropdownMenuItem>
-                <DropdownMenuItem>Web Development</DropdownMenuItem>
-                <DropdownMenuItem>Digital Marketing</DropdownMenuItem>
+                <Link to={'/our-services'}>
+                  <DropdownMenuItem>Branding</DropdownMenuItem>
+                </Link>
+                <Link to={'/our-services'}>
+                  <DropdownMenuItem>Web Development</DropdownMenuItem>
+                </Link>
+                <Link to={'/our-services'}>
+                  <DropdownMenuItem>Digital Marketing</DropdownMenuItem>
+                </Link>
               </DropdownMenuContent>
             </DropdownMenu>
+          </li> */}
+          <li className="mx-4">
+            <Link to="/portfolio" className="group hover:text-[#ffb600] text-white">Portfolio<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
           </li>
           <li className="mx-4">
-            <Link to="/pricing-plan" className="group hover:text-[#ffb600] text-white">Pricing<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+            <Link to="/faq" className="group hover:text-[#ffb600] text-white">Faqs<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
           </li>
           <li className="mx-4">
             <Link to="/contact-us" className="group hover:text-[#ffb600] text-white">Contact Us<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>

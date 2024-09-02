@@ -5,6 +5,14 @@ import AwardImage from '/Images/assets/award-image-2.jpg';
 import AwardImage2 from '/Images/assets/award-image-side.jpg';
 import CirclerText from '/Images/assets/rotate-backward-300x300.png';
 import ArrowRightUp from '/Images/assets/rotate-forward-300x300.png';
+import ToolImg1 from '/Images/assets/tool-img1.png';
+import ToolImg2 from '/Images/assets/tool-img2.png';
+import ToolImg3 from '/Images/assets/tool-img3.png';
+import ToolImg4 from '/Images/assets/tool-img4.png';
+import ToolImg5 from '/Images/assets/tool-img5.png';
+import ToolImg6 from '/Images/assets/tool-img6.png';
+import ToolImg7 from '/Images/assets/tool-img7.png';
+import ToolImg8 from '/Images/assets/tool-img8.png';
 import groupedImage from '/Images/assets/grouped-image.png';
 import { Navigation, Pagination, Autoplay, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -127,7 +135,7 @@ const Home = () => {
                     <p className="font-semibold">Branches</p>
                   </div>
                 </div>
-                <hr  className='border-b border-solid  border-black'/>
+                <hr className='border-b border-solid  border-black' />
                 <Button>About Us</Button>
               </div>
               <div className="size-36 relative sm:flex items-center justify-center hidden">
@@ -149,7 +157,7 @@ const Home = () => {
       </SectionLayout>
       <SectionLayout title={'Our Portfolio'} className={'bg-black text-white'} mainHeading={'Business Development & Promotions'}>
         <div className=' flex items-center justify-center'>
-          <Swiper className=''
+          <Swiper className='portfolio__slider'
             modules={[Pagination, Navigation, Autoplay]}
             spaceBetween={50}
             slidesPerView={2}
@@ -158,7 +166,7 @@ const Home = () => {
             centeredSlides={true}
             loop={true}
             autoplay={{
-              delay: 180000,
+              delay: 1800,
               disableOnInteraction: false,
             }}
             breakpoints={{
@@ -197,10 +205,25 @@ const Home = () => {
         </div>
       </SectionLayout>
       <SectionLayout title={'Featured Tools'} className={''} mainHeading={'Special Tools For Business Growth'}>
-        <div className='flex items-center justify-center Tools__slider select-none'>
-          <Swiper className='py-20 custom_transition6s min-h-[700px]'
+        <div className='flex items-center justify-center Tools__slider select-none lg:px-0 sm:px-10 pl-2'>
+          <Swiper className='custom_transition6s min-h-[540px]'
             modules={[Autoplay]}
             spaceBetween={50}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+              // you can add more breakpoints if needed
+            }}
             slidesPerView={3}
             grabCursor={false}
             draggable={false}
@@ -238,42 +261,42 @@ const Home = () => {
       </SectionLayout>
 
       <SectionLayout title={'COMMON QUESTIONS'} className={'bg-[#f6f6f6]'} mainHeading={'About Our Projects & Services'}>
-        <Accordion type="single" collapsible className={'space-y-5 bg-white'}>
+        <Accordion type="single" collapsible className={'space-y-5 bg-[#f6f6f6'}>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-1">
-            <AccordionTrigger className={'font-bold text-xl'}>What Is Your Service Pricing Structure?</AccordionTrigger>
+            <AccordionTrigger className={'font-bold text-xl text-left'}>What Is Your Service Pricing Structure?</AccordionTrigger>
             <AccordionContent>
               Condimentum id venenatis a condimentum. Nunc congue nisi vitae suscipit tellus mauris a diam maecenas. Adipiscing bibendum est ultricies integer quis auctor elit.Commodo ullamcorper a lacus vestibulum sed. Mauris sit amet massa vitae.Egestas fringilla phasellus faucibus scelerisque eleifend. Egestas dui id ornare arcu odio.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-2">
-            <AccordionTrigger className={'font-bold text-xl'}>What Are The Payment Options Do You Have?
+            <AccordionTrigger className={'font-bold text-xl text-left'}>What Are The Payment Options Do You Have?
             </AccordionTrigger>
             <AccordionContent>
               Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Sit amet facilisis magna etiam tempor orci. Imperdiet nulla malesuada pellentesque elit. Adipiscing tristique risus nec feugiat. Proin sed libero enim sed faucibus.Ultricies lacus sed turpis tincidunt id. Urna duis convallis convallis tellus.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-3">
-            <AccordionTrigger className={'font-bold text-xl'}>Do You Follow All Guidelines & Norms?
+            <AccordionTrigger className={'font-bold text-xl text-left'}>Do You Follow All Guidelines & Norms?
             </AccordionTrigger>
             <AccordionContent>
               Malesuada fames ac turpis egestas integer eget aliquet. Risus viverra adipiscing at in tellus. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Lectus proin nibh nisl condimentum.Lectus mauris ultrices eros in cursus turpis massa tincidunt dui. Tempor nec feugiat nisl pretium fusce id velit ut.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-4">
-            <AccordionTrigger className={'font-bold text-xl'}>Do You Use Freelancers Or Your In-House Team?
+            <AccordionTrigger className={'font-bold text-xl text-left'}>Do You Use Freelancers Or Your In-House Team?
             </AccordionTrigger>
             <AccordionContent>
               Justo laoreet sit amet cursus sit amet dictum sit amet. Amet venenatis urna cursus eget nunc. Vitae elementum curabitur vitae nunc sed velit dignissim. Sit amet nisl purus in mollis nunc sed id semper. Rhoncus urna neque viverra justo nec ultrices dui sapien eget.Sed enim ut sem viverra aliquet eget sit amet tellus.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-5">
-            <AccordionTrigger className={'font-bold text-xl'}>What Kind Of Marketing Techniques Do You Follow?</AccordionTrigger>
+            <AccordionTrigger className={'font-bold text-xl text-left'}>What Kind Of Marketing Techniques Do You Follow?</AccordionTrigger>
             <AccordionContent>
               Fringilla est ullamcorper eget nulla. Enim sed faucibus turpis in eu mi. Nibh tellus molestie nunc non blandit massa enim nec. Eros donec ac odio tempor orci dapibus ultrices. At augue eget arcu dictum varius duis at.Morbi leo urna molestie at. Egestas diam in arcu cursus euismod quis viverra bibendum arcu vitae nibh.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
-            <AccordionTrigger className={'font-bold text-xl'}>Do You Provide Special Focus On Private Companies?</AccordionTrigger>
+            <AccordionTrigger className={'font-bold text-xl text-left'}>Do You Provide Special Focus On Private Companies?</AccordionTrigger>
             <AccordionContent>
               Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Lacus viverra vitae congue eu. Dictum at tempor commodo ullamcorper a lacus. Maecenas ultricies mi eget mauris pharetra.Ut venenatis tellus in metus vulputate eu scelerisque felis. Orci eu lobortis etiam erat velit scelerisque elementum nibh.
             </AccordionContent>
@@ -281,6 +304,114 @@ const Home = () => {
         </Accordion>
 
       </SectionLayout>
+      <SectionLayout title={'Friendly Services'} className={''} mainHeading={'Accelerate Your Growth With Our Digital Agency Services.'} subHeading={'Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Adipiscing vitae proin sagittis nisl rhoncus mattis. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Nec tincidunt praesent semper feugiat.'}>
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={ToolImg1} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">MailChimp</h5>
+              <p className="font-light text-sm">The digital empire your business.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={ToolImg2} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Google Analytics</h5>
+              <p className="font-light text-sm">Devoted to helping your business.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={ToolImg3} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Amplitude</h5>
+              <p className="font-light text-sm">Accelerate your growth</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={ToolImg4} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Google Analytics</h5>
+              <p className="font-light text-sm">Quality software for businesses.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={ToolImg5} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Hubspot</h5>
+              <p className="font-light text-sm">Invest in the future of your business.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={ToolImg6} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Dropbox</h5>
+              <p className="font-light text-sm">Innovative solutions for businesses.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={ToolImg7} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">ToolImg1</h5>
+              <p className="font-light text-sm">Transform your business.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
+            <img src={ToolImg8} className='size-16 object-contain' alt="" />
+            <div className="space-y-1">
+              <h5 className="font-bold text-lg">Google Drive</h5>
+              <p className="font-light text-sm">Elevate your business Saas</p>
+            </div>
+          </div>
+        </div>
+      </SectionLayout>
+
+      <div className="marque__slider bg-[#F8955B] flex items-center w-full h-24" style={{
+        // '--width': "800px",
+        // '--quantity': 8
+      }}>
+        <div className="list flex text-center font-bold uppercase md:text-5xl sm:text-3xl text-xl w-full h-full relative max-w-[calc(--width*--quantity]">
+          <div className="item h-full flex items-center" style={{ '--position': 1 }}>
+            <p className="">
+              fresh ideas
+            </p>
+          </div>
+          <div className="item h-full flex items-center" style={{ '--position': 2 }}>
+            <p className="">
+              *
+            </p>
+          </div>
+          <div className="item h-full flex items-center" style={{ '--position': 3 }}>
+            <p className="">
+              Full-service
+            </p>
+          </div>
+          <div className="item h-full flex items-center" style={{ '--position': 4 }}>
+            <p className="">
+              *
+            </p>
+          </div>
+          <div className="item h-full flex items-center" style={{ '--position': 5 }}>
+            <p className="">
+              technology
+            </p>
+          </div>
+          <div className="item h-full flex items-center" style={{ '--position': 6 }}>
+            <p className="">
+              *
+            </p>
+          </div>
+          <div className="item h-full flex items-center" style={{ '--position': 7 }}>
+            <p className="">
+              cost-effective
+            </p>
+          </div>
+          <div className="item h-full flex items-center" style={{ '--position': 8 }}>
+            <p className="">
+              *
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
