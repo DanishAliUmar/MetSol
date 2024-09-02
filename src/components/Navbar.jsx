@@ -33,10 +33,10 @@ const Navbar = () => {
           <li className="mx-4">
             <Link to="/" className="group hover:text-[#ffb600] text-white">Home<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
           </li>
-          <li className="mx-4">
-            <Link to="/about-us" className="group hover:text-[#ffb600] text-white">About Us<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
-          </li>
           {/* <li className="mx-4">
+            <Link to="/about-us" className="group hover:text-[#ffb600] text-white">About Us<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+          </li> */}
+          <li className="mx-4">
             <DropdownMenu>
               <DropdownMenuTrigger className='focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none'>
                 <div className="group hover:text-[#ffb600] text-white">Services<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></div></DropdownMenuTrigger>
@@ -54,7 +54,7 @@ const Navbar = () => {
                 </Link>
               </DropdownMenuContent>
             </DropdownMenu>
-          </li> */}
+          </li>
           <li className="mx-4">
             <Link to="/portfolio" className="group hover:text-[#ffb600] text-white">Portfolio<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
           </li>
