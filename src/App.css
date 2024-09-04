@@ -104,3 +104,9 @@
 .marque__slider:hover .item{
   animation-play-state: paused!important;
 }
+_primary{
+  color: #004b86
+}
+_secondary{
+  color: #ffb200
+}

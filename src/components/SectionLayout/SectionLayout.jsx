@@ -9,7 +9,7 @@ const SectionLayout = ({ className, title, mainHeading, circle, triangle, subHea
                         <p className='text-[#ffb600] md:text-base text-sm font-semibold uppercase '>{title}</p>
                     }
                     {mainHeading &&
-                        <h3 className=' text-[#004a86] font-semibold md:text-[40px] sm:text-3xl text-2xl mt-3 md:leading-[54px] '>{mainHeading}</h3>
+                        <h3 className=' text-[#004a86] font-bold md:text-[28px] sm:text-3xl text-2xl mt-1 md:leading-[54px] '>{mainHeading}</h3>
                     }
                 </div>
                 <div className='flex-1 relative'>

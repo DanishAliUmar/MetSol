@@ -22,6 +22,7 @@ import AgencyServicesSingleCard from '@/components/AgencyServicesSingleCard';
 import PortfolioSingleCard from '@/components/PortfolioSingleCard';
 import FeaturedSingleCard from '@/components/FeaturedSingleCard';
 import { Button } from "@/components/ui/button"
+import { Link } from 'react-router-dom';
 
 import {
   Accordion,
@@ -90,12 +91,15 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="hidden md:flex items-center absolute right-0 top-[40%] justify-center flex-col gap-10 cursor-pointer ">
-          <p className="rotate-90 text-white w-full p-1">Get In Touch</p>
-          <Svgs.EllipsisVertical className={'size-7 fill-[#ffb600]'} />
-        </div>
+        <Link to='/contact-us' >
+          <div className="hidden md:flex items-center absolute right-0 top-[40%] justify-center flex-col gap-10 cursor-pointer ">
+            <p className="rotate-90 text-white w-full p-1">Get In Touch</p>
+            <Svgs.EllipsisVertical className={'size-7 fill-[#ffb600]'} />
+          </div>
+        </Link>
+
       </header>
-      <SectionLayout mainHeading={"A Single Platform To Find World's Top Agency Services."} subHeading={'Quis vel eros donec ac odio tempor. Sit amet consectetur adipiscing elit ut aliquam purus sit. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada.Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Lectus mauris ultrices eros in cursus turpis.'}>
+      <SectionLayout mainHeading={"Your One-Stop Digital Agency for Unstoppable Business Growth."} subHeading={'We help businesses grow by creating impactful digital experiences. Our personalized approach focuses on understanding your needs and delivering results. Trust MetSole to turn your marketing vision into an impactful reality.'}>
         <div className="flex lg:flex-row flex-col-reverse w-full gap-10">
           <div className="lg:flex-[4] max-w-[calc(100%-7.5rem)]">
             <div className="relative w-full sm:h-[600px] h-[400px]">
@@ -112,8 +116,8 @@ const Home = () => {
           <div className="lg:flex-[5] lg:pl-24 pt-10 space-y-10">
             <div className="space-y-2">
               <p className='text-[#ffb600] md:text-base text-sm font-semibold uppercase '>About Us</p>
-              <h3 className='font-semibold md:text-[40px] sm:text-3xl text-2xl mt-3 md:leading-[54px] '>High Performing Digital Agency</h3>
-              <p className='text-[#757575]  z-50 relative md:text-base text-sm'>Risus sed vulputate odio ut enim blandit volutpat. Sed cras ornare arcu dui vivamus arcu.</p>
+              <h3 className='font-semibold md:text-[40px] sm:text-3xl text-2xl mt-3 md:leading-[54px] '>Your Partner in Digital Growth</h3>
+              <p className='text-[#757575]  z-50 relative md:text-base text-sm'>At MetSole, we are passionate about helping your businesses thrive in the digital age. Let's partner to elevate your brand and achieve your digital marketing goals.</p>
             </div>
             <div className="flex items-end gap-5">
               <div className="flex-1 space-y-10">
@@ -146,12 +150,12 @@ const Home = () => {
           </div>
         </div>
       </SectionLayout>
-      <SectionLayout title={'Agency Services'} className={'bg-[#f6f6f6]'} mainHeading={'Our Strategy & Patented Technology Serve As Our Driving Force.'} circle subHeading={'Nibh praesent tristique magna sit. Aliquam etiam erat velit scelerisque in dictum. Justo donec enim diam vulputate. Leo integer malesuada nunc vel.'}>
+      <SectionLayout title={'Agency Services'} className={'bg-[#f6f6f6]'} mainHeading={'Innovation, creativity, and results-driven approach. Thats our promise.'} circle subHeading={'At MetSole, we focus on three core pillars to boost your brand: Digital Marketing, Branding, and Web Development. We offer a wide range of services within these categories, including SEO, Google Ads, social media marketing, graphic design, and custom website development, to help businesses achieve their online goals.'}>
         <div className='lg:flex grid sm:grid-cols-2 grid-cols-1 gap-7 flex-wrap custom_transition'>
-          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-1.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
-          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-2.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
-          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-3.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
-          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-4.jpg' text='Quisque id diam vel quam elementum. Mauris a diam maecenas sed enim ut. Tincidunt ornare massa eget egestas purus viverra. Ultrices eros in cursus turpis massa tincidunt dui.' />
+          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-1.jpg' heading='Graphics & Illustration' text='we bring your brand’s vision to life through captivating Graphics & Illustration. Our talented designers craft visually stunning graphics that not only catch the eye but also communicate your brands message effectively.' />
+          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-2.jpg' heading= 'Web Development' text='Our web development services help you build a professional and engaging online presence. We offer a wide range of services, including: Custom website development, E-commerce development, WordPress development, Shopify development, Responsive web design, and Web application development' />
+          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-3.jpg' heading = 'Branding' text='Branding is at the heart of what we do. We believe that a strong brand identity is essential for standing out in today’s competitive market. From logo design and color schemes to messaging and brand voice, we ensure every element is cohesive and impactful. With MetSole, your brand doesn’t just get noticed—it becomes memorable, building trust and loyalty with every interaction.' />
+          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-4.jpg' heading= 'Digital Marketing' text='At MetSole, digital marketing is our specialty, and we’re dedicated to helping your business thrive online. We use data-driven strategies to enhance your online visibility, attract more traffic, and convert leads into loyal customers. Our approach is tailored to your specific goals, ensuring that every campaign is optimized for maximum impact and ROI. With MetSole, your digital presence becomes a powerful tool for growth and success.' />
         </div>
 
       </SectionLayout>
@@ -239,16 +243,16 @@ const Home = () => {
             onSlideChange={() => console.log('slide change')}
           >
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title='Paid Search' svgs={<Svgs.Plus className={'size-4'}/>} heading='Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.' />
+              <FeaturedSingleCard title='Paid Search' svgs={<Svgs.Plus className={''} />} heading='Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title='Lead Generation' heading='Ullamcorper sit amet risus nullam eget felis eget nunc. Nunc non blandit massa enim nec dui. Lacus vel facilisis volutpat est velit. ' />
+              <FeaturedSingleCard title='Lead Generation' svgs={<Svgs.Circle className={''} />} heading='Ullamcorper sit amet risus nullam eget felis eget nunc. Nunc non blandit massa enim nec dui. Lacus vel facilisis volutpat est velit. ' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title='Email Marketing' heading='Feugiat nisl pretium fusce id velit ut tortor pretium viverra. Magna fermentum iaculis eu non diam phasellus vestibulum lorem sed. ' />
+              <FeaturedSingleCard title='Email Marketing' svgs={<Svgs.Triangle className={''} />} heading='Feugiat nisl pretium fusce id velit ut tortor pretium viverra. Magna fermentum iaculis eu non diam phasellus vestibulum lorem sed. ' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title='Video Marketing' heading='Est pellentesque elit ullamcorper dignissim cras. Nunc vel risus commodo viverra maecenas. Neque viverra justo nec ultrices dui.' />
+              <FeaturedSingleCard title='Video Marketing' svgs={<Svgs.Square className={''} />}  heading='Est pellentesque elit ullamcorper dignissim cras. Nunc vel risus commodo viverra maecenas. Neque viverra justo nec ultrices dui.' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
               <FeaturedSingleCard title='Graphic Design' heading='Montes nascetur ridiculus mus mauris vitae. Interdum posuere lorem ipsum dolor sit. Praesent semper feugiat nibh sed pulvinar. ' />
@@ -304,7 +308,7 @@ const Home = () => {
         </Accordion>
 
       </SectionLayout>
-      <SectionLayout title={'Friendly Services'} className={''} mainHeading={'Accelerate Your Growth With Our Digital Agency Services.'} subHeading={'Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Adipiscing vitae proin sagittis nisl rhoncus mattis. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Nec tincidunt praesent semper feugiat.'}>
+      <SectionLayout title={'Friendly Services'} className={''} mainHeading={'Friendly and Integrated Services'} subHeading={'At MetSole, we’re more than just a digital agency—we’re your growth partner. We integrate seamlessly with tools like Mailchimp, HubSpot, Google Analytics, Dropbox, Amplitude, Slack, Google Tag Manager, and Google Merchant Center to streamline your marketing efforts. Our user-friendly approach ensures that our services are not just effective but also easy to implement and manage.'}>
         <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
             <img src={ToolImg1} className='size-16 object-contain' alt="" />
@@ -330,7 +334,7 @@ const Home = () => {
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
             <img src={ToolImg4} className='size-16 object-contain' alt="" />
             <div className="space-y-1">
-              <h5 className="font-bold text-lg">Google Analytics</h5>
+              <h5 className="font-bold text-lg">Amplitude</h5>
               <p className="font-light text-sm">Quality software for businesses.</p>
             </div>
           </div>

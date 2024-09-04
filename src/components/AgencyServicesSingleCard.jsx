@@ -6,7 +6,8 @@ const AgencyServicesSingleCard = (props) => {
     <div className='w-full flex-1 h-[540px] bg-cover bg-no-repeat bg-center rounded-xl overflow-hidden custom_transition6s hover:flex-[2] ' style={{backgroundImage: `url(${props.image})` }}>
         <div className='h-full w-full bg-black/40 custom_transition p-7 group custom_transition6s flex flex-col justify-end'>
             <div className=' overflow-hidden h-0 group-hover:h-full flex flex-col justify-end custom_transition6s gap-3'>
-                <p className='text-white max-w-[320px] w-full '>{props.text}</p>
+              <h3 className='text-[#004b86] max-w-[320px] w-full text-2xl font-semibold'>{props.heading}</h3>
+                <p className='text-white max-w-[320px] w-full text-sm'>{props.text}</p>
                 <Button>View More</Button>
             </div>
         </div>
