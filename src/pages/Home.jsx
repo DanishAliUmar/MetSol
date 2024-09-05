@@ -255,10 +255,10 @@ const Home = () => {
               <FeaturedSingleCard title='Video Marketing' svgs={<Svgs.Square className={''} />}  heading='Est pellentesque elit ullamcorper dignissim cras. Nunc vel risus commodo viverra maecenas. Neque viverra justo nec ultrices dui.' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title='Graphic Design' heading='Montes nascetur ridiculus mus mauris vitae. Interdum posuere lorem ipsum dolor sit. Praesent semper feugiat nibh sed pulvinar. ' />
+              <FeaturedSingleCard title='Graphic Design' svgs={<Svgs.Plus className={''} />} heading='Montes nascetur ridiculus mus mauris vitae. Interdum posuere lorem ipsum dolor sit. Praesent semper feugiat nibh sed pulvinar. ' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title='Lead Capture ' heading='Massa ultricies mi quis hendrerit. Sem fringilla ut morbi tincidunt augue interdum velit euismod in. Nunc faucibus a pellentesque sit.' />
+              <FeaturedSingleCard title='Lead Capture ' svgs={<Svgs.Triangle className={''} />} heading='Massa ultricies mi quis hendrerit. Sem fringilla ut morbi tincidunt augue interdum velit euismod in. Nunc faucibus a pellentesque sit.' />
             </SwiperSlide>
           </Swiper>
         </div>

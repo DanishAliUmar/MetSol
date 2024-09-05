@@ -102,7 +102,7 @@ const Portfolio = () => {
 
                 <div className="relative min-h-64">
                   <img src={item.image} alt={item.title} className="w-full h-full absolute object-cover rounded-xl" />
-                  <div className="absolute right-0 bottom-0 z-20 bg-[#F8955B] p-1 border-white border-l-4  rounded-tl-3xl border-t-4 border-solid">
+                  <div className="absolute right-0 bottom-0 z-20 bg-[#F8955B] p-1 border-white border-l-8  rounded-tl-2xl border-t-8 border-solid">
                     <div className="flex items-center justify-center size-8">
                       <Svgs.ArrowUp className={'scale-50'}/>
                     </div>
