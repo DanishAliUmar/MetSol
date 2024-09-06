@@ -152,7 +152,6 @@ console.log('Column 3:', column3);
 
   return (
     <>
-      <HeaderLayout heading={'Portfolio'} page={'Portfolio'} />
       
     </>
   )
