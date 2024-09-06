@@ -154,7 +154,11 @@ console.log('Column 3:', column3);
     <>
       <HeaderLayout heading={'Portfolio'} page={'Portfolio'} />
       <section className="px-5 py-20 space-y-10">
-      
+        <div className="text-center space-y-5">
+          <h2 className="text-4xl font-semibold">Latest Business Development & Promotions</h2>
+          <p className="">Vulputate odio ut enim blandit volutpat. A arcu cursus vitae congue mauris rhoncus aenean. Nisl  <br /> suscipit adipiscing bibendum est ultricies. Nulla malesuada pellentesque elit eget gravida.</p>
+        </div>
+        <hr className="h-[1px] border-b border-solid" />
         <div className="space-y-10">
           <div className="flex md:gap-20 sm:gap-10 flex-wrap gap-4 justify-center">
             {filters.map((filter) => (
