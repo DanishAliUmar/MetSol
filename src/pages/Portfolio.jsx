@@ -160,17 +160,7 @@ console.log('Column 3:', column3);
         </div>
         <hr className="h-[1px] border-b border-solid" />
         <div className="space-y-10">
-          <div className="flex md:gap-20 sm:gap-10 flex-wrap gap-4 justify-center">
-            {filters.map((filter) => (
-              <button
-                key={filter}
-                className={`uppercase font-bold ${activeFilter === filter ? 'text-[#F8955B]' : 'text-black'}`}
-                onClick={() => handleFilterClick(filter)}
-              >
-                {filter}
-              </button>
-            ))}
-          </div>
+          
           <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-3">
             <div className="">
               {column1.map((item) => (
