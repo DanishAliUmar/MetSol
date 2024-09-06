@@ -223,7 +223,7 @@ console.log('Column 3:', column3);
                     </div>
                   </div>
                   <div className="pb-4">
-                    <p className="">{item.category}</p>  
+                    <p className="">{item.category}</p>
                     <h3 className="font-bold text-lg">{item.title}</h3>
                   </div>
                 </div>
