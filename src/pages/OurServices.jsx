@@ -11,10 +11,10 @@ const OurServices = () => {
             <HeaderLayout heading={'Services'} page={'Services'} />
             <section className="flex gap-10">
                 <div className="flex-3">
-                    <img src="" alt="" className="" />
-                    <img src="" alt="" className="" />
-                    <img src="" alt="" className="" />
-                    <img src="" alt="" className="" />
+                    <img src={serviceImages1} alt="" className="" />
+                    <img src={serviceImages2} alt="" className="" />
+                    <img src={serviceImages3} alt="" className="" />
+                    <img src={serviceImages4} alt="" className="" />
                 </div>
                 <div className="flex-2"></div>
             </section>
