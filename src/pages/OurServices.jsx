@@ -4,7 +4,10 @@ import React from 'react'
 const OurServices = () => {
     return (
         <div>
-             <HeaderLayout heading={'Services'} page={'Services'} />
+            <HeaderLayout heading={'Services'} page={'Services'} />
+            <section className="flex items-center">
+
+            </section>
         </div>
     )
 }
