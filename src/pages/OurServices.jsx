@@ -1,7 +1,7 @@
 import HeaderLayout from '@/components/SectionLayout/HeaderLayout'
 import React from 'react'
-import serviceImages1 from '/Images/assets/Service-1.jpg'
-import serviceImages2 from '/Images/assets/Service-2.jpg'
+import serviceImages1 from '/Images/assets/home-1-team-01.jpg'
+import serviceImages2 from '/Images/assets/slider-1-parallax-bg.jpg'
 import serviceImages3 from '/Images/assets/Service-3.jpg'
 import serviceImages4 from '/Images/assets/Service-4.jpg'
 
@@ -9,14 +9,14 @@ const OurServices = () => {
     return (
         <div>
             <HeaderLayout heading={'Services'} page={'Services'} />
-            <section className="grid grid-cols-5 gap-10 px-5 md:py-28 sm:py-16 py-10 items-start">
-                <div className="grid col-span-3 grid-cols-2 gap-5">
-                    <img src={serviceImages1} alt="" className="rounded-lg" />
-                    <img src={serviceImages2} alt="" className="rounded-lg" />
-                    <img src={serviceImages3} alt="" className="rounded-lg" />
-                    <img src={serviceImages4} alt="" className="rounded-lg" />
+            <section className="grid lg:grid-cols-5 gap-10 px-5 md:py-28 sm:py-16 py-10 items-start">
+                <div className="grid lg:col-span-3 grid-cols-2 gap-5">
+                    <img src={serviceImages1} alt="" className="rounded-lg w-full max-h-56 object-cover object-top" />
+                    <img src={serviceImages2} alt="" className="rounded-lg w-full max-h-56 object-cover object-top" />
+                    <img src={serviceImages3} alt="" className="rounded-lg w-full max-h-56 object-cover object-top" />
+                    <img src={serviceImages4} alt="" className="rounded-lg w-full max-h-56 object-cover object-top" />
                 </div>
-                <div className="space-y-12 col-span-2">
+                <div className="space-y-12 lg:col-span-2">
                     <div className="space-y-2">
                         <p className="text-[#ffb600] font-bold uppercase">Amet nulla</p>
                         <h2 className="text-4xl font-semibold">Risus sed vulputate</h2>
