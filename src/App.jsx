@@ -12,6 +12,7 @@ import NotFound from './pages/NotFound'; // 404 Error page
 import Layout from './pages/Layout';
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 import ServicesDetail from './pages/ServicesDetail';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
 
@@ -228,6 +229,7 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<ErrorBoundary>
         <Layout />
+        <ScrollToTop />
       </ErrorBoundary>}>
         <Route index element={<Home />} />
         <Route path="about-us" element={<AboutUs />} />
