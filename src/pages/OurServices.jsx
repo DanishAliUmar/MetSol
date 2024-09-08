@@ -4,8 +4,7 @@ import HeaderLayout from '@/components/SectionLayout/HeaderLayout'
 
 const OurServices = () => {
     const [activeFilter, setActiveFilter] = useState('All');
-
-    const filters = ['All', 'Photography', 'Research', 'Solution'];
+    const filters = ['All', 'Web Development', 'App Development', 'Social Media Marketing'];
 
     const servicesData = [
         {
