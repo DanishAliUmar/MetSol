@@ -24,7 +24,10 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
-const Navbar = () => {
+const Navbar = ({ servicesData }) => {
+  // Filter categories with showInNav set to true
+  const categories = [...new Set(servicesData.filter(service => service.showInNav).map(service => service.category))];
+
   return (
     <>
       <nav className="flex items-center justify-between z-50 px-10 py-5 bg-gradient-to-b absolute top-0 w-full from-[#000] to-[#F2295B00]">
@@ -45,9 +48,14 @@ const Navbar = () => {
                   <DropdownMenuLabel>Our Services</DropdownMenuLabel>
                 </Link>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>Branding</DropdownMenuItem>
-                <DropdownMenuItem>Web Development</DropdownMenuItem>
-                <DropdownMenuItem>Digital Marketing</DropdownMenuItem>
+                {categories.map((category, index) => (
+                  <DropdownMenuItem className="group hover:text-[#ffb600]" key={index}>
+                    <Link to={`/our-services/${category}`}>
+                      {category}
+                      <div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div>
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
               </DropdownMenuContent>
             </DropdownMenu>
           </li>

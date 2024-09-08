@@ -23,7 +23,7 @@ function App() {
       title: 'Web Development Service',
       category: 'Web Development',
       image: '/Images/assets/blog-detail-01.jpg',
-      highted: true,
+      showInNav: true,
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       link: 'https://example.com/service1',
       features: [
@@ -57,7 +57,7 @@ function App() {
       title: 'App Development Service',
       category: 'App Development',
       image: '/Images/assets/blog-detail-02.jpg',
-      highted: true,
+      showInNav: false,
       description: 'Building custom mobile and web applications with smooth user experiences.',
       link: 'https://example.com/service2',
       features: [
@@ -91,7 +91,7 @@ function App() {
       title: 'Social Media Marketing Service',
       category: 'Social Media Marketing',
       image: '/Images/assets/blog-detail-03.jpg',
-      highted: true,
+      showInNav: true,
       description: 'Helping businesses grow their online presence through targeted campaigns.',
       link: 'https://example.com/service3',
       features: [
@@ -125,7 +125,7 @@ function App() {
       title: 'Web Development Consultation',
       category: 'Web Development',
       image: '/Images/assets/blog-detail-04.jpg',
-      highted: false,
+      showInNav: false,
       description: 'Expert consultation to help you make the best decisions for your web development project.',
       link: 'https://example.com/service4',
       features: [
@@ -159,7 +159,7 @@ function App() {
       title: 'App Development Consultation',
       category: 'App Development',
       image: '/Images/assets/blog-detail-05.jpg',
-      highted: true,
+      showInNav: true,
       description: 'Guiding you through the app development process with expert consultation services.',
       link: 'https://example.com/service5',
       features: [
@@ -193,7 +193,7 @@ function App() {
       title: 'Social Media Management',
       category: 'Social Media Marketing',
       image: '/Images/assets/blog-detail-06.jpg',
-      highted: false,
+      showInNav: false,
       description: 'Manage your social media presence and engage with your audience effectively.',
       link: 'https://example.com/service6',
       features: [
@@ -228,7 +228,7 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<ErrorBoundary>
-        <Layout />
+        <Layout servicesData={servicesData}/>
         <ScrollToTop />
       </ErrorBoundary>}>
         <Route index element={<Home />} />
