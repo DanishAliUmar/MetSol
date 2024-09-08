@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import HeaderLayout from '@/components/SectionLayout/HeaderLayout'
 import serviceImages1 from '/Images/assets/home-1-team-01.jpg'
 import serviceImages2 from '/Images/assets/slider-1-parallax-bg.jpg'
@@ -11,11 +11,16 @@ import Svgs from '@/Assets/svgs'
 const ServicesDetail = ({ servicesData }) => {
     const { serviceCategory } = useParams();
 
-    const service = servicesData.find(service => service.category.toLowerCase() === serviceCategory.toLowerCase());
+    const currentIndex = servicesData.findIndex(service => service.category.toLowerCase() === serviceCategory.toLowerCase());
+
+    const service = servicesData[currentIndex];
 
     if (!service) {
         return <p>Service not found</p>;
     }
+
+    const previousService = servicesData[currentIndex - 1];
+    const nextService = servicesData[currentIndex + 1];
 
     const {
         image,
@@ -88,20 +93,24 @@ const ServicesDetail = ({ servicesData }) => {
                 <iframe className='w-full aspect-video rounded-2xl' src={videoUrl} title="YT Vedio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <p className="text-slate-500">{videoDesc3}</p>
                 <div className="flex lg:items-center lg:flex-row flex-col lg:gap-0 gap-10 justify-between sm:p-10 p-5 border border-solid rounded-2xl lg:divide-x divide-y lg:divide-y-0 divide-solid divide-[#ffb600]">
-                    <div className="flex items-center gap-10 flex-1">
-                        <img src={serviceImages1} className='size-28 cursor-pointer rounded-md object-cover' alt="" />
-                        <div className="space-y-3 cursor-pointer">
-                            <p className="text-sm text-[#ffb600]">Previous</p>
-                            <h3 className="text-2xl font-medium">Business Strategy</h3>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-10 text-right flex-1 justify-end cursor-pointer lg:pt-0 pt-10">
-                        <div className="space-y-3 cursor-pointer">
-                            <p className="text-sm text-[#ffb600]">Next</p>
-                            <h3 className="text-2xl font-medium">Business Strategy</h3>
-                        </div>
-                        <img src={serviceImages3} className='size-28 cursor-pointer rounded-md object-cover' alt="" />
-                    </div>
+                    {previousService && (
+                        <Link to={`/our-services/${previousService.category.toLowerCase()}`} className="flex items-center gap-10 flex-1">
+                            <img src={previousService.image} className='size-28 cursor-pointer rounded-md object-cover' alt={previousService.title} />
+                            <div className="space-y-3 cursor-pointer">
+                                <p className="text-sm text-[#ffb600]">Previous</p>
+                                <h3 className="text-2xl font-medium">{previousService.title}</h3>
+                            </div>
+                        </Link>
+                    )}
+                    {nextService && (
+                        <Link to={`/our-services/${nextService.category.toLowerCase()}`} className="flex items-center gap-10 text-right flex-1 justify-end cursor-pointer lg:pt-0 pt-10">
+                            <div className="space-y-3 cursor-pointer">
+                                <p className="text-sm text-[#ffb600]">Next</p>
+                                <h3 className="text-2xl font-medium">{nextService.title}</h3>
+                            </div>
+                            <img src={nextService.image} className='size-28 cursor-pointer rounded-md object-cover' alt={nextService.title} />
+                        </Link>
+                    )}
                 </div>
             </section>
         </div>
