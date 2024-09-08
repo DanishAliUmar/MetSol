@@ -41,17 +41,13 @@ const Navbar = () => {
               <DropdownMenuTrigger className='focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none'>
                 <div className="group hover:text-[#ffb600] text-white">Services<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></div></DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuLabel>Our Services</DropdownMenuLabel>
+                <Link to={'/our-services'}>
+                  <DropdownMenuLabel>Our Services</DropdownMenuLabel>
+                </Link>
                 <DropdownMenuSeparator />
-                <Link to={'/our-services'}>
-                  <DropdownMenuItem>Branding</DropdownMenuItem>
-                </Link>
-                <Link to={'/our-services'}>
-                  <DropdownMenuItem>Web Development</DropdownMenuItem>
-                </Link>
-                <Link to={'/our-services'}>
-                  <DropdownMenuItem>Digital Marketing</DropdownMenuItem>
-                </Link>
+                <DropdownMenuItem>Branding</DropdownMenuItem>
+                <DropdownMenuItem>Web Development</DropdownMenuItem>
+                <DropdownMenuItem>Digital Marketing</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </li>
