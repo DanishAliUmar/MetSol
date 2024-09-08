@@ -146,9 +146,6 @@ const OurServices = () => {
         }
     });
 
-    console.log('Column 1:', column1);
-    console.log('Column 2:', column2);
-    console.log('Column 3:', column3);
     return (
         <>
             <HeaderLayout heading={'Services'} page={'Services'} />
