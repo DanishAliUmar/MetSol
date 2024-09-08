@@ -94,7 +94,7 @@ const Minus = ({ className }) => {
 const BigPlus = ({ className }) => {
     return (
         <svg
-        className={`h-28 w-28 group-hover:fill-[#004a86] fill-[black] custom_transition ${className ? className : ''}`}
+        className={`${className ? className : ''} h-28 w-28 group-hover:fill-[#004a86] fill-[black] custom_transition`}
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 200 200"
