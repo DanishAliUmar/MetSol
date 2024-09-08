@@ -4,6 +4,7 @@ import serviceImages1 from '/Images/assets/home-1-team-01.jpg'
 import serviceImages2 from '/Images/assets/slider-1-parallax-bg.jpg'
 import serviceImages3 from '/Images/assets/Service-3.jpg'
 import serviceImages4 from '/Images/assets/Service-4.jpg'
+import { CheckCircle, CircleCheck, CircleCheckIcon, CircleChevronUpIcon, LucideCircleCheck } from 'lucide-react'
 
 const OurServices = () => {
     return (
@@ -39,6 +40,37 @@ const OurServices = () => {
             <section className='space-y-2 px-5 md:py-28 sm:py-16 py-10 sm:!pt-20 !pt-10 '>
                 <h2 className="sm:text-4xl text-3xl font-semibold">Bibendum enim facilisis gravida.</h2>
                 <p className="text-slate-500">Lacus vestibulum sed arcu non odio euismod lacinia at. Nunc congue nisi vitae suscipit tellus mauris a diam.malesuada quis, sagittis ut dui. Maecenas et interdum ex. Nullam non magna eu nisi congue maximus ac vel justo. Nulla viverra sapien eros, ac convallis urna semper quis. Donec convallis turpis justo, a viverra nisi cursus sit amet. Proin aliquet erat dolor, non tempus tellus euismod pellentesque. Nam iaculis diam tellus. Donec tristique, erat sit amet finibus semper, risus ipsum volutpat lacus, sit amet ultrices augue elit sit amet velit. In facilisis vulputate vestibulum. Suspendisse potenti. Curabitur a sem purus. Ut ut elit sed leo euismod laoreet sit amet feugiat ex. Nulla et enim velit. Maecenas posuere sem quis nunc faucibus, quis rutrum nunc commodo.</p>
+            </section>
+            <section className='flex'>
+                <div className="flex-1 bg-slate-100 p-7 rounded">
+                    <h3 className="text-3xl font-semibold">Morbi tristique senectus</h3>
+                    <p className="text-slate-500">Amet consectetur adipiscing elit duis. Nunc id cursus metus aliquam eleifend. Enim sed faucibus turpis in eu mi bibendum neque egestas.Id consectetur purus ut faucibus pulvinar venenatis lectus magna fringilla.</p>
+                    <div className="flex items-center gap-10 gap-y-5 flex-wrap">
+                        <div className="flex items-center gap-2">
+                            <CircleCheckIcon  className='fill-[#ffb600] stroke-slate-100'/>
+                            <p className="text-black">Sit amet tellus cras adipiscing.</p>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <CircleCheckIcon  className='fill-[#ffb600] stroke-slate-100'/>
+                            <p className="text-black">Ut consequat semper viverra nam.</p>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <CircleCheckIcon  className='fill-[#ffb600] stroke-slate-100'/>
+                            <p className="text-black">Vulputate mi sit amet mauris commodo.</p>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <CircleCheckIcon  className='fill-[#ffb600] stroke-slate-100'/>
+                            <p className="text-black">Leo a diam sollicitudin tempor.</p>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <CircleCheckIcon  className='fill-[#ffb600] stroke-slate-100'/>
+                            <p className="text-black">Rutrum quisque non tellus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-7">
+                    <img src="" alt="" className="" />
+                </div>
             </section>
         </div>
     )
