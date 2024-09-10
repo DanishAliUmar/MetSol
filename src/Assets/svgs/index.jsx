@@ -82,7 +82,7 @@ const ArrowUpLong = ({ className }) => {
 }
 const Plus = ({ className }) => {
     return (
-        <svg className='size-20 m-2 hover:fill-[#004b86]'
+        <svg className='size-24 m-2 hover:fill-[#004b86]'
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             x="0px"
@@ -104,7 +104,7 @@ const Plus = ({ className }) => {
 }
 
 const Circle = ({ className }) => {
-    return (<svg className='size-20 m-2 hover:fill-[#004b86]'
+    return (<svg className='size-24 m-2 hover:fill-[#004b86]'
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         x="0px"
@@ -134,7 +134,7 @@ const Circle = ({ className }) => {
 
 const Triangle = ({ className }) => {
     return (
-        <svg className='size-20 m-2 hover:fill-[#ffb200]'
+        <svg className='size-24 m-2 hover:fill-[#004b86]'
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             x="0px"
@@ -148,7 +148,7 @@ const Triangle = ({ className }) => {
 }
 const Square = ({ className }) => {
     return (
-        <svg className='size-20 m-2 hover:fill-[#ffb200]'
+        <svg className='size-24 m-2 hover:fill-[#004b86]'
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             x="0px"

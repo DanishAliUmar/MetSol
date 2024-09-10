@@ -188,22 +188,22 @@ const Home = () => {
             }}
           >
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-01.jpg' title='Market Research' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-01.jpg' title='Market Research' heading='Paid search advertising is a powerful way. Our paid search services include: Google Ads management, Keyword research, and Campaign tracking and analysis.' />
             </SwiperSlide>
             <SwiperSlide>
               <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-02.jpg' title='Business Strategy' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-03.jpg' title='Digital Security' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-03.jpg' title='Digital Security' heading='Digital Security is the process of attracting and capturing potential customers for your business. Our services help you identify and target your ideal audience.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-04.jpg' title='Market Research' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-04.jpg' title='Lead Generation' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
             </SwiperSlide>
             <SwiperSlide>
               <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-05.jpg' title='Digital Marketing' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-06.jpg' title='Market Research' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-06.jpg' title='Web Services' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
             </SwiperSlide>
           </Swiper>
         </div>
@@ -243,22 +243,22 @@ const Home = () => {
             onSlideChange={() => console.log('slide change')}
           >
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title='Paid Search' svgs={<Svgs.Plus className={''} />} heading='Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.' />
+              <FeaturedSingleCard title='Email Marketing' svgs={<Svgs.Plus className={''} />} heading='Our email marketing services help you build and nurture relationships with your customers. We offer a comprehensive range of services, including: Email list building, Email template design, Email content creation, Email automation, and Email analytics' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title='Lead Generation' svgs={<Svgs.Circle className={''} />} heading='Ullamcorper sit amet risus nullam eget felis eget nunc. Nunc non blandit massa enim nec dui. Lacus vel facilisis volutpat est velit. ' />
+              <FeaturedSingleCard title='Video Marketing' svgs={<Svgs.Circle className={''} />} heading='Video marketing is a powerful tool for engaging your audience and driving conversions. Our video marketing services include: Video editing, Video marketing strategy, Video distribution, and Video analytics.' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title='Email Marketing' svgs={<Svgs.Triangle className={''} />} heading='Feugiat nisl pretium fusce id velit ut tortor pretium viverra. Magna fermentum iaculis eu non diam phasellus vestibulum lorem sed. ' />
+              <FeaturedSingleCard title='Graphic Design' svgs={<Svgs.Triangle className={''} />} heading='Our graphic design services help you create visually compelling materials that capture attention and communicate your message effectively. We offer a wide range of services, including: Logo design, Branding, Print design, Digital design, Illustration, and infographics.' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title='Video Marketing' svgs={<Svgs.Square className={''} />}  heading='Est pellentesque elit ullamcorper dignissim cras. Nunc vel risus commodo viverra maecenas. Neque viverra justo nec ultrices dui.' />
+              <FeaturedSingleCard title='Lead Capture' svgs={<Svgs.Square className={''} />}  heading='Lead capture is a critical step in the sales process. Our lead capture services help you attract and capture qualified leads for your business. We offer a range of strategies, including: Landing pages, Lead magnets, Pop-ups and forms, social media lead generation, and Content marketing.' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title='Graphic Design' svgs={<Svgs.Plus className={''} />} heading='Montes nascetur ridiculus mus mauris vitae. Interdum posuere lorem ipsum dolor sit. Praesent semper feugiat nibh sed pulvinar. ' />
+              <FeaturedSingleCard title='Graphic Design' svgs={<Svgs.Plus className={''} />} heading='Montes nascetur ridiculus mus mauris vitae. Interdum posuere lorem ipsum dolor sit. Praesent semper feugiat nibh sed pulvinar.' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title='Lead Capture ' svgs={<Svgs.Triangle className={''} />} heading='Massa ultricies mi quis hendrerit. Sem fringilla ut morbi tincidunt augue interdum velit euismod in. Nunc faucibus a pellentesque sit.' />
+              <FeaturedSingleCard title='E-mail Automation' svgs={<Svgs.Triangle className={''} />} heading='Email automation is a powerful tool for saving time and increasing your marketing efficiency. Our email automation services help you set up automated email workflows to nurture leads, drive sales, and provide exceptional customer service.' />
             </SwiperSlide>
           </Swiper>
         </div>
