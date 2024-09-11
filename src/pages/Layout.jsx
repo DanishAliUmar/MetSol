@@ -6,7 +6,6 @@ import Footer from '../components/Footer';
 const Layout = ({servicesData}) => {
   return (
     <div className="flex flex-col min-h-screen bg-[#F8955B] !bg-center !bg-auto" style={{background: 'url(/Images/assets/bg-path.png)', backgroundAttachment:'scroll'}}>
-      <Navbar servicesData={servicesData}/>
       <div className="flex-grow">
         <Outlet />
       </div>
