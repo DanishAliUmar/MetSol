@@ -236,7 +236,7 @@ function App() {
         <Route path="our-services" element={<OurServices servicesData={servicesData} />} />
         <Route path="our-services/:serviceCategory" element={<ServicesDetail servicesData={servicesData} />} />
         <Route path="faq" element={<Faq />} />
-        <Route path="portfolio" element={<Portfolio />} />
+        {/* <Route path="portfolio" element={<Portfolio />} /> */}
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="*" element={<NotFound />} /> {/* 404 Error page */}
       </Route>
