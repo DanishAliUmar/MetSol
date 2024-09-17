@@ -6,10 +6,7 @@ const charVariants = {
     reveal: { opacity: 1 },
 }
 
-const SectionReveal = {
-    hidden: { opacity: 0 },
-    reveal: { opacity: 1 },
-}
+
 const SectionLayout = ({ className, title, mainHeading, circle, triangle, subHeading, children }) => {
     const splitTitle = splitStringUsingRegex(title)
     const splitHeading = splitStringUsingRegex(mainHeading)
