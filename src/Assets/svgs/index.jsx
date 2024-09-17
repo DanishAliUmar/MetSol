@@ -223,5 +223,4 @@ export default {
     Circle,
     Triangle,
     Square,
-
 }

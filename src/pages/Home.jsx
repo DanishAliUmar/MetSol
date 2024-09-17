@@ -22,8 +22,12 @@ import AgencyServicesSingleCard from '@/components/AgencyServicesSingleCard';
 import PortfolioSingleCard from '@/components/PortfolioSingleCard';
 import FeaturedSingleCard from '@/components/FeaturedSingleCard';
 import { Button } from "@/components/ui/button"
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 
+=======
+import splitStringUsingRegex from '../utils/splitingUsingRegex'
+>>>>>>> 33a39bc6a16325e941b45dcba74859f571deeee0
 import {
   Accordion,
   AccordionContent,
@@ -369,10 +373,7 @@ const Home = () => {
         </div>
       </SectionLayout>
 
-      <div className="marque__slider bg-[#F8955B] flex items-center w-full h-24" style={{
-        // '--width': "800px",
-        // '--quantity': 8
-      }}>
+      <div className="marque__slider bg-[#F8955B] flex items-center w-full h-24">
         <div className="list flex text-center font-bold uppercase md:text-5xl sm:text-3xl text-xl w-full h-full relative max-w-[calc(--width*--quantity]">
           <div className="item h-full flex items-center" style={{ '--position': 1 }}>
             <p className="">
@@ -420,4 +421,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home 
