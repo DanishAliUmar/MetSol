@@ -22,7 +22,7 @@ import AgencyServicesSingleCard from '@/components/AgencyServicesSingleCard';
 import PortfolioSingleCard from '@/components/PortfolioSingleCard';
 import FeaturedSingleCard from '@/components/FeaturedSingleCard';
 import { Button } from "@/components/ui/button"
-
+import splitStringUsingRegex from '../utils/splitingUsingRegex'
 import {
   Accordion,
   AccordionContent,
