@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Svgs from '../Assets/svgs';
+import Svgs from '@/Assets/svgs';
 import {
   DropdownMenu,
   DropdownMenuContent,
