@@ -49,12 +49,14 @@ const Navbar = ({ servicesData }) => {
                 </Link>
                 <DropdownMenuSeparator />
                 {categories.map((category, index) => (
-                  <DropdownMenuItem className="group hover:text-[#ffb600]" key={index}>
-                    <Link to={`/our-services/${category}`}>
-                      {category}
-                      <div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div>
-                    </Link>
-                  </DropdownMenuItem>
+                  <Link to={`/our-services/${category}`} key={index}>
+                    <DropdownMenuItem className="group hover:text-[#ffb600]">
+                      <div className="">
+                        {category}
+                        <div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div>
+                      </div>
+                    </DropdownMenuItem>
+                  </Link>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
