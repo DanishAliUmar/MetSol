@@ -51,7 +51,7 @@ const Navbar = ({ servicesData }) => {
                 {categories.map((category, index) => (
                   <Link to={`/our-services/${category}`} key={index}>
                     <DropdownMenuItem className="group hover:text-[#ffb600]">
-                      <div className="">
+                      <div className="cursor-pointer">
                         {category}
                         <div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div>
                       </div>
