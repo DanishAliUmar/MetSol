@@ -1,7 +1,7 @@
 import * as React from "react"
 import { EyeIcon, EyeOffIcon } from 'lucide-react'
 import { cn } from "@/lib/utils"
-import Svgs from "@/Assets/Svgs";
+import Svgs from "@/Assets/svgs";
 
 const Input = React.forwardRef(({
   label,
