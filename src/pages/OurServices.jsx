@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Svgs from '@/Assets/svgs';
 import HeaderLayout from '@/components/SectionLayout/HeaderLayout'
 import { Link } from 'react-router-dom';
@@ -29,7 +29,7 @@ const OurServices = ({servicesData}) => {
 
 
     // Distribute data across columns
-    filteredPortfolio.forEach((item, index) => {
+    filteredPortfolio?.forEach((item, index) => {
         if (index % 3 === 0) {
             column1.push(item); // Indexes 0, 3, 6, 9
         } else if (index % 3 === 1) {
