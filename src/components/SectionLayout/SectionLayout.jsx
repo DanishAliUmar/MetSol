@@ -10,7 +10,7 @@ const charVariants = {
     scale: 1,
     rotate: 0,
     x: 0,
-    transition: { duration: 0.5, ease: "easeInOut" },
+    transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] },
   },
 };
 
@@ -19,7 +19,6 @@ const SectionLayout = ({
   title,
   mainHeading,
   circle,
-  triangle,
   subHeading,
   children,
 }) => {
@@ -27,13 +26,11 @@ const SectionLayout = ({
   const splitHeading = splitStringUsingRegex(mainHeading);
   const splitSubHeading = splitStringUsingRegex(subHeading);
 
-  // Intersection Observer to trigger animation once
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.2, // Trigger when 20% of the section is visible
+    threshold: 0.2,
   });
 
-  // Animation variants for the section
   const revealVariants = {
     hidden: { opacity: 0, y: 50, clipPath: "inset(50% 50% 50% 50%)" },
     visible: {
@@ -50,8 +47,7 @@ const SectionLayout = ({
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={revealVariants}
-      className={`px-5 md:py-28 sm:py-16 py-10 md:space-y-20 sm:space-y-16 space-y-10 ${className ? className : ""
-        }`}
+      className={`px-5 md:py-28 sm:py-16 py-10 md:space-y-20 sm:space-y-16 space-y-10 ${className || ""}`}
     >
       <div className="flex items-center md:gap-14 gap-5 lg:flex-row flex-col">
         <div className="flex-1">
@@ -96,10 +92,7 @@ const SectionLayout = ({
             </motion.div>
           )}
           {subHeading && (
-            <div
-              className="flex !items-start flex-1 gap-3"
-              style={{ alignItems: "flex-start" }}
-            >
+            <div className="flex !items-start flex-1 gap-3">
               <Svgs.Play className={"fill-[#fae951] size-28 h-[2rem] -rotate-[30deg]"} />
               <motion.p
                 initial="hidden"
