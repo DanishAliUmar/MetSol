@@ -8,11 +8,50 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 import { Link } from 'react-router-dom'
+import splitStringUsingRegex from '../../utils/splitingUsingRegex';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
+const charVariants = {
+    hidden: { opacity: 0 },
+    reveal: { opacity: 1, transition: { duration: 0.5 } },
+};
 
 const HeaderLayout = ({ heading, page, bgImage }) => {
+    const splitHeading = splitStringUsingRegex(heading);
+
+
+    // Intersection Observer to trigger animation once
+    const [ref, inView] = useInView({
+        triggerOnce: true, // Ensures the animation only happens once
+        threshold: 0.2,    // Trigger when 20% of the section is visible
+    });
+
+    const revealVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } },
+    };
+
     return (
-        <div className='flex items-center justify-center flex-col gap-5 h-96 !bg-cover !bg-center !bg-no-repeat !text-white' style={{ background: 'url(/Images/assets/breadcrumb-common.jpg)' }}>
-            <h1 className="text-5xl font-semibold">{heading}</h1>
+        <motion.section ref={ref}
+            initial="hidden"
+            animate={inView ? 'visible' : 'hidden'}
+            variants={revealVariants} className='flex items-center justify-center flex-col gap-5 h-96 !bg-cover !bg-center !bg-no-repeat !text-white' style={{ background: 'url(/Images/assets/breadcrumb-common.jpg)' }}>
+            {/* <h1 className="text-5xl font-semibold">{heading}</h1> */}
+            {heading &&
+                <motion.h1
+                    initial="hidden"
+                    animate={inView ? 'reveal' : 'hidden'}
+                    transition={{ staggerChildren: 0.02 }}
+                    className='text-[#004a86] font-semibold md:text-[40px] sm:text-3xl text-2xl mt-3 md:leading-[54px]'
+                >
+                    {splitHeading.map((char, index) => (
+                        <motion.span key={index} variants={charVariants}>
+                            {char}
+                        </motion.span>
+                    ))}
+                </motion.h1>
+            }
             <Breadcrumb className={'!text-white'}>
                 <BreadcrumbList>
                     <BreadcrumbItem>
@@ -27,7 +66,7 @@ const HeaderLayout = ({ heading, page, bgImage }) => {
                 </BreadcrumbList>
             </Breadcrumb>
 
-        </div>
+        </motion.section>
     )
 }
 
