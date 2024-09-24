@@ -75,7 +75,7 @@ const Navbar = ({ servicesData }) => {
           <div className="whatsapp"><Svgs.Phone className={'w-10 h-10 p-2 fill-white rounded-full border-white border'} /></div>
           <div className="text-white">
             <p className="">Support Center</p>
-            <h4 className="hover:text-[#ffb600] font-medium">+00-123-456-789</h4>
+           <a href="tel:+1 (754) 305-0779"><h4 className="hover:text-[#ffb600] font-medium cursor-pointer">+1 (754) 305-0779</h4></a> 
           </div>
 
         </div>
@@ -104,10 +104,13 @@ const Navbar = ({ servicesData }) => {
                   </DropdownMenu>
                 </li>
                 <li className="mx-4">
-                  <Link to="/pricing-plan" className="group hover:text-[#ffb600]">Pricing<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+                  <Link to="/Portfolio" className="group hover:text-[#ffb600]">Portfolio<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
                 </li>
                 <li className="mx-4">
-                  <Link to="/team-member" className="group hover:text-[#ffb600]">Team<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+                  <Link to="/Faq" className="group hover:text-[#ffb600]">Faqs<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+                </li>
+                <li className="mx-4">
+                  <Link to="/contact-us" className="group hover:text-[#ffb600]">Contact Us<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
                 </li>
               </ul>
               <SheetFooter>
@@ -116,7 +119,7 @@ const Navbar = ({ servicesData }) => {
                     <div className="whatsapp"><Svgs.Phone className={'w-10 h-10 p-2 fill-black rounded-full border-black border'} /></div>
                     <div className="text-black">
                       <p className="">Support Center</p>
-                      <h4 className="hover:text-[#ffb600] font-medium">+00-123-456-789</h4>
+                      <a href="tel:+1 (754) 305-0779"></a><h4 className="hover:text-[#ffb600] font-medium">+1 (754) 305-0779</h4>
                     </div>
                   </div>
                 </SheetClose>
