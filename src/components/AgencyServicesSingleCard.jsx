@@ -7,7 +7,7 @@ const AgencyServicesSingleCard = (props) => {
         <div className='h-full w-full bg-black/40 custom_transition p-7 group custom_transition6s flex flex-col justify-end'>
             <div className=' overflow-hidden h-0 group-hover:h-full flex flex-col justify-end custom_transition6s gap-3'>
                 <p className='text-white max-w-[320px] w-full '>{props.text}</p>
-                <Button className=''>{props.button}</Button>
+                <Button className='hover:!bg-[#ffb200] !bg-[#004b86]'>{props.button}</Button>
             </div>
         </div>
     </div>
