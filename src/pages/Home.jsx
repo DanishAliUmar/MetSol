@@ -369,11 +369,11 @@ const Home = () => {
         </div>
       </SectionLayout>
 
-      <div className="marque__slider bg-[#F8955B] flex items-center w-full h-24">
+      <div className="marque__slider bg-[#ffb600] flex items-center w-full h-24">
         <div className="list flex text-center font-bold uppercase md:text-5xl sm:text-3xl text-xl w-full h-full relative max-w-[calc(--width*--quantity] ease-in-out">
           <div className="item h-full flex items-center " style={{ '--position': 1 }}>
             <p className="">
-              fresh ideas
+              Fresh Ideas
             </p>
           </div>
           <div className="item h-full flex items-center" style={{ '--position': 2 }}>
@@ -383,7 +383,7 @@ const Home = () => {
           </div>
           <div className="item h-full flex items-center" style={{ '--position': 3 }}>
             <p className="">
-              Full-service
+              Full-Service
             </p>
           </div>
           <div className="item h-full flex items-center" style={{ '--position': 4 }}>
@@ -393,7 +393,7 @@ const Home = () => {
           </div>
           <div className="item h-full flex items-center" style={{ '--position': 5 }}>
             <p className="">
-              technology
+              Technology
             </p>
           </div>
           <div className="item h-full flex items-center" style={{ '--position': 6 }}>
@@ -403,7 +403,7 @@ const Home = () => {
           </div>
           <div className="item h-full flex items-center" style={{ '--position': 7 }}>
             <p className="">
-              cost-effective
+              Cost-Effective
             </p>
           </div>
           <div className="item h-full flex items-center" style={{ '--position': 8 }}>
