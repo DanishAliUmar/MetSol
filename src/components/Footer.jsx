@@ -57,10 +57,9 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-
           </div>
           <hr className="border-b border-solid border-white/40 my-5" />
-          <div className="flex items-center justify-center md:flex-row flex-col  text-white">
+          <div className="flex items-center justify-center md:flex-row flex-col  text-white pt-20">
             <p className="">All Right Reserved © 2024 <span className="cursor-pointer border-b w-fit hover:text-[#ffb600] transition-all hover:border-b-[#ffb600]"> <Link to='/'>MetsoleTech </Link></span></p>
             
           </div>
