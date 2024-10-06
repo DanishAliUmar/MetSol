@@ -76,7 +76,7 @@ const ContactUs = () => {
                 </div>
             </SectionLayout>
             <SectionLayout title={'Address'} className={'bg-white'} mainHeading={'MetSole Agency Office Locations'} >
-                <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
+                <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 container ">
                     <div className="flex gap-4">
                         <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#ffb600] group rounded-full drop-shadow-lg transition-all duration-500">{<LocateFixedIcon className='w-7 h-7 drop-shadow-lg  group-hover:fill-[] group-hover:stroke-[#004b86] stroke-[#ffb600]' />}</div>
                         <div className="space-y-4">

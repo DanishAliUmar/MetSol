@@ -53,7 +53,7 @@ const SectionLayout = ({ className, title, mainHeading, circle, triangle, subHea
                             initial="hidden"
                             animate={inView ? 'reveal' : 'hidden'}
                             transition={{ staggerChildren: 0.02 }}
-                            className='text-[#004a86] font-semibold md:text-[40px] sm:text-3xl text-2xl mt-3 md:leading-[54px]'
+                            className='text-[#004a86] font-semibold md:text-[40px] sm:text-3xl text-2xl mt-3 w-full md:leading-[54px]'
                         >
                             {splitHeading.map((char, index) => (
                                 <motion.span key={index} variants={charVariants}>
