@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Svgs from "@/Assets/svgs";
 import Contact from '/Images/Contact/Contact.jpg';
 import Slide__Image__1 from '/Images/assets/home-1-team-03.jpg';
@@ -16,6 +16,35 @@ import 'swiper/css/pagination';
 import FeaturedSingleCard from '@/components/FeaturedSingleCard';
 
 const ContactUs = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+      });
+
+       // Handle change in form inputs
+    const handleChange = (e) => {
+        setFormData({
+        ...formData,
+        [e.target.name]: e.target.value // Dynamically updating form fields
+        });
+    };
+
+     // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add form validation logic here if needed
+    if (!formData.name || !formData.email) {
+      alert("Please fill all the fields.");
+      return;
+    }
+    // Submit form (you can send data to backend, etc.)
+    console.log('Form Submitted: ', formData);
+    alert('Form Submitted Successfully!');
+    
+    // Optionally, reset form
+    setFormData({ name: '', email: '', message: '' });
+  };
 
 
     return (
