@@ -51,22 +51,22 @@ const Home = () => {
   return (
     <>
       <header className='min-h-[120vh] flex items-center relative lg:justify-between justify-center lg:flex-row flex-col overflow-hidden xl:gap-10 lg:gap-2 gap-10 !bg-cover !bg-center !bg-no-repeat p-10' >
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover md:object-fit center"
-      >
-        <source src={'Video/Background .mp4'} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-        
-      <div className=" space-y-6 absolute left-0 top-[40%] px-5 hidden md:block">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover md:object-fit center"
+        >
+          <source src={'Video/Background .mp4'} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className=" space-y-6 absolute left-0 top-[40%] px-5 hidden md:block">
           <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#ffb600] transition-all group">
             <a href='https://www.linkedin.com/company/metsole/' target='_blank'><Svgs.Linkedin className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /></a>
           </div>
-          
+
           <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#ffb600] transition-all group">
             <a href="https://www.facebook.com/profile.php?id=61560851851780" target='_blank'><Svgs.FaceBook className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /></a>
           </div>
@@ -74,7 +74,7 @@ const Home = () => {
             <a href="http://www.instagram.com/met_sole" target='_blank'><Svgs.Instagram className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /> </a>
           </div>
         </div>
-        
+
         <Link to='/contact-us' className="hidden md:flex items-center absolute right-0 top-[40%] justify-center flex-col gap-10 cursor-pointer "><p className="rotate-90 text-white w-full p-1">Get In Touch</p><Svgs.EllipsisVertical className={'size-7 fill-[#ffb600]'} /></Link>
       </header>
       <SectionLayout mainHeading={"Your One-Stop Digital Agency for Unstoppable Business Growth."} subHeading={'Boost your brand with MetSole`s innovative digital marketing solutions. We don"t just create digital experiences; we transform businesses by putting people at the core.Our approach is all about understanding your unique needs. This involves in-depth research, brand strategy and positioning, audience identification, and objective setting.Trust MetSole to turn your marketing vision into an impactful reality.'}>
@@ -118,7 +118,7 @@ const Home = () => {
                   </div>
                 </div>
                 <hr className='border-b border-solid  border-black' />
-                <Button>About Us</Button>
+                <Button className='hover:!bg-[#ffb200] !bg-[#004b86]'>About Us</Button>
               </div>
               <div className="size-36 relative sm:flex items-center justify-center hidden">
                 <img src={CirclerText} className='w-full h-full absolute left-0 top-0' alt="" />
@@ -132,8 +132,8 @@ const Home = () => {
         <div className='lg:flex grid sm:grid-cols-2 grid-cols-1 gap-7 flex-wrap custom_transition'>
           <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-1.jpg' text='we bring your brand’s vision to life through captivating Graphics & Illustration. Our talented designers craft visually stunning graphics that not only catch the eye but also communicate your brand`s message effectively.' button='Graphics & Illustration' />
           <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-2.jpg' text='Our web development services help you build a professional and engaging online presence. We offer a wide range of services, including: Custom website development, E-commerce development, WordPress development, Shopify development, Responsive web design, and Web application development' button='Web Development' />
-          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-3.jpg' text='Branding is at the heart of what we do. We believe that a strong brand identity is essential for standing out in today`s competitive market. From logo design and color schemes to messaging and brand voice, we ensure every element is cohesive and impactful. With MetSole, your brand doesn’t just get noticed—it becomes memorable, building trust and loyalty with every interaction.' button='Branding'/>
-          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-4.jpg' text='At MetSole, digital marketing is our specialty, and we`re dedicated to helping your business thrive online. We use data-driven strategies to enhance your online visibility, attract more traffic, and convert leads into loyal customers. Our approach is tailored to your specific goals, ensuring that every campaign is optimized for maximum impact and ROI. With MetSole, your digital presence becomes a powerful tool for growth and success.' button='Digital Marketing'/>
+          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-3.jpg' text='Branding is at the heart of what we do. We believe that a strong brand identity is essential for standing out in today`s competitive market. From logo design and color schemes to messaging and brand voice, we ensure every element is cohesive and impactful. With MetSole, your brand doesn’t just get noticed—it becomes memorable, building trust and loyalty with every interaction.' button='Branding' />
+          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-4.jpg' text='At MetSole, digital marketing is our specialty, and we`re dedicated to helping your business thrive online. We use data-driven strategies to enhance your online visibility, attract more traffic, and convert leads into loyal customers. Our approach is tailored to your specific goals, ensuring that every campaign is optimized for maximum impact and ROI. With MetSole, your digital presence becomes a powerful tool for growth and success.' button='Digital Marketing' />
         </div>
 
       </SectionLayout>
@@ -148,7 +148,7 @@ const Home = () => {
             centeredSlides={true}
             loop={true}
             autoplay={{
-              delay: 1800,
+              delay: 1900,
               disableOnInteraction: false,
             }}
             breakpoints={{
@@ -166,19 +166,19 @@ const Home = () => {
             }}
           >
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-01.jpg' title='Market Research' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-01.jpg' title='Digital Marketing' heading='As a results-driven digital marketing agency, we`ve helped clients across various industries achieve their online goals. Explore our portfolio to see how we`ve transformed businesses through innovative digital strategies' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-02.jpg' title='Business Strategy' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-02.jpg' title='Branding' heading='Explore our branding portfolio to see how we`ve helped clients build powerful and authentic brands. Our approach combines creativity, strategy, and market insights to create lasting impressions.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-03.jpg' title='Digital Security' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-03.jpg' title='Web Development' heading='Our team of skilled web developers specializes in creating custom, responsive websites that are both visually stunning and user-friendly. Explore our portfolio to see examples of our web development projects, from simple landing pages to complex e-commerce platforms.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-04.jpg' title='Market Research' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-04.jpg' title='Graphics Illustration' heading='we bring your brand’s vision to life through captivating Graphics & Illustration. Our talented designers craft visually stunning graphics that not only catch the eye but also communicate your brand`s message effectively.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-05.jpg' title='Digital Marketing' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-05.jpg' title='Video Marketing' heading='Video marketing is a powerful tool for engaging your audience and driving conversions. Our video marketing services include: Video editing, Video marketing strategy, Video distribution, and Video analytics.' />
             </SwiperSlide>
             <SwiperSlide>
               <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-06.jpg' title='Market Research' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
@@ -221,7 +221,7 @@ const Home = () => {
             onSlideChange={() => console.log('slide change')}
           >
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard  title='Email Marketing' heading='Our email marketing services help you build and nurture relationships with your customers. We offer a comprehensive range of services, including: Email list building, Email template design, Email content creation, Email automation, and Email analytics' />
+              <FeaturedSingleCard title='Email Marketing' heading='Our email marketing services help you build and nurture relationships with your customers. We offer a comprehensive range of services, including: Email list building, Email template design, Email content creation, Email automation, and Email analytics' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
               <FeaturedSingleCard title='Video Marketing' heading='Video marketing is a powerful tool for engaging your audience and driving conversions. Our video marketing services include: Video editing, Video marketing strategy, Video distribution, and Video analytics.' />
@@ -248,42 +248,61 @@ const Home = () => {
       <SectionLayout title={'COMMON QUESTIONS'} className={'bg-[#f6f6f6]'} mainHeading={'About Our Projects & Services'}>
         <Accordion type="single" collapsible className={'space-y-5 bg-[#f6f6f6'}>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-1">
-            <AccordionTrigger className={'font-bold text-xl text-left'}>What Is Your Service Pricing Structure?</AccordionTrigger>
-            <AccordionContent>
-              Condimentum id venenatis a condimentum. Nunc congue nisi vitae suscipit tellus mauris a diam maecenas. Adipiscing bibendum est ultricies integer quis auctor elit.Commodo ullamcorper a lacus vestibulum sed. Mauris sit amet massa vitae.Egestas fringilla phasellus faucibus scelerisque eleifend. Egestas dui id ornare arcu odio.
+            <AccordionTrigger className={'font-bold text-xl text-left'}>What types of projects do you specialize in? </AccordionTrigger>
+            <AccordionContent>We specialize in a wide range of projects, including Digital Marketing Strategies: SEO, Google Ads, Meta Ads, Social Media Marketing, Email Marketing, and Content Marketing. Brand Development: Graphic Design and Packaging Design. Web Development Solutions: Custom websites and platforms such as WordPress, Shopify, Wix, and Magento.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-2">
-            <AccordionTrigger className={'font-bold text-xl text-left'}>What Are The Payment Options Do You Have?
+            <AccordionTrigger className={'font-bold text-xl text-left'}>Can you provide examples of your previous work?
             </AccordionTrigger>
-            <AccordionContent>
-              Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Sit amet facilisis magna etiam tempor orci. Imperdiet nulla malesuada pellentesque elit. Adipiscing tristique risus nec feugiat. Proin sed libero enim sed faucibus.Ultricies lacus sed turpis tincidunt id. Urna duis convallis convallis tellus.
+            <AccordionContent>Absolutely! We have a portfolio of successful projects that showcase our expertise. Please visit our portfolio section or contact us for more information.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-3">
-            <AccordionTrigger className={'font-bold text-xl text-left'}>Do You Follow All Guidelines & Norms?
+            <AccordionTrigger className={'font-bold text-xl text-left'}>How do you ensure the quality of your work?
             </AccordionTrigger>
-            <AccordionContent>
-              Malesuada fames ac turpis egestas integer eget aliquet. Risus viverra adipiscing at in tellus. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Lectus proin nibh nisl condimentum.Lectus mauris ultrices eros in cursus turpis massa tincidunt dui. Tempor nec feugiat nisl pretium fusce id velit ut.
+            <AccordionContent>We have a rigorous quality assurance process in place to ensure that our work meets the highest standards. Our team of experienced professionals is dedicated to delivering exceptional results.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-4">
-            <AccordionTrigger className={'font-bold text-xl text-left'}>Do You Use Freelancers Or Your In-House Team?
+            <AccordionTrigger className={'font-bold text-xl text-left'}>How do you measure the success of a digital marketing campaign?
             </AccordionTrigger>
-            <AccordionContent>
-              Justo laoreet sit amet cursus sit amet dictum sit amet. Amet venenatis urna cursus eget nunc. Vitae elementum curabitur vitae nunc sed velit dignissim. Sit amet nisl purus in mollis nunc sed id semper. Rhoncus urna neque viverra justo nec ultrices dui sapien eget.Sed enim ut sem viverra aliquet eget sit amet tellus.
+            <AccordionContent>We use a variety of metrics to measure the success of digital marketing campaigns, including website traffic, conversions, engagement, and ROI.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-5">
-            <AccordionTrigger className={'font-bold text-xl text-left'}>What Kind Of Marketing Techniques Do You Follow?</AccordionTrigger>
-            <AccordionContent>
-              Fringilla est ullamcorper eget nulla. Enim sed faucibus turpis in eu mi. Nibh tellus molestie nunc non blandit massa enim nec. Eros donec ac odio tempor orci dapibus ultrices. At augue eget arcu dictum varius duis at.Morbi leo urna molestie at. Egestas diam in arcu cursus euismod quis viverra bibendum arcu vitae nibh.
+            <AccordionTrigger className={'font-bold text-xl text-left'}>Can you help me improve my website`s SEO?</AccordionTrigger>
+            <AccordionContent>Yes, we can help you improve your website`s SEO through a variety of techniques, such as keyword research, on-page optimization, and link building.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
-            <AccordionTrigger className={'font-bold text-xl text-left'}>Do You Provide Special Focus On Private Companies?</AccordionTrigger>
-            <AccordionContent>
-              Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Lacus viverra vitae congue eu. Dictum at tempor commodo ullamcorper a lacus. Maecenas ultricies mi eget mauris pharetra.Ut venenatis tellus in metus vulputate eu scelerisque felis. Orci eu lobortis etiam erat velit scelerisque elementum nibh.
+            <AccordionTrigger className={'font-bold text-xl text-left'}>What social media platforms do you specialize in? </AccordionTrigger>
+            <AccordionContent>We specialize in a variety of social media platforms, including WhatsApp, Facebook, Instagram, Twitter, LinkedIn, and Snapchat.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
+            <AccordionTrigger className={'font-bold text-xl text-left'}>Can you help me redesign my logo? </AccordionTrigger>
+            <AccordionContent>Yes, we can help you redesign your logo to create a more modern and impactful look.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
+            <AccordionTrigger className={'font-bold text-xl text-left'}>What is the difference between branding and marketing?</AccordionTrigger>
+            <AccordionContent>Branding is about creating a unique identity for your business, while marketing is about promoting your brand and driving sales.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
+            <AccordionTrigger className={'font-bold text-xl text-left'}>Can you build a custom website for my business?</AccordionTrigger>
+            <AccordionContent>Yes, we can build a custom website that is tailored to your specific needs and goals.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
+            <AccordionTrigger className={'font-bold text-xl text-left'}>What platforms do you use for web development?</AccordionTrigger>
+            <AccordionContent>We are proficient in a variety of platforms, including WordPress, Shopify, Magento, and custom solutions.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
+            <AccordionTrigger className={'font-bold text-xl text-left'}>Can you help me improve the user experience of my website? </AccordionTrigger>
+            <AccordionContent>Yes, we can help you improve the user experience of your website through user research, wireframing, prototyping, and usability testing.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -350,11 +369,11 @@ const Home = () => {
         </div>
       </SectionLayout>
 
-      <div className="marque__slider bg-[#F8955B] flex items-center w-full h-24">
+      <div className="marque__slider bg-[#ffb600] flex items-center w-full h-24">
         <div className="list flex text-center font-bold uppercase md:text-5xl sm:text-3xl text-xl w-full h-full relative max-w-[calc(--width*--quantity] ease-in-out">
           <div className="item h-full flex items-center " style={{ '--position': 1 }}>
             <p className="">
-              fresh ideas
+              Fresh Ideas
             </p>
           </div>
           <div className="item h-full flex items-center" style={{ '--position': 2 }}>
@@ -364,7 +383,7 @@ const Home = () => {
           </div>
           <div className="item h-full flex items-center" style={{ '--position': 3 }}>
             <p className="">
-              Full-service
+              Full-Service
             </p>
           </div>
           <div className="item h-full flex items-center" style={{ '--position': 4 }}>
@@ -374,7 +393,7 @@ const Home = () => {
           </div>
           <div className="item h-full flex items-center" style={{ '--position': 5 }}>
             <p className="">
-              technology
+              Technology
             </p>
           </div>
           <div className="item h-full flex items-center" style={{ '--position': 6 }}>
@@ -384,7 +403,7 @@ const Home = () => {
           </div>
           <div className="item h-full flex items-center" style={{ '--position': 7 }}>
             <p className="">
-              cost-effective
+              Cost-Effective
             </p>
           </div>
           <div className="item h-full flex items-center" style={{ '--position': 8 }}>

@@ -10,30 +10,27 @@ const Faq = () => {
       <SectionLayout title={'COMMON QUESTIONS'} className={'bg-[#f6f6f6]'} mainHeading={'About Our Projects & Services'}>
         <Accordion type="single" collapsible className={'space-y-5 bg-[#f6f6f6'}>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-1">
-            <AccordionTrigger className={'font-bold text-xl text-left'}>What Is Your Service Pricing Structure?</AccordionTrigger>
+            <AccordionTrigger className={'font-bold text-xl text-left'}>What types of projects do you specialize in?</AccordionTrigger>
             <AccordionContent>
-              Condimentum id venenatis a condimentum. Nunc congue nisi vitae suscipit tellus mauris a diam maecenas. Adipiscing bibendum est ultricies integer quis auctor elit.Commodo ullamcorper a lacus vestibulum sed. Mauris sit amet massa vitae.Egestas fringilla phasellus faucibus scelerisque eleifend. Egestas dui id ornare arcu odio.
+              We specialize in a wide range of projects, including Digital Marketing Strategies: SEO, Google Ads, Meta Ads, Social Media Marketing, Email Marketing, and Content Marketing. Brand Development: Graphic Design and Packaging Design. Web Development Solutions: Custom websites and platforms such as WordPress, Shopify, Wix, and Magento.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-2">
-            <AccordionTrigger className={'font-bold text-xl text-left'}>What Are The Payment Options Do You Have?
+            <AccordionTrigger className={'font-bold text-xl text-left'}>Can you provide examples of your previous work?
             </AccordionTrigger>
-            <AccordionContent>
-              Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Sit amet facilisis magna etiam tempor orci. Imperdiet nulla malesuada pellentesque elit. Adipiscing tristique risus nec feugiat. Proin sed libero enim sed faucibus.Ultricies lacus sed turpis tincidunt id. Urna duis convallis convallis tellus.
+            <AccordionContent>Absolutely! We have a portfolio of successful projects that showcase our expertise. Please visit our portfolio section or contact us for more information.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-3">
-            <AccordionTrigger className={'font-bold text-xl text-left'}>Do You Follow All Guidelines & Norms?
+            <AccordionTrigger className={'font-bold text-xl text-left'}>How do you ensure the quality of your work?
             </AccordionTrigger>
-            <AccordionContent>
-              Malesuada fames ac turpis egestas integer eget aliquet. Risus viverra adipiscing at in tellus. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Lectus proin nibh nisl condimentum.Lectus mauris ultrices eros in cursus turpis massa tincidunt dui. Tempor nec feugiat nisl pretium fusce id velit ut.
+            <AccordionContent>We have a rigorous quality assurance process in place to ensure that our work meets the highest standards. Our team of experienced professionals is dedicated to delivering exceptional results.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-4">
-            <AccordionTrigger className={'font-bold text-xl text-left'}>Do You Use Freelancers Or Your In-House Team?
+            <AccordionTrigger className={'font-bold text-xl text-left'}>How do you measure the success of a digital marketing campaign?
             </AccordionTrigger>
-            <AccordionContent>
-              Justo laoreet sit amet cursus sit amet dictum sit amet. Amet venenatis urna cursus eget nunc. Vitae elementum curabitur vitae nunc sed velit dignissim. Sit amet nisl purus in mollis nunc sed id semper. Rhoncus urna neque viverra justo nec ultrices dui sapien eget.Sed enim ut sem viverra aliquet eget sit amet tellus.
+            <AccordionContent>We use a variety of metrics to measure the success of digital marketing campaigns, including website traffic, conversions, engagement, and ROI.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-5">
@@ -43,9 +40,8 @@ const Faq = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
-            <AccordionTrigger className={'font-bold text-xl text-left'}>Do You Provide Special Focus On Private Companies?</AccordionTrigger>
-            <AccordionContent>
-              Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Lacus viverra vitae congue eu. Dictum at tempor commodo ullamcorper a lacus. Maecenas ultricies mi eget mauris pharetra.Ut venenatis tellus in metus vulputate eu scelerisque felis. Orci eu lobortis etiam erat velit scelerisque elementum nibh.
+            <AccordionTrigger className={'font-bold text-xl text-left'}>Can you help me improve my website`s SEO?</AccordionTrigger>
+            <AccordionContent>Yes, we can help you improve your website`s SEO through a variety of techniques, such as keyword research, on-page optimization, and link building.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

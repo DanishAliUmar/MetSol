@@ -1,11 +1,11 @@
 import React from 'react'
-import Svgs from '@/Assets/svgs';
+import Svgs from "@/Assets/svgs";
 import Contact from '/Images/Contact/Contact.jpg';
 import Slide__Image__1 from '/Images/assets/home-1-team-03.jpg';
-import contactPerson from '/Images/assets/contact-page-image-1.jpg';
+import contactPerson from '/Images/Contact/Contactimage2.jpg';
 import HeaderLayout from '@/components/SectionLayout/HeaderLayout';
 import SectionLayout from '@/components/SectionLayout/SectionLayout';
-import { Facebook, Instagram, InstagramIcon, PhoneCallIcon, X, Youtube } from 'lucide-react';
+import { ContactIcon, Facebook, Instagram, InstagramIcon, LocateFixedIcon, PhoneCallIcon, X, Youtube } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from '@/components/ui/button';
@@ -21,7 +21,7 @@ const ContactUs = () => {
     return (
         <>
             <HeaderLayout heading={'Contact Us'} page={'Contact Us'} />
-            <SectionLayout title={'Contact Us'} className={'bg-white !pb-0'} mainHeading={'Reach Us For Instant Service'} subHeading={'Consectetur libero id faucibus nisl tincidunt eget. Sed augue lacus viverra vitae congue. Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Nibh praesent tristique magna sit amet.Amet dictum sit amet justo donec.'} >
+            <SectionLayout title={'Contact Us'} className={'bg-white !pb-0'} mainHeading={'Reach Us For Instant Service'} subHeading={'Get in touch with our team for tailored solutions to elevate your business. Whether you have questions, need more details, or want to discuss a project, we`re ready to assist. Contact us today to begin a conversation about how we can support your goals.'} >
                 <div className="flex items-start lg:flex-row flex-col-reverse gap-10">
                     <div className="p-10 space-y-6 bg-[#f6f6f6] flex-1 w-full">
                         <Input
@@ -42,75 +42,76 @@ const ContactUs = () => {
                             name="email"
                             className={'!p-5 !py-8 placeholder:text-lg text-lg'}
                         />
+
+                        <Input
+                            placeholder='Subject'
+                            type=''
+                            name="Subject"
+                            className={'!p-5 !py-8 placeholder:text-lg text-lg'}
+                        />
                         <Textarea placeholder="Type your message here." className={'!p-5 min-h-40 max-h-80 placeholder:text-lg text-lg'} id="message" />
-                        <Button className={'uppercase'}>Let's Talks</Button>
+                        <Button className={'uppercase'}>Let`s Talks</Button>
                     </div>
-                    <div className="p-12 bg-[#F8955B] text-white space-y-4 lg:w-[430px] w-full">
-                        <h2 className="text-5xl font-medium">Say Hello!</h2>
-                        <p className="">Lectus sit amet est placerat in. Tempor orci eu lobortis elementum nibh.</p>
-                        <img src={contactPerson} className='w-full h-auto object-cover' alt="" />
-                        <h4 className="text-3xl font-medium">Inquiries</h4>
-                        <div className="flex items-center flex-wrap sm:flex-nowrap gap-5 gap-y-2">
-                            <p className="">info@example.com</p>
-                            <p className="">support@example.com</p>
+                    <div className="p-12 bg-[#ffb600] rounded-md text-white space-y-4 lg:w-[430px] w-full">
+                        <h2 className="text-5xl font-medium text-center">Say Hello!</h2>
+                        <p className="">Let`s connect and start something amazing! Say hello and share your vision with us.</p>
+                        <img src={contactPerson} className='w-full h-auto object-cover rounded-3xl' alt="" />
+                        <h4 className="text-3xl font-medium text-center">Inquiries</h4>
+                        <p className="text-center">info@metsole.com</p>
+                        <div className="flex items-center w-full justify-evenly">
+
+                        <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full  hover:scale-105 hover:bg-[#ffb600] transition-all group">
+                            <a href='https://www.linkedin.com/company/metsole/' target='_blank'><Svgs.Linkedin className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /></a>
                         </div>
-                        <p className="flex items-center gap-3"><Facebook className="hover:bg-white border-white border bg-[#f8955B] cursor-pointer hover:stroke-[#f8955B] stroke-white size-8 rounded-full p-[6px]" /> <InstagramIcon className="hover:bg-white border-white border bg-[#f8955B] cursor-pointer hover:stroke-[#f8955B] stroke-white size-8 rounded-full p-[6px]" /> <X className="hover:bg-white border-white border bg-[#f8955B] cursor-pointer hover:stroke-[#f8955B] stroke-white size-8 rounded-full p-[6px]" /> <Youtube className="hover:bg-white border-white border bg-[#f8955B] cursor-pointer hover:stroke-[#f8955B] stroke-white size-8 rounded-full p-[6px]" /></p>
+
+                        <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full  hover:scale-105 hover:bg-[#ffb600] transition-all group">
+                            <a href="https://www.facebook.com/profile.php?id=61560851851780" target='_blank'><Svgs.FaceBook className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /></a>
+                        </div>
+                        <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full  hover:scale-105 hover:bg-[#ffb600] transition-all group">
+                            <a href="http://www.instagram.com/met_sole" target='_blank'><Svgs.Instagram className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /> </a>
+                        </div>
+                        </div>
+
                     </div>
                 </div>
             </SectionLayout>
-            <SectionLayout title={'Address'} className={'bg-white'} mainHeading={'GOAT Agency Office Locations'} >
-                <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
+            <SectionLayout title={'Address'} className={'bg-white'} mainHeading={'MetSole Agency Office Locations'} >
+                <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
                     <div className="flex gap-4">
-                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]' />}</div>
+                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#ffb600] group rounded-full drop-shadow-lg transition-all duration-500">{<LocateFixedIcon className='w-7 h-7 drop-shadow-lg  group-hover:fill-[] group-hover:stroke-[#004b86] stroke-[#ffb600]' />}</div>
                         <div className="space-y-4">
                             <h4 className="text-xl font-bold">Head Office</h4>
-                            <div className="">
-                                <p className="">No: 58 A, East Madison Street, Baltimore, MD, USA 4508 </p>
-                            </div>
+                            <ul className="space-y-4">
+                                <li className=""> 8403 PINES BLVD, PEMBROKE PINES, FL 33024</li>
+                                <li className="">Gulf Executive Offices, Manama, Bahrain</li>
+                            </ul>
                         </div>
                     </div>
                     <div className="flex gap-4">
-                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]' />}</div>
+                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#ffb600] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg  group-hover:fill-[] group-hover:stroke-[#004b86] stroke-[#ffb600]' />}</div>
                         <div className="space-y-4">
                             <h4 className="text-xl font-bold">Mobile Number</h4>
-                            <div className="">
-                                <p className="">+00 (0)12 3456 789</p>
-                                <p className="">+00 (0)12 3456 897</p>
+                            <div className="space-y-4">
+                                <p className="">+1 (754) 305-0779</p>
+                                <p className="">+973 3343 1826</p>
                             </div>
                         </div>
                     </div>
+                   
                     <div className="flex gap-4">
-                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]' />}</div>
-                        <div className="space-y-4">
-                            <h4 className="text-xl font-bold">Have Quires ?</h4>
-                            <div className="">
-                                <p className="">Seestrasse St, Zurich, CH</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex gap-4">
-                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#f8955B] group rounded-full drop-shadow-lg transition-all duration-500">{<PhoneCallIcon className='w-7 h-7 drop-shadow-lg fill-[#f8955B] group-hover:fill-[#f6f6f6] group-hover:stroke-[#f6f6f6] stroke-[#f8955B]' />}</div>
+                        <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#ffb600] group rounded-full drop-shadow-lg transition-all duration-500">{<ContactIcon className='w-7 h-7 drop-shadow-lg  group-hover:fill-[] group-hover:stroke-[#004b86] stroke-[#ffb600]' />}</div>
                         <div className="space-y-4">
                             <h4 className="text-xl font-bold">Contact Support</h4>
-                            <div className="">
-                                <p className="">info@example.com</p>
-                                <p className="">support@example.com</p>
+                            <div className="space-y-4">
+                                <p className="">info@metsole.com</p>
+                                <p className="">support@metsole.com</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="w-fit h-full mx-auto">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27219.527274414948!2d74.32631253237793!3d31.484562507356756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904105ec589ff%3A0x67af359ad6cad4b3!2sModel%20Town%20Park!5e0!3m2!1sen!2s!4v1725218388270!5m2!1sen!2s"
-                        className="!w-[90vw] md:h-[450px] h-[300px] border-0"
-                        allowFullScreen=""
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                        title="Google Map"
-                    ></iframe>
-                </div>
+                
             </SectionLayout>
-            <div className="space-y-10">
+            {/* <div className="space-y-10">
                 <div className="font-semibold text-center space-y-3">
                     <h3 className="text-[#f8955B] uppercase">Join Our Insta</h3>
                     <h2 className="text-4xl">Our Instagram</h2>
@@ -194,7 +195,7 @@ const ContactUs = () => {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }
