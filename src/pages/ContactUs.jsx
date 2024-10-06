@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import Svgs from "@/Assets/svgs";
 import Contact from '/Images/Contact/Contact.jpg';
 import Slide__Image__1 from '/Images/assets/home-1-team-03.jpg';
@@ -14,8 +14,30 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import FeaturedSingleCard from '@/components/FeaturedSingleCard';
-
+import emailjs from '@emailjs/browser';
 const ContactUs = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_ezm4q3p', 'template_p4gyup6', form.current, {
+                publicKey: 'WD0URsbyPGop8e1_V',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    alert('Form Send Successfully')
+                    window.location.reload();
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    alert('Something went wrong')
+                    window.location.reload();
+                },
+            );
+    };
 
 
     return (
@@ -23,35 +45,37 @@ const ContactUs = () => {
             <HeaderLayout heading={'Contact Us'} page={'Contact Us'} />
             <SectionLayout title={'Contact Us'} className={'bg-white !pb-0'} mainHeading={'Reach Us For Instant Service'} subHeading={'Get in touch with our team for tailored solutions to elevate your business. Whether you have questions, need more details, or want to discuss a project, we`re ready to assist. Contact us today to begin a conversation about how we can support your goals.'} >
                 <div className="flex items-start lg:flex-row flex-col-reverse gap-10">
-                    <div className="p-10 space-y-6 bg-[#f6f6f6] flex-1 w-full">
+                    <form className="p-10 space-y-6 bg-[#f6f6f6] flex-1 w-full" ref={form} onSubmit={sendEmail}>
                         <Input
                             placeholder='Your Name'
+                            required
                             type='text'
-                            name="name"
+                            name="user_name"
                             className={'!p-5 !py-8 placeholder:text-lg text-lg'}
                         />
+                        <Input
+                                required
+                                placeholder='Your Email'
+                                type='email'
+                                name="user_email"
+                                className={'!p-5 !py-8 placeholder:text-lg text-lg'}
+                            />
                         <Input
                             placeholder='Your Phone Number'
                             type='number'
                             name="phone_number"
                             className={'!p-5 !py-8 placeholder:text-lg text-lg'}
-                        />
-                        <Input
-                            placeholder='Your Email'
-                            type='email'
-                            name="email"
-                            className={'!p-5 !py-8 placeholder:text-lg text-lg'}
-                        />
+                            />
 
                         <Input
                             placeholder='Subject'
                             type=''
-                            name="Subject"
+                            name="subject"
                             className={'!p-5 !py-8 placeholder:text-lg text-lg'}
                         />
-                        <Textarea placeholder="Type your message here." className={'!p-5 min-h-40 max-h-80 placeholder:text-lg text-lg'} id="message" />
-                        <Button className={'uppercase'}>Let`s Talks</Button>
-                    </div>
+                        <Textarea placeholder="Type your message here." name="message" className={'!p-5 min-h-40 max-h-80 placeholder:text-lg text-lg'} id="message" />
+                        <Input type="submit" value="Submit Request" className='text-white cursor-pointer bg-[#ffb600] rounded-full w-fit px-10'/>
+                    </form>
                     <div className="p-12 bg-[#ffb600] rounded-md text-white space-y-4 lg:w-[430px] w-full">
                         <h2 className="text-5xl font-medium text-center">Say Hello!</h2>
                         <p className="">Let`s connect and start something amazing! Say hello and share your vision with us.</p>
@@ -60,16 +84,16 @@ const ContactUs = () => {
                         <p className="text-center">info@metsole.com</p>
                         <div className="flex items-center w-full justify-evenly">
 
-                        <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full  hover:scale-105 hover:bg-[#ffb600] transition-all group">
-                            <a href='https://www.linkedin.com/company/metsole/' target='_blank'><Svgs.Linkedin className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /></a>
-                        </div>
+                            <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full  hover:scale-105 hover:bg-[#ffb600] transition-all group">
+                                <a href='https://www.linkedin.com/company/metsole/' target='_blank'><Svgs.Linkedin className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /></a>
+                            </div>
 
-                        <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full  hover:scale-105 hover:bg-[#ffb600] transition-all group">
-                            <a href="https://www.facebook.com/profile.php?id=61560851851780" target='_blank'><Svgs.FaceBook className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /></a>
-                        </div>
-                        <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full  hover:scale-105 hover:bg-[#ffb600] transition-all group">
-                            <a href="http://www.instagram.com/met_sole" target='_blank'><Svgs.Instagram className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /> </a>
-                        </div>
+                            <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full  hover:scale-105 hover:bg-[#ffb600] transition-all group">
+                                <a href="https://www.facebook.com/profile.php?id=61560851851780" target='_blank'><Svgs.FaceBook className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /></a>
+                            </div>
+                            <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full  hover:scale-105 hover:bg-[#ffb600] transition-all group">
+                                <a href="http://www.instagram.com/met_sole" target='_blank'><Svgs.Instagram className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /> </a>
+                            </div>
                         </div>
 
                     </div>
@@ -97,7 +121,7 @@ const ContactUs = () => {
                             </div>
                         </div>
                     </div>
-                   
+
                     <div className="flex gap-4">
                         <div className="flex items-center justify-center min-w-16 size-16  bg-[#f6f6f6] hover:bg-[#ffb600] group rounded-full drop-shadow-lg transition-all duration-500">{<ContactIcon className='w-7 h-7 drop-shadow-lg  group-hover:fill-[] group-hover:stroke-[#004b86] stroke-[#ffb600]' />}</div>
                         <div className="space-y-4">
@@ -109,7 +133,7 @@ const ContactUs = () => {
                         </div>
                     </div>
                 </div>
-                
+
             </SectionLayout>
             {/* <div className="space-y-10">
                 <div className="font-semibold text-center space-y-3">

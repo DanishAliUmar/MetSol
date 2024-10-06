@@ -74,6 +74,7 @@ const Input = React.forwardRef(({
           <input
             onKeyDown={HandleKeyPress}
             type={inputType}
+            required={required ? required : ''}
             onChange={onChange}
             value={value}
             className={cn(
