@@ -10,17 +10,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import logo from '/Images/Logo/met sole logo-01.png';
 import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
   SheetFooter,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
 
@@ -75,7 +69,7 @@ const Navbar = ({ servicesData }) => {
           <div className="whatsapp"><Svgs.Phone className={'w-10 h-10 p-2 fill-white rounded-full border-white border'} /></div>
           <div className="text-white">
             <p className="">Support Center</p>
-           <a href="tel:+1 (754) 305-0779"><h4 className="hover:text-[#ffb600] font-medium cursor-pointer">+1 (754) 305-0779</h4></a> 
+            <a href="tel:+1 (754) 305-0779"><h4 className="hover:text-[#ffb600] font-medium cursor-pointer">+1 (754) 305-0779</h4></a>
           </div>
 
         </div>
@@ -87,30 +81,46 @@ const Navbar = ({ servicesData }) => {
             <SheetContent className={'flex items-center justify-between flex-col'}>
               <ul className="flex flex-col items-center justify-center font-bold space-y-10 flex-1">
                 <li className="mx-4">
-                  <Link to="/" className="group hover:text-[#ffb600]">Home<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+                  <SheetClose asChild>
+                    <Link to="/" className="group hover:text-[#ffb600]">Home<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+                  </SheetClose>
                 </li>
                 <li className="mx-4">
-                  <Link to="/about-us" className="group hover:text-[#ffb600]">About Us<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+                  <SheetClose asChild>
+                    <Link to="/about-us" className="group hover:text-[#ffb600]">About Us<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+                  </SheetClose>
                 </li>
                 <li className="mx-4">
                   <DropdownMenu>
                     <DropdownMenuTrigger className='focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none'>
                       <div className="group hover:text-[#ffb600]">Services<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></div></DropdownMenuTrigger>
                     <DropdownMenuContent className={'text-center p-4 py-2'}>
-                      <DropdownMenuLabel>Branding</DropdownMenuLabel>
-                      <DropdownMenuLabel>Web Development</DropdownMenuLabel>
-                      <DropdownMenuLabel>Digital Marketing</DropdownMenuLabel>
+                      <SheetClose asChild>
+                        <DropdownMenuLabel>Branding</DropdownMenuLabel>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <DropdownMenuLabel>Web Development</DropdownMenuLabel>
+                      </SheetClose>
+                      <SheetClose asChild>
+                        <DropdownMenuLabel>Digital Marketing</DropdownMenuLabel>
+                      </SheetClose>
                     </DropdownMenuContent>
                   </DropdownMenu>
                 </li>
                 <li className="mx-4">
-                  <Link to="/Portfolio" className="group hover:text-[#ffb600]">Portfolio<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+                  <SheetClose asChild>
+                    <Link to="/Portfolio" className="group hover:text-[#ffb600]">Portfolio<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+                  </SheetClose>
                 </li>
                 <li className="mx-4">
-                  <Link to="/Faq" className="group hover:text-[#ffb600]">Faqs<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+                  <SheetClose asChild>
+                    <Link to="/Faq" className="group hover:text-[#ffb600]">Faqs<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+                  </SheetClose>
                 </li>
                 <li className="mx-4">
-                  <Link to="/contact-us" className="group hover:text-[#ffb600]">Contact Us<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+                  <SheetClose asChild>
+                    <Link to="/contact-us" className="group hover:text-[#ffb600]">Contact Us<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></Link>
+                  </SheetClose>
                 </li>
               </ul>
               <SheetFooter>
