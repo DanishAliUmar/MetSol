@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Svgs from "@/Assets/svgs";
 import Contact from '/Images/Contact/Contact.jpg';
 import Slide__Image__1 from '/Images/assets/home-1-team-03.jpg';
@@ -17,10 +17,11 @@ import FeaturedSingleCard from '@/components/FeaturedSingleCard';
 import emailjs from '@emailjs/browser';
 const ContactUs = () => {
     const form = useRef();
+    const [loading, setLoading] = useState(false)
 
     const sendEmail = (e) => {
         e.preventDefault();
-
+        setLoading(true);
         emailjs
             .sendForm('service_ezm4q3p', 'template_p4gyup6', form.current, {
                 publicKey: 'WD0URsbyPGop8e1_V',
@@ -29,12 +30,13 @@ const ContactUs = () => {
                 () => {
                     console.log('SUCCESS!');
                     alert('Form Send Successfully')
-                    window.location.reload();
+                    form.current.reset();
+                    setLoading(false);
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
                     alert('Something went wrong')
-                    window.location.reload();
+                    setLoading(false);
                 },
             );
     };
@@ -54,18 +56,18 @@ const ContactUs = () => {
                             className={'!p-5 !py-8 placeholder:text-lg text-lg'}
                         />
                         <Input
-                                required
-                                placeholder='Your Email'
-                                type='email'
-                                name="user_email"
-                                className={'!p-5 !py-8 placeholder:text-lg text-lg'}
-                            />
+                            required
+                            placeholder='Your Email'
+                            type='email'
+                            name="user_email"
+                            className={'!p-5 !py-8 placeholder:text-lg text-lg'}
+                        />
                         <Input
                             placeholder='Your Phone Number'
                             type='number'
                             name="phone_number"
                             className={'!p-5 !py-8 placeholder:text-lg text-lg'}
-                            />
+                        />
 
                         <Input
                             placeholder='Subject'
@@ -74,7 +76,11 @@ const ContactUs = () => {
                             className={'!p-5 !py-8 placeholder:text-lg text-lg'}
                         />
                         <Textarea placeholder="Type your message here." name="message" className={'!p-5 min-h-40 max-h-80 placeholder:text-lg text-lg'} id="message" />
-                        <Input type="submit" value="Submit Request" className='text-white cursor-pointer bg-[#ffb600] rounded-full w-fit px-10'/>
+                        <Input type="submit"
+                            value={loading ? 'Loading...' : 'Submit Request'} // Conditionally render button text
+                            disabled={loading} // Disable button when loading
+                            className={`text-white cursor-pointer bg-[#ffb600] rounded-full w-fit px-10 ${loading ? 'opacity-50' : ''
+                                }`} />
                     </form>
                     <div className="p-12 bg-[#ffb600] rounded-md text-white space-y-4 lg:w-[430px] w-full">
                         <h2 className="text-5xl font-medium text-center">Say Hello!</h2>
