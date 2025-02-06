@@ -47,7 +47,7 @@ const ContactUs = () => {
             <HeaderLayout heading={'Contact Us'} page={'Contact Us'} />
             <SectionLayout title={'Contact Us'} className={'bg-white !pb-0'} mainHeading={'Reach Us For Instant Service'} subHeading={'Get in touch with our team for tailored solutions to elevate your business. Whether you have questions, need more details, or want to discuss a project, we`re ready to assist. Contact us today to begin a conversation about how we can support your goals.'} >
                 <div className="flex items-start lg:flex-row flex-col-reverse gap-10">
-                    <form className="p-10 space-y-6 bg-[#f6f6f6] flex-1 w-full" ref={form} onSubmit={sendEmail}>
+                    <form className="p-10 space-y-6 bg-[#f6f6f6] flex-1 w-full rounded-md" ref={form} onSubmit={sendEmail}>
                         <Input
                             placeholder='Your Name'
                             required
@@ -64,9 +64,9 @@ const ContactUs = () => {
                         />
                         <Input
                             placeholder='Your Phone Number'
-                            type='number'
+                            type='text'
                             name="phone_number"
-                            className={'!p-5 !py-8 placeholder:text-lg text-lg'}
+                            className={'!p-5 !py-8 !appearance-none placeholder:text-lg text-lg'}
                         />
 
                         <Input

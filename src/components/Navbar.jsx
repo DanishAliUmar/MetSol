@@ -96,13 +96,14 @@ const Navbar = ({ servicesData }) => {
                       <div className="group hover:text-[#ffb600]">Services<div className="rounded-[30px] bg-[#ffb600] h-[3px] w-[0px] group-hover:w-full transition-all duration-400"></div></div></DropdownMenuTrigger>
                     <DropdownMenuContent className={'text-center p-4 py-2'}>
                       <SheetClose asChild>
-                        <DropdownMenuLabel>Branding</DropdownMenuLabel>
+                        <Link to='/our-services/Web%20Development'><DropdownMenuLabel>Web Development</DropdownMenuLabel></Link>
                       </SheetClose>
                       <SheetClose asChild>
-                        <DropdownMenuLabel>Web Development</DropdownMenuLabel>
+                      <Link to='our-services/Social%20Media%20Marketing'><DropdownMenuLabel>Social Media Marketing</DropdownMenuLabel></Link>
+                        
                       </SheetClose>
                       <SheetClose asChild>
-                        <DropdownMenuLabel>Digital Marketing</DropdownMenuLabel>
+                      <Link to='/our-services/App%20Development'><DropdownMenuLabel>App Development</DropdownMenuLabel></Link>
                       </SheetClose>
                     </DropdownMenuContent>
                   </DropdownMenu>

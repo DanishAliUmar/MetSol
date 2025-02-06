@@ -51,15 +51,29 @@ const Home = () => {
   return (
     <>
       <header className='min-h-[120vh] flex items-center relative lg:justify-between justify-center lg:flex-row flex-col overflow-hidden xl:gap-10 lg:gap-2 gap-10 !bg-cover !bg-center !bg-no-repeat p-10' >
+
+        {/* Desktop Video */}
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover md:object-fit center"
+          className="absolute top-0 left-0 w-full h-full object-cover md:block hidden"
         >
-          <source src={'Video/Background .mp4'} type="video/mp4" />
+          <source src="Video/Background.mp4" type="video/mp4" />
           Your browser does not support the video tag.
+        </video>
+
+        {/* Mobile Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover md:hidden block"
+        >
+          <source src="Video/Background-Mobile.mp4" type="video/mp4" />
+          
         </video>
 
         <div className=" space-y-6 absolute left-0 top-[40%] px-5 hidden md:block">
@@ -280,27 +294,27 @@ const Home = () => {
             <AccordionContent>We specialize in a variety of social media platforms, including WhatsApp, Facebook, Instagram, Twitter, LinkedIn, and Snapchat.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-7">
             <AccordionTrigger className={'font-bold text-xl text-left'}>Can you help me redesign my logo? </AccordionTrigger>
             <AccordionContent>Yes, we can help you redesign your logo to create a more modern and impactful look.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-8">
             <AccordionTrigger className={'font-bold text-xl text-left'}>What is the difference between branding and marketing?</AccordionTrigger>
             <AccordionContent>Branding is about creating a unique identity for your business, while marketing is about promoting your brand and driving sales.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-9">
             <AccordionTrigger className={'font-bold text-xl text-left'}>Can you build a custom website for my business?</AccordionTrigger>
             <AccordionContent>Yes, we can build a custom website that is tailored to your specific needs and goals.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-10">
             <AccordionTrigger className={'font-bold text-xl text-left'}>What platforms do you use for web development?</AccordionTrigger>
             <AccordionContent>We are proficient in a variety of platforms, including WordPress, Shopify, Magento, and custom solutions.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-6">
+          <AccordionItem className={'px-5 py-2 border-black border rounded-lg'} value="item-11">
             <AccordionTrigger className={'font-bold text-xl text-left'}>Can you help me improve the user experience of my website? </AccordionTrigger>
             <AccordionContent>Yes, we can help you improve the user experience of your website through user research, wireframing, prototyping, and usability testing.
             </AccordionContent>

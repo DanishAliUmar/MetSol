@@ -5,111 +5,111 @@ import React, { useState } from 'react'
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const filters = ['All', 'Photography', 'Research', 'Solution'];
+  const filters = ['All', 'Web Development', 'Social Marketing', 'App Development'];
 
   const portfolioData = [
     {
       id: 1,
-      title: 'Research Project',
-      category: 'Research',
+      title: '',
+      category: 'Web Development',
       highted: true,
-      image: '/Images/assets/blog-detail-01.jpg',
+      image: '/Images/Web Devlopment/Web Devlopment 1.jpg',
       link: 'https://example.com/project1',
     },
     {
       id: 2,
-      title: 'Photography Project',
-      category: 'Photography',
-      image: '/Images/assets/blog-detail-02.jpg',
+      title: '',
+      category: 'Web Development',
+      image: '/Images/Web Devlopment/Web Devlopment 6.png',
       link: 'https://example.com/project2',
     },
     {
       id: 3,
-      title: 'Solution Project',
+      title: '',
       highted: true,
-      category: 'Solution',
-      image: '/Images/assets/blog-detail-03.jpg',
+      category: 'App Development',
+      image: '/Images/Shopify Store/Shopify Store 4.png',
       link: 'https://example.com/project3',
     },
     {
       id: 4,
-      title: 'Photography Project',
-      category: 'Photography',
-      image: '/Images/assets/blog-detail-04.jpg',
+      title: '',
+      category: 'Web Development',
+      image: '/Images/Web Devlopment/Web Devlopment 8.jpg',
       link: 'https://example.com/project4',
     },
     {
       id: 5,
       highted: true,
-      title: 'Solution Project',
-      category: 'Solution',
-      image: '/Images/assets/blog-detail-05.jpg',
+      title: '',
+      category: 'App Development',
+      image: '/Images/Shopify Store/Shopify Store 5.png',
       link: 'https://example.com/project5',
     },
     {
       id: 6,
-      title: 'Research Project',
-      category: 'Research',
-      image: '/Images/assets/blog-detail-06.jpg',
+      title: '',
+      category: 'App Development',
+      image: '/Images/Shopify Store/Shopify Store.jpg',
       link: 'https://example.com/project6',
     },
     {
       id: 7,
-      title: 'Photography Project',
-      category: 'Photography',
-      image: '/Images/assets/blog-detail-01.jpg',
+      title: '',
+      category: 'Web Development',
+      image: '/Images/Web Devlopment/Web Devlopment.png',
       link: 'https://example.com/project1',
     },
     {
       id: 8,
-      title: 'Research Project',
-      category: 'Research',
+      title: '',
+      category: 'App Development',
       highted: true,
-      image: '/Images/assets/blog-detail-01.jpg',
+      image: '/Images/Logo/Logo 3.jpg',
       link: 'https://example.com/project1',
     },
     {
       id: 9,
-      title: 'Photography Project',
-      category: 'Photography',
-      image: '/Images/assets/blog-detail-02.jpg',
+      title: '',
+      category: 'Social Marketing',
+      image: '/Images/Social Media Design/Social Meida Design 8.png',
       link: 'https://example.com/project2',
     },
     {
       id: 10,
-      title: 'Solution Project',
+      title: '',
       highted: true,
-      category: 'Solution',
-      image: '/Images/assets/blog-detail-03.jpg',
+      category: 'Social Marketing',
+      image: '/Images/Social Media Design/Social Media Design 13.jpg',
       link: 'https://example.com/project3',
     },
     {
       id: 11,
-      title: 'Photography Project',
-      category: 'Photography',
-      image: '/Images/assets/blog-detail-04.jpg',
+      title: '',
+      category: 'Social Marketing',
+      image: '/Images/Social Media Design/Social Meida Design 3.jpg',
       link: 'https://example.com/project4',
     },
     {
       id: 12,
       highted: true,
-      title: 'Solution Project',
-      category: 'Solution',
-      image: '/Images/assets/blog-detail-05.jpg',
+      title: '',
+      category: 'Social Marketing',
+      image: '/Images/Social Media Design/Social Media Design 14.jpg',
       link: 'https://example.com/project5',
     },
     {
       id: 13,
-      title: 'Research Project',
-      category: 'Research',
-      image: '/Images/assets/blog-detail-06.jpg',
+      title: '',
+      category: 'Social Marketing',
+      image: 'public/Images/Social Media Design/Social Media Design 6.jpg',
       link: 'https://example.com/project6',
     },
     {
       id: 14,
-      title: 'Photography Project',
-      category: 'Photography',
-      image: '/Images/assets/blog-detail-01.jpg',
+      title: '',
+      category: 'Web Development',
+      image: '/Images/Web Devlopment/Web Devlopment 11.png',
       link: 'https://example.com/project1',
     },
   ];
@@ -152,7 +152,8 @@ filteredPortfolio.forEach((item, index) => {
       <section className="px-5 py-20 space-y-10">
         <div className="text-center space-y-5">
           <h2 className="text-4xl font-semibold">Latest Business Development & Promotions</h2>
-          <p className="">Vulputate odio ut enim blandit volutpat. A arcu cursus vitae congue mauris rhoncus aenean. Nisl  <br /> suscipit adipiscing bibendum est ultricies. Nulla malesuada pellentesque elit eget gravida.</p>
+          <p className="">Stay ahead with cutting-edge strategies that drive business growth<br /> Enhance your brand presence with targeted promotions and digital engagement.
+          </p>
         </div>
         <hr className="h-[1px] border-b border-solid" />
         <div className="space-y-10">
