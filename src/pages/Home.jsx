@@ -82,10 +82,10 @@ const Home = () => {
           </div>
 
           <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#ffb600] transition-all group">
-            <a href="https://www.facebook.com/profile.php?id=61560851851780" target='_blank'><Svgs.FaceBook className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /></a>
+            <a href="https://www.facebook.com/metsoleofficial" target='_blank'><Svgs.FaceBook className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /></a>
           </div>
           <div className="size-9 flex items-center justify-center  cursor-pointer rounded-full bg-white hover:scale-105 hover:bg-[#ffb600] transition-all group">
-            <a href="http://www.instagram.com/met_sole" target='_blank'><Svgs.Instagram className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /> </a>
+            <a href="https://www.instagram.com/metsole1?igsh=YTZpZ21xcDNlejNr" target='_blank'><Svgs.Instagram className={'size-5 fill-black group-hover: transition-all group-hover:scale-75 group-hover:fill-[#004b86]'} /> </a>
           </div>
         </div>
 
