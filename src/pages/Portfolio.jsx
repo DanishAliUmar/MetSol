@@ -102,7 +102,7 @@ const Portfolio = () => {
       id: 13,
       title: '',
       category: 'Social Marketing',
-      image: 'public/Images/Social Media Design/Social Media Design 6.jpg',
+      image: '/Images/Social Media Design/Social Media Design 6.jpg',
       link: 'https://example.com/project6',
     },
     {
@@ -125,8 +125,6 @@ const Portfolio = () => {
   const handleFilterClick = (filter) => {
     setActiveFilter(filter);
   };
-
-
 
 // Arrays for grid columns
 const column1 = [];

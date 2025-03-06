@@ -1,7 +1,6 @@
 import Svgs from '@/Assets/svgs'
 import { Link } from 'react-router-dom';
-import React, { useEffect, useState } from 'react'
-import SpaceMan from '/Images/assets/slider-1-parallax-image-big.png';
+import { useEffect, useState } from 'react'
 import AwardImage from '/Images/assets/award-image-2.jpg';
 import AwardImage2 from '/Images/assets/award-image-side.jpg';
 import CirclerText from '/Images/assets/rotate-backward-300x300.png';
@@ -14,7 +13,6 @@ import ToolImg5 from '/Images/assets/tool-img5.png';
 import ToolImg6 from '/Images/assets/tool-img6.png';
 import ToolImg7 from '/Images/assets/tool-img7.png';
 import ToolImg8 from '/Images/assets/tool-img8.png';
-import groupedImage from '/Images/assets/grouped-image.png';
 import { Navigation, Pagination, Autoplay, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -23,7 +21,6 @@ import AgencyServicesSingleCard from '@/components/AgencyServicesSingleCard';
 import PortfolioSingleCard from '@/components/PortfolioSingleCard';
 import FeaturedSingleCard from '@/components/FeaturedSingleCard';
 import { Button } from "@/components/ui/button"
-import splitStringUsingRegex from '../utils/splitingUsingRegex'
 import {
   Accordion,
   AccordionContent,
@@ -59,8 +56,9 @@ const Home = () => {
           muted
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover md:block hidden"
+          loading='lazy'
         >
-          <source src="Video/Background.mp4" type="video/mp4" />
+          <source src="/Video/Background.mp4" type="video/mp4" loading='lazy'/>
           Your browser does not support the video tag.
         </video>
 
@@ -70,9 +68,9 @@ const Home = () => {
           loop
           muted
           playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover md:hidden block"
+          className="absolute top-0 left-0 w-full h-full object-cover md:hidden block" loading='lazy'
         >
-          <source src="Video/Background-Mobile.mp4" type="video/mp4" />
+          <source src="Video/Background-Mobile.mp4" type="video/mp4" loading='lazy' />
           
         </video>
 
@@ -95,8 +93,8 @@ const Home = () => {
         <div className="flex lg:flex-row flex-col-reverse w-full gap-10">
           <div className="lg:flex-[4] max-w-[calc(100%-7.5rem)]">
             <div className="relative w-full sm:h-[600px] h-[400px]">
-              <img src={AwardImage} alt="" className="absolute sm:w-full w-[120%] h-full object-cover rounded-3xl " />
-              <img src={AwardImage2} alt="" className="absolute size-60 top-1/2 right-0 translate-x-1/2 bg-white p-4 sm:pr-4 pr-0 object-cover rounded-[30px] " />
+              <img src={AwardImage} alt="" loading='lazy' className="absolute sm:w-full w-[120%] h-full object-cover rounded-3xl " />
+              <img src={AwardImage2} alt="" loading='lazy' className="absolute size-60 top-1/2 right-0 translate-x-1/2 bg-white p-4 sm:pr-4 pr-0 object-cover rounded-[30px] " />
               <div className="bg-white absolute -rotate-90 w-[210px] p-4 h-[80px] top-[30px] rounded-full left-[-90px] flex items-end justify-start ">
                 <div className="flex items-center gap-2 border-solid border-black border px-3 bg-white p-2 rounded-3xl">
                   <Svgs.Play className={'size-4'} />
@@ -135,8 +133,8 @@ const Home = () => {
                 <Button className='hover:!bg-[#ffb200] !bg-[#004b86]'>About Us</Button>
               </div>
               <div className="size-36 relative sm:flex items-center justify-center hidden">
-                <img src={CirclerText} className='w-full h-full absolute left-0 top-0' alt="" />
-                <img src={ArrowRightUp} className='' alt="" />
+                <img src={CirclerText} loading='lazy' className='w-full h-full absolute left-0 top-0' alt="" />
+                <img src={ArrowRightUp} loading='lazy' className='' alt="" />
               </div>
             </div>
           </div>
@@ -144,10 +142,10 @@ const Home = () => {
       </SectionLayout>
       <SectionLayout title={'Agency Services'} className={'bg-[#f6f6f6]'} mainHeading={'Innovation, creativity, and results-driven approach. That`s our promise.'} circle subHeading={'At MetSole, we focus on three core pillars to boost your brand: Digital Marketing, Branding, and Web Development. We offer a wide range of services within these categories, including SEO, Google Ads, social media marketing, graphic design, and custom website development, to help businesses achieve their online goals.'}>
         <div className='lg:flex grid sm:grid-cols-2 grid-cols-1 gap-7 flex-wrap custom_transition'>
-          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-1.jpg' text='we bring your brand’s vision to life through captivating Graphics & Illustration. Our talented designers craft visually stunning graphics that not only catch the eye but also communicate your brand`s message effectively.' button='Graphics & Illustration' />
-          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-2.jpg' text='Our web development services help you build a professional and engaging online presence. We offer a wide range of services, including: Custom website development, E-commerce development, WordPress development, Shopify development, Responsive web design, and Web application development' button='Web Development' />
-          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-3.jpg' text='Branding is at the heart of what we do. We believe that a strong brand identity is essential for standing out in today`s competitive market. From logo design and color schemes to messaging and brand voice, we ensure every element is cohesive and impactful. With MetSole, your brand doesn’t just get noticed—it becomes memorable, building trust and loyalty with every interaction.' button='Branding' />
-          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-4.jpg' text='At MetSole, digital marketing is our specialty, and we`re dedicated to helping your business thrive online. We use data-driven strategies to enhance your online visibility, attract more traffic, and convert leads into loyal customers. Our approach is tailored to your specific goals, ensuring that every campaign is optimized for maximum impact and ROI. With MetSole, your digital presence becomes a powerful tool for growth and success.' button='Digital Marketing' />
+          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-1.jpg' loading='lazy' text='we bring your brand’s vision to life through captivating Graphics & Illustration. Our talented designers craft visually stunning graphics that not only catch the eye but also communicate your brand`s message effectively.' button='Graphics & Illustration' />
+          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-2.jpg' loading='lazy' text='Our web development services help you build a professional and engaging online presence. We offer a wide range of services, including: Custom website development, E-commerce development, WordPress development, Shopify development, Responsive web design, and Web application development' button='Web Development' />
+          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-3.jpg' loading='lazy' text='Branding is at the heart of what we do. We believe that a strong brand identity is essential for standing out in today`s competitive market. From logo design and color schemes to messaging and brand voice, we ensure every element is cohesive and impactful. With MetSole, your brand doesn’t just get noticed—it becomes memorable, building trust and loyalty with every interaction.' button='Branding' />
+          <AgencyServicesSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/04/Service-4.jpg' loading='lazy' text='At MetSole, digital marketing is our specialty, and we`re dedicated to helping your business thrive online. We use data-driven strategies to enhance your online visibility, attract more traffic, and convert leads into loyal customers. Our approach is tailored to your specific goals, ensuring that every campaign is optimized for maximum impact and ROI. With MetSole, your digital presence becomes a powerful tool for growth and success.' button='Digital Marketing' />
         </div>
 
       </SectionLayout>
@@ -180,22 +178,22 @@ const Home = () => {
             }}
           >
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-01.jpg' title='Digital Marketing' heading='As a results-driven digital marketing agency, we`ve helped clients across various industries achieve their online goals. Explore our portfolio to see how we`ve transformed businesses through innovative digital strategies' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-01.jpg' loading='lazy' title='Digital Marketing' heading='As a results-driven digital marketing agency, we`ve helped clients across various industries achieve their online goals. Explore our portfolio to see how we`ve transformed businesses through innovative digital strategies' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-02.jpg' title='Branding' heading='Explore our branding portfolio to see how we`ve helped clients build powerful and authentic brands. Our approach combines creativity, strategy, and market insights to create lasting impressions.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-02.jpg' loading='lazy' title='Branding' heading='Explore our branding portfolio to see how we`ve helped clients build powerful and authentic brands. Our approach combines creativity, strategy, and market insights to create lasting impressions.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-03.jpg' title='Web Development' heading='Our team of skilled web developers specializes in creating custom, responsive websites that are both visually stunning and user-friendly. Explore our portfolio to see examples of our web development projects, from simple landing pages to complex e-commerce platforms.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-03.jpg' loading='lazy' title='Web Development' heading='Our team of skilled web developers specializes in creating custom, responsive websites that are both visually stunning and user-friendly. Explore our portfolio to see examples of our web development projects, from simple landing pages to complex e-commerce platforms.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-04.jpg' title='Graphics Illustration' heading='we bring your brand’s vision to life through captivating Graphics & Illustration. Our talented designers craft visually stunning graphics that not only catch the eye but also communicate your brand`s message effectively.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-04.jpg' loading='lazy' title='Graphics Illustration' heading='we bring your brand’s vision to life through captivating Graphics & Illustration. Our talented designers craft visually stunning graphics that not only catch the eye but also communicate your brand`s message effectively.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-05.jpg' title='Video Marketing' heading='Video marketing is a powerful tool for engaging your audience and driving conversions. Our video marketing services include: Video editing, Video marketing strategy, Video distribution, and Video analytics.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-05.jpg' loading='lazy' title='Video Marketing' heading='Video marketing is a powerful tool for engaging your audience and driving conversions. Our video marketing services include: Video editing, Video marketing strategy, Video distribution, and Video analytics.' />
             </SwiperSlide>
             <SwiperSlide>
-              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-06.jpg' title='Market Research' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
+              <PortfolioSingleCard image='https://wdtgoat.wpengine.com/wp-content/uploads/2024/03/portfolio-06.jpg' loading='lazy' title='Market Research' heading='Continually maintain web-enabled convergence before performance based initiatives. Dramatically network exceptional portals with worldwide.' />
             </SwiperSlide>
           </Swiper>
         </div>
@@ -250,7 +248,7 @@ const Home = () => {
               <FeaturedSingleCard title='Lead Capture' heading='Lead capture is a critical step in the sales process. Our lead capture services help you attract and capture qualified leads for your business. We offer a range of strategies, including: Landing pages, Lead magnets, Pop-ups and forms, social media lead generation, and Content marketing.' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
-              <FeaturedSingleCard title='Email AUtomation' heading='Email automation is a powerful tool for saving time and increasing your marketing efficiency. Our email automation services help you set up automated email workflows to nurture leads, drive sales, and provide exceptional customer service.' />
+              <FeaturedSingleCard title='Email Automation' heading='Email automation is a powerful tool for saving time and increasing your marketing efficiency. Our email automation services help you set up automated email workflows to nurture leads, drive sales, and provide exceptional customer service.' />
             </SwiperSlide>
             <SwiperSlide className='custom_transition6s'>
               <FeaturedSingleCard title='Paid Search' heading='Paid search advertising is a powerful way to reach your target audience and drive traffic to your website. Our paid search services include: Google Ads management, Keyword research, Ad copy writing, Bid management, and Campaign tracking and analysis.' />
@@ -325,56 +323,56 @@ const Home = () => {
       <SectionLayout title={'Friendly Services'} className={''} mainHeading={'Friendly and Integrated Services'} subHeading={'At MetSole, we’re more than just a digital agency—we’re your growth partner. We integrate seamlessly with tools like Mailchimp, HubSpot, Google Analytics, Dropbox, Amplitude, Slack, Google Tag Manager, and Google Merchant Center to streamline your marketing efforts. Our user-friendly approach ensures that our services are not just effective but also easy to implement and manage.'}>
         <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={ToolImg1} className='size-16 object-contain' alt="" />
+            <img src={ToolImg1} className='size-16 object-contain' loading='lazy' alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">Google Drive</h5>
               <p className="font-light text-sm">Elevate your business Saas</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={ToolImg2} className='size-16 object-contain' alt="" />
+            <img src={ToolImg2} className='size-16 object-contain' loading='lazy' alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">Amplitude</h5>
               <p className="font-light text-sm">Accelerate your growth</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={ToolImg3} className='size-16 object-contain' alt="" />
+            <img src={ToolImg3} className='size-16 object-contain' loading='lazy' alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">Slack</h5>
               <p className="font-light text-sm">Transform your business</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={ToolImg4} className='size-16 object-contain' alt="" />
+            <img src={ToolImg4} className='size-16 object-contain' loading='lazy' alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">Google Analytics</h5>
               <p className="font-light text-sm">Devoted to helping your business.</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={ToolImg5} className='size-16 object-contain' alt="" />
+            <img src={ToolImg5} className='size-16 object-contain'loading='lazy'  alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">MailChimp</h5>
               <p className="font-light text-sm">The digital empire your business.</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={ToolImg6} className='size-16 object-contain' alt="" />
+            <img src={ToolImg6} className='size-16 object-contain' loading='lazy' alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">Dropbox</h5>
               <p className="font-light text-sm">Innovative solutions for businesses.</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={ToolImg7} className='size-16 object-contain' alt="" />
+            <img src={ToolImg7} className='size-16 object-contain' loading='lazy' alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">Hub Spot</h5>
               <p className="font-light text-sm">Invest in the future of your business.</p>
             </div>
           </div>
           <div className="flex items-center gap-3 p-5 rounded-lg border-solid border bg-white hover:bg-slate-50 cursor-pointer">
-            <img src={ToolImg8} className='size-16 object-contain' alt="" />
+            <img src={ToolImg8} className='size-16 object-contain' loading='lazy' alt="" />
             <div className="space-y-1">
               <h5 className="font-bold text-lg">Power BI</h5>
               <p className="font-light text-sm">Quality software for businesses.</p>

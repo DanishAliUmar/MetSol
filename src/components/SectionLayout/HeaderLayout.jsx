@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react';
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -6,68 +6,87 @@ import {
     BreadcrumbList,
     BreadcrumbPage,
     BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
-import { Link } from 'react-router-dom'
+} from "@/components/ui/breadcrumb";
+import { Link } from 'react-router-dom';
 import splitStringUsingRegex from '../../utils/splitingUsingRegex';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import OptimizedImage from '@/components/OptimizedImage';
 
 const charVariants = {
-    hidden: { opacity: 0 },
-    reveal: { opacity: 1, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, y: 20 },
+    reveal: { 
+        opacity: 1, 
+        y: 0,
+        transition: { type: "spring", stiffness: 100, damping: 20 }
+    },
 };
 
 const HeaderLayout = ({ heading, page, bgImage }) => {
-    const splitHeading = splitStringUsingRegex(heading);
-
-
-    // Intersection Observer to trigger animation once
-    const [ref, inView] = useInView({
-        triggerOnce: true, // Ensures the animation only happens once
-        threshold: 0.2,    // Trigger when 20% of the section is visible
-    });
-
-    const revealVariants = {
-        hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } },
-    };
+    const splitHeading = useMemo(() => splitStringUsingRegex(heading), [heading]);
+    const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
     return (
-        <motion.section ref={ref}
+        <motion.section 
+            ref={ref}
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
-            variants={revealVariants} className='flex items-center justify-center flex-col gap-5 h-96 !bg-cover !bg-center !bg-no-repeat !text-white' style={{ background: 'url(/Images/Contact/Contact.jpg)' }}>
-            {/* <h1 className="text-5xl font-semibold">{heading}</h1> */}
-            {heading &&
+            className='relative flex items-center justify-center flex-col h-96 text-white overflow-hidden'>
+            
+            {/* Background Image */}
+            <div className="absolute inset-0 w-full h-full overflow-hidden">
+                <OptimizedImage
+                    src={bgImage || "/Images/Contact/Contact.webp"}
+                    alt="Background"
+                    className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/50"></div>
+            </div>
+
+            {/* Heading Text */}
+            {heading && (
                 <motion.h1
                     initial="hidden"
                     animate={inView ? 'reveal' : 'hidden'}
-                    transition={{ staggerChildren: 0.02 }}
-                    className='text-white font-semibold md:text-[40px] sm:text-3xl text-2xl mt-3 md:leading-[54px]'
+                    transition={{ staggerChildren: 0.03 }}
+                    className='relative z-10 text-white font-semibold md:text-[40px] sm:text-3xl text-2xl mt-3 md:leading-[54px]'
                 >
                     {splitHeading.map((char, index) => (
-                        <motion.span key={index} variants={charVariants}>
+                        <motion.span key={index} variants={charVariants} style={{ display: 'inline-block' }}>
                             {char}
                         </motion.span>
                     ))}
                 </motion.h1>
-            }
-            <Breadcrumb className={'!text-white'}>
+            )}
+
+            {/* Breadcrumb Navigation */}
+            <Breadcrumb className='relative z-10 text-white'>
                 <BreadcrumbList>
                     <BreadcrumbItem>
                         <Link to={'/'}>
-                            <BreadcrumbLink className={'text-white hover:text-[#004b86] font-medium'}>Home</BreadcrumbLink>
+                            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                                <BreadcrumbLink className='text-white hover:text-[#004b86] font-medium'>
+                                    Home
+                                </BreadcrumbLink>
+                            </motion.div>
                         </Link>
                     </BreadcrumbItem>
-                    <BreadcrumbSeparator className={'text-white font-medium'} />
+                    <BreadcrumbSeparator className='text-white font-medium' />
                     <BreadcrumbItem>
-                        <BreadcrumbPage className={'text-[#ffb600] font-medium'}>{page}</BreadcrumbPage>
+                        <motion.div
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={inView ? { opacity: 1, x: 0 } : {}}
+                            transition={{ delay: 0.3 }}
+                        >
+                            <BreadcrumbPage className='text-[#ffb600] font-medium'>
+                                {page}
+                            </BreadcrumbPage>
+                        </motion.div>
                     </BreadcrumbItem>
                 </BreadcrumbList>
             </Breadcrumb>
-
         </motion.section>
-    )
-}
+    );
+};
 
-export default HeaderLayout
+export default HeaderLayout;

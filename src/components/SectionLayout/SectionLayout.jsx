@@ -16,12 +16,12 @@ const SectionLayout = ({ className, title, mainHeading, circle, triangle, subHea
     // Intersection Observer to trigger animation once
     const [ref, inView] = useInView({
         triggerOnce: true, // Ensures the animation only happens once
-        threshold: 0.2,    // Trigger when 20% of the section is visible
+        threshold: 0.01,    // Trigger when 02% of the section is visible
     });
 
     const revealVariants = {
-        hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } },
+        hidden: { opacity: 0.8, y: 0 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'ease' } },
     };
 
     return (
@@ -30,8 +30,7 @@ const SectionLayout = ({ className, title, mainHeading, circle, triangle, subHea
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
             variants={revealVariants}
-            className={`px-5 md:py-28 sm:py-16 py-10 md:space-y-20 sm:space-y-16 space-y-10 ${className ? className : ''}`}
-        >
+            className={`px-5 md:py-28 sm:py-16 py-10 md:space-y-20 sm:space-y-16 space-y-10 ${className ? className : ''}`}>
             <div className='flex items-center md:gap-14 gap-5 lg:flex-row flex-col'>
                 <div className='flex-1'>
                     {title &&
