@@ -15,8 +15,8 @@ import OptimizedImage from '@/components/OptimizedImage';
 
 const charVariants = {
     hidden: { opacity: 0, y: 20 },
-    reveal: { 
-        opacity: 1, 
+    reveal: {
+        opacity: 1,
         y: 0,
         transition: { type: "spring", stiffness: 100, damping: 20 }
     },
@@ -27,12 +27,13 @@ const HeaderLayout = ({ heading, page, bgImage }) => {
     const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
     return (
-        <motion.section 
+        <motion.section
             ref={ref}
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
-            className='relative flex items-center justify-center flex-col h-96 text-white overflow-hidden'>
-            
+            className='relative flex items-center justify-center flex-col h-96 text-white overflow-hidden'
+        >
+
             {/* Background Image */}
             <div className="absolute inset-0 w-full h-full overflow-hidden">
                 <OptimizedImage
@@ -52,8 +53,12 @@ const HeaderLayout = ({ heading, page, bgImage }) => {
                     className='relative z-10 text-white font-semibold md:text-[40px] sm:text-3xl text-2xl mt-3 md:leading-[54px]'
                 >
                     {splitHeading.map((char, index) => (
-                        <motion.span key={index} variants={charVariants} style={{ display: 'inline-block' }}>
-                            {char}
+                        <motion.span
+                            key={index}
+                            variants={charVariants}
+                            style={{ display: 'inline-block' }}
+                        >
+                            {char === ' ' ? '\u00A0' : char}
                         </motion.span>
                     ))}
                 </motion.h1>

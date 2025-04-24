@@ -113,19 +113,19 @@ const Home = () => {
               <div className="flex-1 space-y-10">
                 <div className="grid grid-cols-2 gap-10 ">
                   <div className="space-y-2">
-                    <h2 className="text-5xl font-semibold">50k+</h2>
+                    <h2 className="text-5xl font-semibold">50</h2>
                     <p className="font-semibold">Global Clients</p>
                   </div>
                   <div className="space-y-2">
-                    <h2 className="text-5xl font-semibold">25k</h2>
+                    <h2 className="text-5xl font-semibold">40+</h2>
                     <p className="font-semibold">Successful Projects</p>
                   </div>
                   <div className="space-y-2">
-                    <h2 className="text-5xl font-semibold">50k+</h2>
+                    <h2 className="text-5xl font-semibold">30+</h2>
                     <p className="font-semibold">On Going Projects</p>
                   </div>
                   <div className="space-y-2">
-                    <h2 className="text-5xl font-semibold">50k+</h2>
+                    <h2 className="text-5xl font-semibold">2</h2>
                     <p className="font-semibold">Branches</p>
                   </div>
                 </div>

@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import Svgs from "@/Assets/svgs";
-import Contact from '/Images/Contact/Contact.jpg';
 import Slide__Image__1 from '/Images/assets/home-1-team-03.jpg';
 import contactPerson from '/Images/Contact/Contactimage2.jpg';
 import HeaderLayout from '@/components/SectionLayout/HeaderLayout';
